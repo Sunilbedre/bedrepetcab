@@ -1,32 +1,25 @@
 import React from 'react';
 import { Metadata } from 'next';
-import HeroServiceSelector from '@/components/HeroServiceSelector';
-import DubaiFareCalculator from '@/components/DubaiFareCalculator';
-import InternationalQuoteForm from '@/components/InternationalQuoteForm';
+import ChauffurBookingWizard from '@/components/ChauffurBookingWizard';
+import FAQAccordion from '@/components/FAQAccordion';
 
 export const metadata: Metadata = {
-  title: 'Get a Quote — Global Pet Cab Dubai',
-  description: 'Select your service: instant distance fare for Dubai Pet Taxi or custom international relocation quote.',
+  title: 'Get a Quote & Book — Global Pet Cab Dubai',
+  description: 'Book your Dubai Pet Taxi or request an international pet relocation quote using our step-by-step interactive booking form.',
 };
 
 export default function GetAQuotePage() {
   return (
-    <div className="space-y-16 py-8 font-body">
-      <section className="bg-gradient-to-r from-navy-dark via-navy to-navy-light text-white py-16 text-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <h1 className="text-3xl sm:text-5xl font-black font-heading tracking-tight">Get Your Pet Transport Quote</h1>
-          <p className="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto">
-            Select Dubai Pet Taxi for instant city ride estimates or International Relocation for cross-border moves.
-          </p>
-        </div>
+    <div className="space-y-12 py-6 font-body">
+      
+      {/* Interactive Multi-Step Booking Wizard */}
+      <section className="bg-slate-50/50 py-4">
+        <ChauffurBookingWizard />
       </section>
 
-      <HeroServiceSelector />
+      {/* Categorized FAQs */}
+      <FAQAccordion />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        <DubaiFareCalculator />
-        <InternationalQuoteForm />
-      </div>
     </div>
   );
 }
