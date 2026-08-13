@@ -4,6 +4,8 @@
 
 Official web platform for **Global Pet Cab Dubai**, built with Next.js 14, TypeScript, Tailwind CSS, and Prisma ORM. Re-architected with a high-converting UI/UX design system inspired by **FidoJet**, tailored strictly for the Dubai and UAE market (`globalpetcab.ae`).
 
+> 📚 **Developer & AI Agent Documentation**: For detailed architectural specifications, mathematical fare formulas, FidoJet design system tokens, and extension patterns, see [DEVELOPMENT.md](file:///Users/bedre/globalpecab/DEVELOPMENT.md).
+
 ---
 
 ## 🚀 Key Business Models & Features
@@ -37,7 +39,7 @@ Official web platform for **Global Pet Cab Dubai**, built with Next.js 14, TypeS
   - Soft Backgrounds (`#F6F8FA` / `#E3E9EE`)
 - **Hero & Interactive Globe**:
   - Animated SVG globe graphic with spinning grid lines, glowing flight arcs (`DXB → LHR`, `DXB → BOM`, `DXB → JFK`), and live route indicators.
-  - Floating 5-column inline quick estimate bar overlapping the hero section boundary.
+  - Floating 5-column inline quick estimate bar overlapping 50% across section boundaries.
 
 ---
 
@@ -56,6 +58,7 @@ Official web platform for **Global Pet Cab Dubai**, built with Next.js 14, TypeS
 
 ```
 /globalpecab
+├── DEVELOPMENT.md                         # Architecture & Developer Guide for Engineers & AI Agents
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx                     # Root layout (Google Fonts & Metadata)
