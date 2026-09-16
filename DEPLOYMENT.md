@@ -11,7 +11,7 @@ The GitHub repo (`main` branch) is connected to **globalpetcab.ae** via Hostinge
 
 ## Recommended deploy flow
 
-1. Commit and push to `https://github.com/Sunilbedre/petcabdubai.git` (`main`)
+1. Commit and push to `https://github.com/Sunilbedre/newpetcab.git` (`main`)
 2. In Hostinger hPanel: **Websites → globalpetcab.ae → Deployments** — confirm build succeeded
 3. Open https://globalpetcab.ae and verify
 
