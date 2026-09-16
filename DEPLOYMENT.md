@@ -5,7 +5,7 @@
 | Domain | Server | Status |
 |--------|--------|--------|
 | **https://globalpetcab.ae** | `u432886921@217.21.85.101:65002` | Active — Hostinger hbuilds, deploys from GitHub |
-| **https://bedreweb.com** | `u172903565@147.93.109.71:65002` | Legacy — old Aug 2026 build, not auto-synced |
+| **https://bedreweb.com** | `u172903565@147.93.109.71:65002` | Active — manual SSH deploy to `app-v2` (not Git-linked) |
 
 The GitHub repo (`main` branch) is connected to **globalpetcab.ae** via Hostinger Git integration. Pushing to GitHub triggers a rebuild on the new server.
 
@@ -21,9 +21,11 @@ The GitHub repo (`main` branch) is connected to **globalpetcab.ae** via Hostinge
 .\scripts\deploy-globalpetcab.ps1
 ```
 
-## Legacy bedreweb.com scripts
+## bedreweb.com (separate server)
 
-`scripts/deploy-bedreweb.ps1` and `scripts/upload-bedreweb-now.ps1` target the **old server** only. Do not use them unless you intentionally deploy to bedreweb.com on `147.93.109.71`.
+`scripts/deploy-bedreweb.ps1` and `scripts/upload-bedreweb-now.ps1` deploy to `147.93.109.71` → `domains/bedreweb.com/nodejs/app-v2`. After deploy, hard-refresh the browser (`Ctrl+Shift+R`) — stale `_next/static` files in `public_html` can make the site look outdated.
+
+**Do not run locally from** `F:\petcab\bedreweb.com\` — that is an old server download. Clone `newpetcab` instead.
 
 ## Environment variables
 
