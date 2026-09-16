@@ -1,4 +1,6 @@
-# One-click upload to bedreweb.com — run in PowerShell from project root:
+# LEGACY — uploads to OLD server (bedreweb.com on 147.93.109.71).
+# Current live site: https://globalpetcab.ae on 217.21.85.101 (see DEPLOYMENT.md).
+# Run from project root in PowerShell:
 #   .\scripts\upload-bedreweb-now.ps1
 
 $ErrorActionPreference = "Stop"

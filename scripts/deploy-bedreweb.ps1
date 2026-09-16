@@ -1,4 +1,5 @@
-# Deploy Global Pet Cab to bedreweb.com (Hostinger)
+# LEGACY — deploys to OLD server (bedreweb.com on 147.93.109.71).
+# Current live site: https://globalpetcab.ae on 217.21.85.101 (see DEPLOYMENT.md).
 # Run from project root in PowerShell:
 #   .\scripts\deploy-bedreweb.ps1
 
