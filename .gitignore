@@ -5,3 +5,7 @@ node_modules/
 prisma/dev.db
 *.log
 tmp/
+
+# Full live server download (local backup only — do not commit)
+globalpetcab-live-full.tar.gz
+live-server-full/
