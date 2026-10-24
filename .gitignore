@@ -9,3 +9,5 @@ tmp/
 # Full live server download (local backup only — do not commit)
 globalpetcab-live-full.tar.gz
 live-server-full/
+hostinger-live-deploy/.env
+hostinger-live-deploy/**/.env

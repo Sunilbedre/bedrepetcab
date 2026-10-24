@@ -2,7 +2,7 @@ import React from 'react';
 import { MessageCircle } from 'lucide-react';
 import HeroServiceSelector from '@/components/HeroServiceSelector';
 import TrustBar from '@/components/TrustBar';
-import ChauffurBookingWizard from '@/components/ChauffurBookingWizard';
+import MobilityServiceSection from '@/components/MobilityServiceSection';
 import ThreeJourneysSection from '@/components/ThreeJourneysSection';
 import PetJourneyGallery from '@/components/PetJourneyGallery';
 import WhyChooseUs from '@/components/WhyChooseUs';
@@ -18,10 +18,8 @@ export default function HomePage() {
       {/* 2. TRUST METRICS BAR */}
       <TrustBar />
 
-      {/* 3. BOOKING WIZARD (matches live globalpetcab.ae homepage) */}
-      <section className="bg-slate-50/50 py-8 border-t border-teal-border/50">
-        <ChauffurBookingWizard />
-      </section>
+      {/* 3. MOBILITY SELECTOR (from live Hostinger build) */}
+      <MobilityServiceSection />
 
       {/* 4. THREE JOURNEYS */}
       <ThreeJourneysSection />

@@ -46,8 +46,12 @@ Open http://localhost:3000
 2. Hostinger hPanel → **globalpetcab.ae** → connect Git to **`finalglobalpetcab`**
 3. Redeploy / confirm build
 
-## Live server backup (reference only)
+## Live server backup (downloaded from Hostinger)
 
-Use the tarball to **inspect the old production build** or restore files on the server — not for editing in VS Code. Editable code is always **`src/`** in Git.
+| Location | Purpose |
+|----------|---------|
+| `hostinger-live-deploy/` | **Exact live deploy** in Git (~31 MB, no `node_modules`) — same as server |
+| `live-server-full/` (local only, gitignored) | Full unzip including `node_modules` |
+| `globalpetcab-live-full.tar.gz` (gitignored) | Archive of full server copy |
 
-If you still have the Windows project **`E:\Pictures\petcabdubai-main\petcabdubai-main`**, that may be the newest source; compare with this repo if something on live is missing.
+Missing live-only code was **recovered from the server `.next` build** into `src/` (e.g. `/api/places/search`, `placeSuggestions`, `MobilityServiceSection`).
