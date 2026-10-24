@@ -1,10 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
-import { Car, Globe, ArrowRight, MessageCircle, ShieldCheck, Heart, Sparkles, CheckCircle2 } from 'lucide-react';
-import DubaiFareCalculator from '@/components/DubaiFareCalculator';
-import InternationalQuoteForm from '@/components/InternationalQuoteForm';
+import { MessageCircle } from 'lucide-react';
 import HeroServiceSelector from '@/components/HeroServiceSelector';
 import TrustBar from '@/components/TrustBar';
+import ChauffurBookingWizard from '@/components/ChauffurBookingWizard';
+import ThreeJourneysSection from '@/components/ThreeJourneysSection';
 import PetJourneyGallery from '@/components/PetJourneyGallery';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import FAQAccordion from '@/components/FAQAccordion';
@@ -19,51 +18,13 @@ export default function HomePage() {
       {/* 2. TRUST METRICS BAR */}
       <TrustBar />
 
-      {/* 3. DUBAI PET TAXI CALCULATOR SECTION */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <DubaiFareCalculator />
-        </div>
+      {/* 3. BOOKING WIZARD (matches live globalpetcab.ae homepage) */}
+      <section className="bg-slate-50/50 py-8 border-t border-teal-border/50">
+        <ChauffurBookingWizard />
       </section>
 
-      {/* 4. INTERNATIONAL RELOCATION SECTION */}
-      <section className="py-20 bg-teal-soft/50 border-t border-teal-border">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-            <span className="text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-sm">
-              Cross-Border Pet Logistics
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight">
-              Popular International Relocation Routes
-            </h2>
-            <p className="text-base sm:text-lg font-body text-slate-600">
-              We specialize in end-to-end relocation into and out of Dubai with complete MOCCAE permits and airline approvals.
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-2.5 pt-3">
-              {[
-                'Dubai ↔ India (Mumbai / Delhi)',
-                'Dubai ↔ UK (London LHR)',
-                'Dubai ↔ USA (New York / LAX)',
-                'Dubai ↔ Canada (Toronto)',
-                'Dubai ↔ Australia',
-                'Dubai ↔ Europe',
-                'Dubai ↔ Singapore',
-              ].map((route) => (
-                <span
-                  key={route}
-                  className="bg-white text-navy font-bold text-xs sm:text-sm px-4 py-2 rounded-2xl border border-teal-border shadow-sm"
-                >
-                  ✈️ {route}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <InternationalQuoteForm />
-        </div>
-      </section>
+      {/* 4. THREE JOURNEYS */}
+      <ThreeJourneysSection />
 
       {/* 5. QUESTIONS PET PARENTS ASK */}
       <section className="py-20 bg-white border-t border-teal-border">
