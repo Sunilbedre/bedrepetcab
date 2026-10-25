@@ -1,36 +1,61 @@
-# Deployment — globalpetcab.ae
+# Deploy to Hostinger — globalpetcab.ae
 
-## Live site not showing GitHub changes?
+Changes are on GitHub **`main`**. To put them on **https://globalpetcab.ae**, deploy once (pick one method).
 
-**GitHub `main` is updated first.** Hostinger does **not** auto-update until you redeploy.
+---
 
-1. Push is already on: `https://github.com/Sunilbedre/finalglobalpetcab` → branch **`main`**
-2. Hostinger hPanel → **Websites** → **globalpetcab.ae** → **Deployments** (or Git)
-3. **Pull / Redeploy** from `main` (or click **Deploy**)
-4. Start command must be: **`npm start`** or **`node server.js`** (not `next build` — this repo ships the built `.next` folder)
-5. Hard refresh: **Ctrl+Shift+R** on https://globalpetcab.ae
+## Method A — Deploy from your Mac (recommended)
 
-## Check live site from terminal
+You need your **Hostinger SSH password** (hPanel → **Advanced** → **SSH Access**).
+
+```bash
+cd ~/finalglobalpetcab
+git pull origin main
+bash scripts/deploy-globalpetcab.sh
+```
+
+Enter SSH password when prompted.
+
+Then in **hPanel**:
+
+1. **Websites** → **globalpetcab.ae** → **Node.js**
+2. Application root: `domains/globalpetcab.ae/hbuilds/manual-deploy/app`
+3. Start command: **`npm start`**
+4. **Restart** the app
+
+Check live:
 
 ```bash
 curl -sL https://globalpetcab.ae/ | grep -o 'IPATA Member' | head -1
 ```
 
-If this prints nothing, production is still on the old build → redeploy in hPanel.
+---
 
-## Manual SSH deploy (fallback)
+## Method B — Windows PowerShell
 
 ```powershell
+cd $HOME\finalglobalpetcab
+git pull origin main
 .\scripts\deploy-globalpetcab.ps1
 ```
 
-## Local Mac verify
+Same hPanel restart steps as above.
+
+---
+
+## Method C — GitHub only (if Git deploy is already set up)
+
+hPanel → **Deployments** → **Redeploy** branch **`main`**
+
+**Important:** Build command must be **empty** or **skip** (this repo already contains `.next`).  
+Start command: **`npm start`** or **`node server.js`**.
+
+---
+
+## Local preview before deploy
 
 ```bash
-cd ~/finalglobalpetcab
-git fetch origin && git reset --hard origin/main
-bash scripts/verify-trust-badges.sh
 npm run local
 ```
 
-Open http://localhost:3010 — **Cmd+Shift+R**
+Open http://localhost:3010
