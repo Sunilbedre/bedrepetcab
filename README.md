@@ -31,4 +31,4 @@ This runs the **Hostinger build** (`server.js` + `.next`), not the old `src/` fo
 | “Verified Google” badges | Wrong server or old git | `git pull` then **`npm run dev`** |
 | Check | — | `bash scripts/check-local-preview.sh` |
 
-**Live site** (globalpetcab.ae) updates only after deploy: GitHub secret `HOSTINGER_SSH_PASSWORD` + push to `main`, or Hostinger hPanel restart after manual deploy.
+**Live site not updated?** See **[DEPLOY-HOSTINGER.md](./DEPLOY-HOSTINGER.md)** — you must add GitHub secret `HOSTINGER_SSH_PASSWORD` once, then re-run the deploy workflow and restart Node in hPanel.
