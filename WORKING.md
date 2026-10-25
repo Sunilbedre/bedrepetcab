@@ -30,6 +30,19 @@ cd finalglobalpetcab
 
 ## Daily development
 
+**Preview the real Hostinger/live site locally** (compiled snapshot in `hostinger-live-deploy/`, matches **globalpetcab.ae**):
+
+```powershell
+cd hostinger-live-deploy
+npm ci --omit=dev
+npx prisma generate
+$env:PORT=3010; node server.js
+```
+
+Or from repo root: `npm run dev:hostinger` then open http://localhost:3010
+
+**Edit TypeScript source** (`src/` at repo root — may be behind live until you sync/deploy):
+
 ```powershell
 npm ci
 npx prisma generate
