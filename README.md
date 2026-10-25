@@ -1,33 +1,27 @@
-# Global Pet Cab Dubai — globalpetcab.ae
+# Global Pet Cab Dubai
 
-You **do not** need to run terminal commands for normal work.
+## Work locally (see your changes on localhost)
 
-## How you work (simple)
+**You:** tell Cursor what to change.  
+**Cursor:** edits `src/` and runs the dev server.  
+**You:** open **http://localhost:3010** in Cursor (**Forwarded Ports → 3010**).
 
-1. Tell **Cursor** what to change (text, pages, design).
-2. Cursor edits the repo and **pushes to GitHub `main`**.
-3. **GitHub automatically deploys** to Hostinger (after one-time setup below).
-4. Open **https://globalpetcab.ae** — hard refresh if needed.
+Edits in `src/` show up automatically when you save (hot reload).
 
-Preview while Cursor is working: use **Forwarded Ports → 3010** in the Cursor agent (not your Mac terminal).
+### First time on your Mac (once)
 
-## One-time setup (5 minutes, then never again)
+```bash
+cd ~/finalglobalpetcab
+git pull origin main
+npm install
+npx prisma generate
+npm run db:push
+npm run db:seed
+npm run dev
+```
 
-So deploys run **without you**:
+Then keep **http://localhost:3010** open. After that, usually only `git pull` + `npm run dev` if you work on your machine.
 
-1. Open https://github.com/Sunilbedre/finalglobalpetcab/settings/secrets/actions  
-2. **New repository secret**  
-   - Name: `HOSTINGER_SSH_PASSWORD`  
-   - Value: your Hostinger SSH password (hPanel → Advanced → SSH Access)  
-3. Hostinger hPanel → **globalpetcab.ae** → **Node.js**  
-   - App folder: `domains/globalpetcab.ae/hbuilds/manual-deploy/app`  
-   - Start: **`npm start`**  
-   - Save and **Restart** once  
+### Deploy to live site
 
-After that, every push to `main` runs the deploy workflow.
-
-## If live site looks old
-
-In hPanel → Node.js → **Restart** (once). No terminal on your laptop.
-
-Details: [DEPLOYMENT.md](DEPLOYMENT.md)
+After you approve changes, Cursor pushes to GitHub → auto-deploy to **globalpetcab.ae** (see [DEPLOYMENT.md](DEPLOYMENT.md)).

@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #FBFBFA;
+    color: #052D49;
+    font-size: 16px;
+  }
+  
+  body {
+    background-color: #FBFBFA;
+    color: #052D49;
+    overflow-x: hidden;
+    line-height: 1.6;
+    font-size: 0.95rem; /* ~15.2px default body text */
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0C7F8A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0FA3B1;
+}
+
+/* Luxury Input & Form Field Custom Styling */
+.fj-input {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid #E3E9EE;
+  background-color: #FFFFFF;
+  color: #052D49;
+  font-size: 0.925rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.fj-input:focus {
+  outline: none;
+  border-color: #0C7F8A;
+  box-shadow: 0 0 0 4px rgba(12, 127, 138, 0.12);
+  background-color: #FFFFFF;
+}
+
+.fj-select {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid #E3E9EE;
+  background-color: #FFFFFF;
+  color: #052D49;
+  font-size: 0.925rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.fj-select:focus {
+  outline: none;
+  border-color: #0C7F8A;
+  box-shadow: 0 0 0 4px rgba(12, 127, 138, 0.12);
+}
+
+.fj-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #33454F;
+  margin-bottom: 0.4rem;
+}
+
+/* Custom Glassmorphism & Luxury Cards */
+.glass-luxury {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Glow Effects */
+.glow-coral {
+  box-shadow: 0 12px 28px -8px rgba(251, 111, 76, 0.45);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
