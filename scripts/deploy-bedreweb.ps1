@@ -1,5 +1,4 @@
-# LEGACY — deploys to OLD server (bedreweb.com on 147.93.109.71).
-# Current live site: https://globalpetcab.ae on 217.21.85.101 (see DEPLOYMENT.md).
+# Deploy Global Pet Cab to bedreweb.com (Hostinger)
 # Run from project root in PowerShell:
 #   .\scripts\deploy-bedreweb.ps1
 
@@ -54,10 +53,13 @@ cd $REMOTE_DIR && \
 rm -rf app && mkdir -p app && \
 unzip -o deploy.zip -d app && \
 cd app && \
-npm ci --omit=dev && \
+rm -rf node_modules && \
+npm install && \
+export DATABASE_URL='file:./prisma/dev.db' && \
 npx prisma generate && \
 npx prisma db push && \
-node scripts/seed.js || true
+node scripts/seed.js || true && \
+mkdir -p tmp && touch tmp/restart.txt
 "@ -replace "`r`n", " "
 
 & plink -batch -hostkey $HOSTKEY -P $SSH_PORT -pw $PlainPass "${SSH_USER}@${SSH_HOST}" $remoteCmd

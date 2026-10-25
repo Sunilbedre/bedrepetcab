@@ -1,5 +1,4 @@
 node_modules/
-.next/
 .env
 .env.local
 prisma/dev.db
@@ -9,5 +8,6 @@ tmp/
 # Full live server download (local backup only — do not commit)
 globalpetcab-live-full.tar.gz
 live-server-full/
-hostinger-live-deploy/.env
-hostinger-live-deploy/**/.env
+
+# Local dev caches only (production .next at repo root is committed)
+.next/cache/webpack/

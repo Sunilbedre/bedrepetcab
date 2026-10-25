@@ -1,6 +1,4 @@
-# LEGACY — uploads to OLD server (bedreweb.com on 147.93.109.71).
-# Current live site: https://globalpetcab.ae on 217.21.85.101 (see DEPLOYMENT.md).
-# Run from project root in PowerShell:
+# One-click upload to bedreweb.com — run in PowerShell from project root:
 #   .\scripts\upload-bedreweb-now.ps1
 
 $ErrorActionPreference = "Stop"
@@ -35,6 +33,8 @@ Copy-Item -Recurse ".next\static" (Join-Path $stage ".next\static")
 Copy-Item -Recurse "public" (Join-Path $stage "public")
 Copy-Item -Recurse "prisma" (Join-Path $stage "prisma")
 Copy-Item -Recurse "scripts" (Join-Path $stage "scripts")
+Copy-Item "package.json" $stage
+Copy-Item "package-lock.json" $stage
 Copy-Item ".env.production.example" (Join-Path $stage ".env")
 
 $archive = Join-Path $env:TEMP "gpc-deploy.zip"
@@ -52,7 +52,9 @@ $p = Start-Process -FilePath $PLINK -ArgumentList @(
 if ($p.ExitCode -ne 0) { throw "Upload failed (exit $($p.ExitCode))" }
 
 Write-Host "Extracting on server..." -ForegroundColor Cyan
-$remoteCmd = "cd $REMOTE_DIR && rm -rf app && mkdir app && unzip -o deploy.zip -d app && ls -la app | head"
+$remoteCmd = @"
+cd $REMOTE_DIR && rm -rf app && mkdir app && unzip -o deploy.zip -d app && cd app && rm -rf node_modules && npm install && export DATABASE_URL='file:./prisma/dev.db' && npx prisma generate && npx prisma db push && node scripts/seed.js || true && mkdir -p tmp && touch tmp/restart.txt && ls -la | head
+"@
 & $PLINK -batch -hostkey $HOSTKEY -P $SSH_PORT -pw $PlainPass "${SSH_USER}@${SSH_HOST}" $remoteCmd
 
 Write-Host ""
