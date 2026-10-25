@@ -1,0 +1,52 @@
+name: Deploy to Hostinger (globalpetcab.ae)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify trust build in repo
+        run: bash scripts/verify-trust-badges.sh
+
+      - name: Pack live app
+        run: |
+          bash scripts/pack-deploy.sh
+          mv /tmp/gpc-deploy.zip deploy.zip
+          ls -lh deploy.zip
+
+      - name: Install sshpass
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq sshpass
+
+      - name: Upload and install on Hostinger
+        env:
+          GPC_SSH_PASSWORD: ${{ secrets.HOSTINGER_SSH_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GPC_SSH_PASSWORD}" ]; then
+            echo "::error::Add GitHub secret HOSTINGER_SSH_PASSWORD (Hostinger SSH password). One-time setup — then every push to main deploys automatically."
+            exit 1
+          fi
+          SSH_HOST="217.21.85.101"
+          SSH_PORT="65002"
+          SSH_USER="u432886921"
+          REMOTE_DIR="domains/globalpetcab.ae/hbuilds/manual-deploy"
+          export SSHPASS="$GPC_SSH_PASSWORD"
+          sshpass -e ssh -o StrictHostKeyChecking=accept-new -p "$SSH_PORT" "${SSH_USER}@${SSH_HOST}" "mkdir -p $REMOTE_DIR"
+          sshpass -e scp -o StrictHostKeyChecking=accept-new -P "$SSH_PORT" deploy.zip "${SSH_USER}@${SSH_HOST}:$REMOTE_DIR/deploy.zip"
+          sshpass -e ssh -o StrictHostKeyChecking=accept-new -p "$SSH_PORT" "${SSH_USER}@${SSH_HOST}" \
+            "cd $REMOTE_DIR && rm -rf app && mkdir -p app && unzip -o deploy.zip -d app && cd app && npm ci --omit=dev && npx prisma generate"
+
+      - name: Live check (IPATA badges)
+        run: |
+          sleep 15
+          if curl -fsSL https://globalpetcab.ae/ | grep -q 'IPATA Member'; then
+            echo "Live site shows updated trust badges."
+          else
+            echo "::warning::Site may need Node app restart in Hostinger hPanel (npm start). Upload succeeded."
+          fi

@@ -1,29 +1,23 @@
-# Global Pet Cab — one workflow
+# How you work with Cursor (no daily terminal)
 
-## Mac (zsh)
+## Your job
 
-```bash
-cd ~/finalglobalpetcab
-git pull origin main
-npm ci --omit=dev
-npx prisma generate
-npm run local
-```
+Describe changes in Cursor chat. That’s it.
 
-Browser: **http://localhost:3010**
+## Cursor’s job
 
-Do **not** use `$env:PORT` on Mac (that is Windows). Do **not** paste `PORT=3010` on the same line as `cd` without a newline.
+- Edit the site  
+- Push to GitHub `main`  
+- GitHub Action deploys to **globalpetcab.ae** (if `HOSTINGER_SSH_PASSWORD` secret is set)
 
-## Windows
+## One-time (you do this once)
 
-```powershell
-cd $HOME\finalglobalpetcab
-git pull origin main
-npm ci --omit=dev
-npx prisma generate
-$env:PORT=3010; npm start
-```
+GitHub → **Settings → Secrets → Actions** → add **`HOSTINGER_SSH_PASSWORD`** (Hostinger SSH password).
 
-## Change the site
+## Preview
 
-Describe changes in Cursor → we push to GitHub `main` → Hostinger updates **globalpetcab.ae**.
+In the **Cursor agent**, open **Forwarded Ports → 3010**. Do not use `npm run local` on your Mac unless you want to.
+
+## Live site
+
+https://globalpetcab.ae
