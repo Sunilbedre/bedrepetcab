@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "local": "PORT=3010 HOSTNAME=127.0.0.1 node server.js",
+    "local": "bash scripts/run-local.sh",
     "db:push": "prisma db push",
     "db:seed": "node scripts/seed.js"
   },
