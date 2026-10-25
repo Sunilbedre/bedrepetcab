@@ -1,20 +1,29 @@
 # Global Pet Cab — one workflow
 
-## On your PC
+## Mac (zsh)
 
-```powershell
-git clone https://github.com/Sunilbedre/finalglobalpetcab.git
-cd finalglobalpetcab
+```bash
+cd ~/finalglobalpetcab
+git pull origin main
 npm ci --omit=dev
 npx prisma generate
-$env:PORT=3010
-npm start
+npm run local
 ```
 
-Open **http://localhost:3010** — same site as **https://globalpetcab.ae**.
+Browser: **http://localhost:3010**
 
-## Change the website
+Do **not** use `$env:PORT` on Mac (that is Windows). Do **not** paste `PORT=3010` on the same line as `cd` without a newline.
 
-Tell **Cursor** what to change (text, images, pages). We edit this repo, push to GitHub `main`, and Hostinger redeploys **globalpetcab.ae**.
+## Windows
 
-You do not need a second folder, `npm run dev`, or `hostinger-live-deploy`.
+```powershell
+cd $HOME\finalglobalpetcab
+git pull origin main
+npm ci --omit=dev
+npx prisma generate
+$env:PORT=3010; npm start
+```
+
+## Change the site
+
+Describe changes in Cursor → we push to GitHub `main` → Hostinger updates **globalpetcab.ae**.

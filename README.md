@@ -2,15 +2,28 @@
 
 Live Hostinger website in this repo (`server.js` + `.next`).
 
-```powershell
-git clone https://github.com/Sunilbedre/finalglobalpetcab.git
-cd finalglobalpetcab
+### Mac (Terminal / zsh) — copy all lines
+
+```bash
+cd ~/finalglobalpetcab
+git pull origin main
 npm ci --omit=dev
 npx prisma generate
-$env:PORT=3010
-npm start
+npm run local
 ```
 
-→ **http://localhost:3010** (same as the live site)
+Open **http://localhost:3010**
 
-**Changes:** ask Cursor to edit → push to `main` → Hostinger deploys. See [WORKING.md](WORKING.md).
+### Windows (PowerShell)
+
+```powershell
+cd $HOME\finalglobalpetcab
+git pull origin main
+npm ci --omit=dev
+npx prisma generate
+$env:PORT=3010; npm start
+```
+
+Open **http://localhost:3010**
+
+**Changes:** tell Cursor what to edit → push to `main` → Hostinger deploys.
