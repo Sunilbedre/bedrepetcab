@@ -1,3 +1,7 @@
+/**
+ * DEV ONLY — not used by Hostinger / npm run dev.
+ * For live site badges edit live/trust-badges.json and run: npm run sync:live
+ */
 import React from 'react';
 import { ShieldCheck, Award, HeartHandshake, Globe2 } from 'lucide-react';
 

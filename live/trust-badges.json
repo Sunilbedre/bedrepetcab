@@ -1,0 +1,9 @@
+{
+  "note": "Edit this file, then run: npm run sync:live — NOT src/components/TrustBar.tsx",
+  "badges": [
+    { "title": "IPATA Member", "subtitle": "Accredited pet transport association" },
+    { "title": "IATA-Compliant Handling", "subtitle": "Live animal regulations & crates" },
+    { "title": "45+ Countries", "subtitle": "Global Network" },
+    { "title": "2,000+ Pets Transported", "subtitle": "Dubai taxi rides & global flights" }
+  ]
+}

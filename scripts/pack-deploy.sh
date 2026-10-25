@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
+node "$ROOT/scripts/patch-trust-badges.mjs"
 bash "$ROOT/scripts/verify-trust-badges.sh"
 
 STAGE="${TMPDIR:-/tmp}/gpc-deploy-stage"

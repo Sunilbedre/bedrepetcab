@@ -8,6 +8,7 @@
     "build": "prisma generate && next build",
     "start": "node server.js",
     "local": "bash scripts/run-local.sh",
+    "sync:live": "node scripts/patch-trust-badges.mjs && bash scripts/verify-trust-badges.sh",
     "db:push": "prisma db push",
     "db:seed": "node scripts/seed.js"
   },
