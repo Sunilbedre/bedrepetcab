@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  pack:
+  pack-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,19 +29,6 @@ jobs:
           path: deploy.zip
           retention-days: 14
 
-  deploy:
-    needs: pack
-    runs-on: ubuntu-latest
-    if: ${{ secrets.HOSTINGER_SSH_PASSWORD != '' }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Pack live app
-        run: |
-          node scripts/patch-trust-badges.mjs
-          bash scripts/pack-deploy.sh
-          mv /tmp/gpc-deploy.zip deploy.zip
-
       - name: Install sshpass
         run: sudo apt-get update -qq && sudo apt-get install -y -qq sshpass
 
@@ -50,6 +37,10 @@ jobs:
           GPC_SSH_PASSWORD: ${{ secrets.HOSTINGER_SSH_PASSWORD }}
         run: |
           set -euo pipefail
+          if [ -z "${GPC_SSH_PASSWORD}" ]; then
+            echo "::warning::HOSTINGER_SSH_PASSWORD is not set — zip uploaded as artifact only. See DEPLOY-HOSTINGER.md"
+            exit 0
+          fi
           SSH_HOST="217.21.85.101"
           SSH_PORT="65002"
           SSH_USER="u432886921"
@@ -61,19 +52,16 @@ jobs:
             "cd $REMOTE_DIR && rm -rf app && mkdir -p app && unzip -o deploy.zip -d app && cd app && npm ci --omit=dev && npx prisma generate"
 
       - name: Live check (IPATA badges)
+        env:
+          GPC_SSH_PASSWORD: ${{ secrets.HOSTINGER_SSH_PASSWORD }}
         run: |
+          if [ -z "${GPC_SSH_PASSWORD}" ]; then
+            echo "Skipping live check (no deploy)."
+            exit 0
+          fi
           sleep 20
           if curl -fsSL https://globalpetcab.ae/ | grep -q 'IPATA Member'; then
             echo "Live site shows updated trust badges."
           else
-            echo "::warning::Upload OK but homepage still missing IPATA — restart Node.js app in Hostinger hPanel (npm start)."
+            echo "::warning::Upload OK but homepage still missing IPATA — restart Node.js in Hostinger hPanel (npm start)."
           fi
-
-  deploy-skipped:
-    needs: pack
-    runs-on: ubuntu-latest
-    if: ${{ secrets.HOSTINGER_SSH_PASSWORD == '' }}
-    steps:
-      - name: Hostinger not updated
-        run: |
-          echo "::warning::HOSTINGER_SSH_PASSWORD secret is not set. Pack job succeeded — download artifact globalpetcab-deploy-zip or add the secret and re-run workflow. See DEPLOY-HOSTINGER.md"
