@@ -1,70 +1,61 @@
 # How we work on Global Pet Cab (Git + live site)
 
-## Simple answers
+## What is in this repo now?
+
+This repo is the **Hostinger live app** (same as **https://globalpetcab.ae**):
+
+- `server.js` — how the live server starts
+- `.next/` — compiled website (what you see on the internet)
+- `public/`, `prisma/`, `scripts/`
+
+The old editable `src/` TypeScript tree was **removed** so you are not editing an outdated copy.
 
 | Question | Answer |
 |----------|--------|
-| **Did we download the live server?** | **Yes** — full backup is on the machine that ran the Cloud Agent (`live-server-full/` + `globalpetcab-live-full.tar.gz`). |
-| **Should that backup go on GitHub?** | **No.** It is ~771 MB–2.6 GB of `node_modules` + compiled `.next` — not editable source. |
-| **What goes on GitHub?** | This folder: **`src/`**, `prisma/schema.prisma`, `public/`, configs — the **website you edit**. |
-| **Which repo?** | **`https://github.com/Sunilbedre/finalglobalpetcab`** (canonical). Legacy: `newpetcab`. |
+| **Repo** | `https://github.com/Sunilbedre/finalglobalpetcab` |
+| **Live site** | **https://globalpetcab.ae** (Hostinger) |
 
-## One-time: put code on `finalglobalpetcab`
-
-The Cloud Agent often **cannot push** to `finalglobalpetcab` until GitHub app access is granted. On **your PC**:
-
-```powershell
-git clone https://github.com/Sunilbedre/newpetcab.git
-cd newpetcab
-git pull
-git remote add final https://github.com/Sunilbedre/finalglobalpetcab.git
-git push -u final main
-```
-
-After that, clone **`finalglobalpetcab`** for all future work:
+## Run locally (matches live)
 
 ```powershell
 git clone https://github.com/Sunilbedre/finalglobalpetcab.git
 cd finalglobalpetcab
-```
-
-## Daily development
-
-**Preview the real Hostinger/live site locally** (compiled snapshot in `hostinger-live-deploy/`, matches **globalpetcab.ae**):
-
-```powershell
-cd hostinger-live-deploy
 npm ci --omit=dev
 npx prisma generate
-$env:PORT=3010; node server.js
+$env:PORT=3010
+$env:HOSTNAME="0.0.0.0"
+npm start
 ```
 
-Or from repo root: `npm run dev:hostinger` then open http://localhost:3010
+Open **http://localhost:3010**
 
-**Edit TypeScript source** (`src/` at repo root — may be behind live until you sync/deploy):
+## Can I change the website from this folder?
 
-```powershell
-npm ci
-npx prisma generate
-npm run db:push
-npm run db:seed
-npm run dev
-```
+**Not as normal React/Next source** — there is no `src/` here, only compiled `.next` files.
 
-Open http://localhost:3000
+To **edit pages properly**, you need the original TypeScript project (it was built from  
+`E:\Pictures\petcabdubai-main\petcabdubai-main` on your PC). Copy that folder into the repo as `src/` plus `next.config.mjs`, `tailwind.config.js`, etc., then we can wire `npm run dev` again.
+
+Until then you can:
+
+1. **Small text tweaks** — risky edits inside `.next/server/app/*.js` (not recommended)
+2. **Proper changes** — restore `petcabdubai-main` source, run `npm run build`, replace `.next/`, commit, deploy
+3. **Fresh live download** — re-download from Hostinger and replace `.next/` if the server changed
 
 ## Deploy to globalpetcab.ae
 
+Hostinger should run **`node server.js`** (or `npm start`), not `npm run build`, unless you add `src/` back.
+
 1. Commit and push to **`finalglobalpetcab`** `main`
-2. Hostinger hPanel → **globalpetcab.ae** → connect Git to **`finalglobalpetcab`**
-3. Redeploy / confirm build
+2. Hostinger hPanel → **globalpetcab.ae** → confirm deploy uses `npm start` / `node server.js`
+3. Verify **https://globalpetcab.ae**
 
-## Live server backup (downloaded from Hostinger)
+Manual fallback: `.\scripts\deploy-globalpetcab.ps1` (needs a local `npm run build` only if you have `src/` again).
 
-| Location | Purpose |
-|----------|---------|
-| `hostinger-live-deploy/` | **Exact live deploy** in Git (~31 MB, no `node_modules`) — same as server |
-| `live-server-full/` (local only, gitignored) | Full unzip including `node_modules` |
-| `globalpetcab-live-full.tar.gz` (gitignored) | Archive of full server copy |
+## Backups (do not commit)
 
-Missing live-only code was **recovered from the server `.next` build** into `src/` (e.g. `/api/places/search`, `placeSuggestions`, `MobilityServiceSection`).
+| Path | Purpose |
+|------|---------|
+| `live-server-full/` | Full server unzip (gitignored) |
+| `globalpetcab-live-full.tar.gz` | Archive (gitignored) |
+| `docs/HOSTINGER-SNAPSHOT.md` | Notes from server download |
