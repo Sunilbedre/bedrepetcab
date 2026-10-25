@@ -1,27 +1,34 @@
 # Global Pet Cab Dubai
 
-## Work locally (see your changes on localhost)
-
-**You:** tell Cursor what to change.  
-**Cursor:** edits `src/` and runs the dev server.  
-**You:** open **http://localhost:3010** in Cursor (**Forwarded Ports → 3010**).
-
-Edits in `src/` show up automatically when you save (hot reload).
-
-### First time on your Mac (once)
+## Localhost = same files as Hostinger (live site)
 
 ```bash
-cd ~/finalglobalpetcab
 git pull origin main
-npm install
+npm ci --omit=dev
 npx prisma generate
-npm run db:push
-npm run db:seed
 npm run dev
 ```
 
-Then keep **http://localhost:3010** open. After that, usually only `git pull` + `npm run dev` if you work on your machine.
+Open **http://localhost:3010** (in Cursor: **Forwarded Ports → 3010**).
 
-### Deploy to live site
+This runs the **Hostinger build** (`server.js` + `.next`), not the old `src/` folder.
 
-After you approve changes, Cursor pushes to GitHub → auto-deploy to **globalpetcab.ae** (see [DEPLOYMENT.md](DEPLOYMENT.md)).
+## When Cursor changes the site
+
+1. Cursor edits files (usually under `src/` for big changes, or the live `.next` for small updates).
+2. You check **http://localhost:3010** after Cursor restarts **`npm run dev`**.
+3. When ready for live: Cursor pushes → GitHub deploys to **globalpetcab.ae**.
+
+## Do not use by mistake
+
+- **`npm run edit`** — old `src/` dev mode (different layout). Only if Cursor asks for it.
+
+## Still seeing the old site on localhost?
+
+| Symptom | Cause | Fix |
+|--------|--------|-----|
+| Page feels “old”, ~153KB | `next dev` on 3010 | Stop it; run **`npm run dev`** only |
+| “Verified Google” badges | Wrong server or old git | `git pull` then **`npm run dev`** |
+| Check | — | `bash scripts/check-local-preview.sh` |
+
+**Live site** (globalpetcab.ae) updates only after deploy: GitHub secret `HOSTINGER_SSH_PASSWORD` + push to `main`, or Hostinger hPanel restart after manual deploy.
