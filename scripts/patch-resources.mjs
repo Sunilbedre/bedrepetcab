@@ -16,7 +16,7 @@ const ARTICLES = [
     title: 'How to Relocate a Pet to Dubai/UAE: A Practical Step-by-Step Guide',
     description: 'Planning to bring your dog or cat into Dubai? Learn how to approach the pet import process, from microchip and vaccination preparation to veterinary documents, UAE entry requirements and airport arrival arrangements.',
     focus: 'What pet parents should prepare before travelling to the UAE; the difference between an import journey and an export journey; veterinary preparation; required documentation; travel arrangements; and what to expect around arrival at the UAE airport.',
-    keywords: ['pet import Dubai', 'pet relocation Dubai', 'pet relocation services Dubai', 'international pet relocation'],
+    // keywords: ['pet import Dubai', 'pet relocation Dubai', 'pet relocation services Dubai', 'international pet relocation'],
     href: '/get-a-quote',
   },
   {
@@ -26,7 +26,7 @@ const ARTICLES = [
     title: 'Moving a Pet Out of Dubai: UAE Export & Travel Guide',
     description: 'Moving abroad with your pet? Understand the main steps involved in exporting a pet from Dubai/UAE, including veterinary preparation, export documentation, airline arrangements and destination requirements.',
     focus: 'How to start an export journey from Dubai; veterinary preparation; UAE export documentation; airline and crate planning; destination-country requirements; airport arrangements; and why requirements can differ from one destination to another.',
-    keywords: ['pet export UAE', 'pet relocation Dubai', 'international pet relocation', 'pet relocation services Dubai'],
+    // keywords: ['pet export UAE', 'pet relocation Dubai', 'international pet relocation', 'pet relocation services Dubai'],
     href: '/get-a-quote',
   },
   {
@@ -36,7 +36,7 @@ const ARTICLES = [
     title: 'Choosing the Right IATA Travel Crate for Dogs & Cats',
     description: 'The right travel crate is an important part of an international pet journey. Learn how to think about crate size, ventilation, space and comfort when preparing your pet for air travel.',
     focus: 'How to measure your pet correctly; choosing the right crate size; ventilation and space; food and water arrangements; preparing your pet for the crate; and checking the airline requirements for the specific journey.',
-    keywords: ['IATA pet crate', 'IATA travel crate', 'pet travel crate', 'international pet relocation', 'pet transport Dubai'],
+    // keywords: ['IATA pet crate', 'IATA travel crate', 'pet travel crate', 'international pet relocation', 'pet transport Dubai'],
     href: '/get-a-quote',
   },
   {
@@ -46,7 +46,7 @@ const ARTICLES = [
     title: 'Dubai Pet Taxi Guide: Getting Your Pet to the Vet, Groomer or Airport',
     description: "Need to take your pet across Dubai but don't have a suitable way to travel? Learn how Dubai pet taxi services work and what to expect when arranging a safe, climate-controlled door-to-door ride.",
     focus: 'Everyday urban pet transit across Dubai; door-to-door veterinary clinic runs; grooming drop-offs; airport transfers (DXB/DWC); and round-trip ride coordination.',
-    keywords: ['Dubai pet taxi', 'pet transport Dubai', 'dog taxi Dubai', 'cat taxi Dubai', 'vet transportation'],
+    // keywords: ['Dubai pet taxi', 'pet transport Dubai', 'dog taxi Dubai', 'cat taxi Dubai', 'vet transportation'],
     href: '/dubai-pet-taxi',
   },
 ];
@@ -93,15 +93,6 @@ function buildMainHtml() {
           </p>
         </div>
 
-        <div class="space-y-1.5 pt-1">
-          <span class="text-[11px] font-extrabold font-heading uppercase tracking-wider text-slate-400 flex items-center gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag w-3 h-3 text-slate-400"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
-            SEO Keywords
-          </span>
-          <div class="flex flex-wrap gap-1.5">
-            ${art.keywords.map(kw => `<span class="inline-flex items-center text-[11px] font-semibold text-slate-600 bg-slate-100/90 rounded-md px-2.5 py-1 border border-slate-200/50">${escapeHtml(kw)}</span>`).join('')}
-          </div>
-        </div>
       </div>
 
       <div class="pt-5 border-t border-slate-100">
@@ -115,7 +106,10 @@ function buildMainHtml() {
 
   return `<main class="flex-grow"><div class="font-body">
     <section class="relative overflow-hidden bg-navy text-white pt-16 sm:pt-20 pb-20 sm:pb-24 text-center">
-      <div class="absolute inset-0 bg-gradient-to-r from-navy-dark via-navy to-navy-light opacity-95"></div>
+      <div class="absolute inset-0" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&amp;fit=crop&amp;w=2000&amp;q=75" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center" loading="eager" decoding="async" fetchpriority="high">
+        <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(3,31,51,.84) 0%,rgba(5,45,73,.74) 55%,rgba(5,45,73,.88) 100%)"></div>
+      </div>
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         <div class="inline-flex items-center gap-2 bg-teal-bright/20 text-teal-light text-xs sm:text-sm px-4 py-1.5 rounded-full font-extrabold font-heading uppercase tracking-[0.16em] border border-teal-bright/30 backdrop-blur-sm">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-4 h-4 text-teal-bright"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
@@ -201,28 +195,6 @@ function buildRscChildren(linkRef) {
                   children: art.focus
                 }]
               ]
-            }],
-            ["$", "div", null, {
-              className: "space-y-1.5 pt-1",
-              children: [
-                ["$", "span", null, {
-                  className: "text-[11px] font-extrabold font-heading uppercase tracking-wider text-slate-400 flex items-center gap-1",
-                  children: [
-                    ["$", "svg", null, {
-                      xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round", className: "lucide lucide-tag w-3 h-3 text-slate-400",
-                      children: [["$", "path", "1", { d: "M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" }], ["$", "circle", "2", { cx: 7.5, cy: 7.5, r: 0.5, fill: "currentColor" }]]
-                    }],
-                    "SEO Keywords"
-                  ]
-                }],
-                ["$", "div", null, {
-                  className: "flex flex-wrap gap-1.5",
-                  children: art.keywords.map((kw, ki) => ["$", "span", String(ki), {
-                    className: "inline-flex items-center text-[11px] font-semibold text-slate-600 bg-slate-100/90 rounded-md px-2.5 py-1 border border-slate-200/50",
-                    children: kw
-                  }])
-                }]
-              ]
             }]
           ]
         }],
@@ -250,7 +222,10 @@ function buildRscChildren(linkRef) {
     ["$", "section", null, {
       className: "relative overflow-hidden bg-navy text-white pt-16 sm:pt-20 pb-20 sm:pb-24 text-center",
       children: [
-        ["$", "div", null, { className: "absolute inset-0 bg-gradient-to-r from-navy-dark via-navy to-navy-light opacity-95" }],
+        ["$", "div", null, { className: "absolute inset-0", "aria-hidden": "true", children: [
+          ["$", "img", null, { src: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=2000&q=75", alt: "", style: { position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }, loading: "eager", decoding: "async", fetchPriority: "high" }],
+          ["$", "div", null, { className: "absolute inset-0", style: { background: "linear-gradient(180deg,rgba(3,31,51,.84) 0%,rgba(5,45,73,.74) 55%,rgba(5,45,73,.88) 100%)" } }]
+        ] }],
         ["$", "div", null, {
           className: "relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6",
           children: [
