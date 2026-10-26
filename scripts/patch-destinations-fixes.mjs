@@ -293,6 +293,9 @@ const CSS = [
   `${B} h1,${B} h2{text-wrap:balance}`,
   `${B} section p{text-wrap:pretty}`,
   // route card + documents panel: same height, title that wraps cleanly
+  // the two-card rule above also caught this 2-column grid; keep its own 1 / 12 column layout so the 5 / 7 spans work
+  `@media (min-width:768px) and (max-width:1023px){${B} #route-overview .grid{grid-template-columns:minmax(0,1fr)}}`,
+  `@media (min-width:1024px){${B} #route-overview .grid{grid-template-columns:repeat(12,minmax(0,1fr))}}`,
   `${B} #route-overview .grid.items-start{align-items:stretch}`,
   `${B} #route-overview .lg\\:col-span-7>div{height:100%}`,
   `${B} #route-overview .lg\\:col-span-5 h3{font-size:1.5rem;line-height:1.3;text-wrap:balance}`,

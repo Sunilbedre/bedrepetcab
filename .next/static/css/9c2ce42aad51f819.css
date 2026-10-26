@@ -507,6 +507,8 @@ body:has(#route-overview) .gpc-intl-page>section.relative.overflow-hidden.text-w
 body:has(#route-overview) .gpc-intl-page>section .text-center.max-w-3xl{max-width:54rem}
 body:has(#route-overview) .gpc-intl-page h1,body:has(#route-overview) .gpc-intl-page h2{text-wrap:balance}
 body:has(#route-overview) .gpc-intl-page section p{text-wrap:pretty}
+@media (min-width:768px) and (max-width:1023px){body:has(#route-overview) .gpc-intl-page #route-overview .grid{grid-template-columns:minmax(0,1fr)}}
+@media (min-width:1024px){body:has(#route-overview) .gpc-intl-page #route-overview .grid{grid-template-columns:repeat(12,minmax(0,1fr))}}
 body:has(#route-overview) .gpc-intl-page #route-overview .grid.items-start{align-items:stretch}
 body:has(#route-overview) .gpc-intl-page #route-overview .lg\:col-span-7>div{height:100%}
 body:has(#route-overview) .gpc-intl-page #route-overview .lg\:col-span-5 h3{font-size:1.5rem;line-height:1.3;text-wrap:balance}
