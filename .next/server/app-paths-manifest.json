@@ -20,5 +20,7 @@
   "/dubai-pet-taxi/page": "app/dubai-pet-taxi/page.js",
   "/resources/page": "app/resources/page.js",
   "/how-it-works/page": "app/how-it-works/page.js",
-  "/why-global-pet-cab/page": "app/why-global-pet-cab/page.js"
+  "/why-global-pet-cab/page": "app/why-global-pet-cab/page.js",
+  "/international-pet-relocation/from-dubai/page": "app/international-pet-relocation/from-dubai/page.js",
+  "/international-pet-relocation/to-dubai/page": "app/international-pet-relocation/to-dubai/page.js"
 }

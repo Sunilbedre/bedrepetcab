@@ -38,18 +38,18 @@ const REVIEWS = [
 
 export default function PetJourneyGallery() {
   return (
-    <section className="py-20 bg-white border-t border-teal-border">
+    <section className="py-20 sm:py-24 bg-white border-t border-teal-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <span className="text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border">
-            Real Stories & Reviews
+            REAL PET RELOCATION STORIES
           </span>
           <h2 className="text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight">
-            Trusted by Dubai Pet Parents & Families
+            Trusted by Pet Parents in Dubai and Around the World
           </h2>
           <p className="text-base sm:text-lg font-body text-slate-600">
-            Read authentic experiences from pet owners who rely on Global Pet Cab for city taxi rides and cross-border relocations.
+            Read real experiences from pet parents who have used Global Pet Cab for Dubai pet transport, airport transfers and international pet relocation.
           </p>
         </div>
 

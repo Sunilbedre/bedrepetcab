@@ -25,7 +25,7 @@ export default function HeroServiceSelector() {
   };
 
   return (
-    <section className="relative bg-[#052D49] text-white pt-12 sm:pt-16 pb-24 lg:pb-32 font-body">
+    <section className="relative bg-[#052D49] text-white pt-10 sm:pt-14 pb-24 lg:pb-32 font-body">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -38,18 +38,23 @@ export default function HeroServiceSelector() {
             {/* Top Kick Badge - FidoJet Style */}
             <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold font-heading tracking-widest text-[#7FDBE5] uppercase">
               <span className="w-2.5 h-2.5 rounded-full bg-[#0FA3B1] animate-pulse"></span>
-              DUBAI&apos;S TRUSTED PET RELOCATION TEAM
+              PET RELOCATION SERVICES IN DUBAI
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-black font-heading text-white tracking-tight leading-[1.08]">
-              Wherever you&apos;re moving, your pet gets there safely.
+            <h1 className="text-3xl sm:text-4xl lg:text-[45px] font-black font-heading text-white tracking-tight leading-[1.15]">
+              Pet Relocation in Dubai,<br className="hidden sm:inline" /> Made Simple From Start to Safe Arrival
             </h1>
 
             {/* Subtitle Description */}
-            <p className="text-base sm:text-lg text-slate-300 font-body leading-relaxed max-w-2xl">
-              Cargo safety, customs paperwork, the right crate, the timing &mdash; we handle the entire journey end to end, so you can focus on the reunion. One team that owns your pet&apos;s trip from first call to safe arrival.
-            </p>
+            <div className="space-y-3 max-w-2xl text-base sm:text-lg text-slate-300 font-body leading-relaxed">
+              <p>
+                Moving your pet across borders involves more than booking a flight. From travel planning and documentation to customs coordination, the right travel crate and arrival arrangements, Global Pet Cab manages the journey end to end.
+              </p>
+              <p>
+                Our pet relocation team helps pet parents move their dogs and cats safely to and from Dubai, with one team coordinating the journey from the first call to safe arrival.
+              </p>
+            </div>
 
             {/* Pill Chips */}
             <div className="flex flex-wrap items-center gap-3 pt-1">
@@ -65,23 +70,23 @@ export default function HeroServiceSelector() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
               <a
                 href="#dubai-taxi-calculator"
-                className="inline-flex items-center justify-center gap-2.5 bg-coral hover:bg-coral-hover text-white font-extrabold font-heading px-8 py-4 rounded-full shadow-fj-coral text-base sm:text-lg transition-all transform active:scale-95"
+                className="inline-flex items-center justify-center gap-2 bg-coral hover:bg-coral-hover text-white font-extrabold font-heading px-6 py-3.5 sm:px-7 sm:py-3.5 rounded-full shadow-fj-coral text-sm sm:text-base whitespace-nowrap transition-all transform active:scale-95"
               >
-                <span>Get a free quote</span>
-                <ArrowRight className="w-5 h-5" />
+                <span>Get a Free Pet Relocation Quote</span>
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
               </a>
 
               <a
                 href="https://wa.me/971501234567?text=Hello%20Global%20Pet%20Cab%20Dubai"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 bg-white/5 hover:bg-white/15 text-white font-extrabold font-heading px-7 py-4 rounded-full border border-white/20 backdrop-blur-md text-base sm:text-lg transition-all"
+                className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/15 text-white font-extrabold font-heading px-6 py-3.5 sm:px-7 sm:py-3.5 rounded-full border border-white/20 backdrop-blur-md text-sm sm:text-base whitespace-nowrap transition-all"
               >
-                <MessageCircle className="w-5 h-5 text-emerald-400" />
-                <span>Chat on WhatsApp</span>
+                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 shrink-0" />
+                <span>Chat with Us on WhatsApp</span>
               </a>
             </div>
 

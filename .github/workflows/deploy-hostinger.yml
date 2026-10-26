@@ -14,6 +14,17 @@ jobs:
       - name: Apply live patches and verify
         run: |
           node scripts/patch-trust-badges.mjs
+          node scripts/patch-taxi-hero-form.mjs
+          node scripts/patch-places-google.mjs
+          node scripts/patch-taxi-faq.mjs
+          node scripts/patch-international-split.mjs
+          node scripts/patch-site-menu.mjs
+          node scripts/patch-site-fixes.mjs
+          node scripts/patch-home-hero.mjs
+          node scripts/patch-home-services.mjs
+          node scripts/patch-how-it-works-fixes.mjs
+          node scripts/patch-why-us-fixes.mjs
+          node scripts/patch-destinations-fixes.mjs
           bash scripts/verify-trust-badges.sh
 
       - name: Pack live app

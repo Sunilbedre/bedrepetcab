@@ -151,11 +151,14 @@ export default function DubaiFareCalculator() {
           <div>
             <div className="inline-flex items-center gap-1.5 bg-teal-bright/20 text-teal-light text-xs px-3 py-1 rounded-full font-bold mb-1">
               <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-              Instant Distance Fare Engine
+              INSTANT DISTANCE FARE
             </div>
             <h2 className="text-2xl sm:text-3xl font-black font-heading tracking-tight">
-              Dubai Pet Taxi — Calculate My Fare
+              Calculate Your Pet Taxi Fare
             </h2>
+            <p className="text-sm text-slate-300 mt-1">
+              Enter your pickup and drop-off locations in Dubai to get an estimated fare based on your journey.
+            </p>
           </div>
         </div>
       </div>
@@ -240,7 +243,7 @@ export default function DubaiFareCalculator() {
                     : 'text-slate-500 hover:text-navy'
                 }`}
               >
-                One Way Ride
+                One-Way Ride
               </button>
               <button
                 type="button"
@@ -252,7 +255,7 @@ export default function DubaiFareCalculator() {
                 }`}
               >
                 <ArrowRightLeft className="w-4 h-4 text-teal-deep" />
-                Round Trip (-10%)
+                Round Trip — Save 10%
               </button>
             </div>
 

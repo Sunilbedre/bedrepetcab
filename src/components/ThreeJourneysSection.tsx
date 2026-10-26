@@ -4,29 +4,29 @@ import { ArrowRight, Plane, PlaneLanding, Car } from 'lucide-react';
 
 const JOURNEYS = [
   {
-    badge: 'DXB → LHR · BOM · JFK',
+    badge: 'DXB → LHR / BOM · JFK',
     badgeSub: 'Export, handled end to end',
     title: 'Moving a pet out of Dubai',
     description:
-      'Taking your dog or cat overseas? We handle MOCCAE export papers, the IATA crate, airline booking and customs at the other end — start to finish.',
+      'Taking your dog or cat overseas? We coordinate MOCCAE export requirements, IATA-compliant crate preparation, airline arrangements and destination-side customs coordination.',
     href: '/international-pet-relocation',
     icon: Plane,
   },
   {
-    badge: 'BOM → DXB · LHR · JFK',
+    badge: 'BOM → DXB / LHR · JFK',
     badgeSub: 'Import & MOCCAE, handled',
     title: 'Bringing a pet into Dubai',
     description:
-      'Importing into the UAE? We manage RNATT, the MOCCAE import permit and airport clearance — so arrival in Dubai is the easy part.',
+      'Bringing your pet into the UAE? We support the required RNATT, MOCCAE import permit, airport clearance and arrival arrangements.',
     href: '/international-pet-relocation',
     icon: PlaneLanding,
   },
   {
-    badge: 'MARINA → DXB · VET · GROOMING',
+    badge: 'MARINA → DXB / VET · GROOMING',
     badgeSub: 'Road · City · Airport',
     title: 'Dubai Pet Taxi',
     description:
-      'Moving across Dubai? Climate-controlled door-to-door rides for vet visits, grooming, boarding and DXB / DWC transfers — calm, on time.',
+      'Need pet transport within Dubai? Book climate-controlled, door-to-door rides for vet visits, grooming, boarding and DXB/DWC airport transfers.',
     href: '/dubai-pet-taxi',
     icon: Car,
   },
@@ -34,17 +34,17 @@ const JOURNEYS = [
 
 export default function ThreeJourneysSection() {
   return (
-    <section className="py-20 bg-teal-soft/40 border-t border-teal-border">
+    <section className="py-20 sm:py-24 bg-teal-soft/40 border-t border-teal-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <span className="text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-sm">
-            Whatever your move looks like
+            WHATEVER YOUR PET&apos;S JOURNEY LOOKS LIKE
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight">
-            Three journeys, one team that handles all of it
+          <h2 className="text-2xl sm:text-[33px] font-black font-heading text-navy tracking-tight">
+            Pet Relocation and Transport, From Dubai to Anywhere You Need to Go
           </h2>
           <p className="text-base sm:text-lg font-body text-slate-600">
-            Most families fall into one of these. Tell us which is yours, and we&apos;ll take it from there.
+            Whether you&apos;re moving your pet out of Dubai, bringing them into the UAE, or travelling across the city, our team coordinates the journey from start to finish.
           </p>
         </div>
 

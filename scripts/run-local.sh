@@ -12,7 +12,7 @@ fi
 bash "$ROOT/scripts/verify-trust-badges.sh" || true
 
 export PORT="${PORT:-3010}"
-export HOSTNAME="${HOSTNAME:-127.0.0.1}"
+export HOSTNAME="0.0.0.0"
 
 # Stop old next dev if it is still running (it serves ~153KB "src/" site — wrong)
 if pgrep -f "next dev -p ${PORT}" >/dev/null 2>&1; then

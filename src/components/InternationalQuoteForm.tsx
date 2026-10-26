@@ -16,7 +16,12 @@ const SERVICES_LIST = [
   'Complete Door-to-Door End-to-End Relocation',
 ];
 
-export default function InternationalQuoteForm() {
+interface InternationalQuoteFormProps {
+  title?: string;
+  description?: string;
+}
+
+export default function InternationalQuoteForm({ title, description }: InternationalQuoteFormProps = {}) {
   const [step, setStep] = useState(1);
 
   const [direction, setDirection] = useState<'from_dubai' | 'to_dubai'>('from_dubai');
@@ -130,11 +135,15 @@ export default function InternationalQuoteForm() {
           <div>
             <div className="inline-flex items-center gap-1.5 bg-teal-bright/20 text-teal-light text-xs px-3 py-1 rounded-full font-bold mb-1">
               <Plane className="w-3.5 h-3.5 text-amber-300" />
-              Dubai ↔ Worldwide Relocation
+              DUBAI ↔ WORLDWIDE RELOCATION
             </div>
             <h2 className="text-2xl sm:text-3xl font-black font-heading tracking-tight">
-              International Pet Relocation — Request Expert Quote
+              {title || 'Tell Us Where Your Pet Is Going'}
             </h2>
+            <p className="text-sm text-slate-300 font-body mt-1 leading-relaxed">
+              {description ||
+                'Every pet relocation is different. Your starting point, destination, pet, travel date and travel requirements all affect the journey. Share the basics with us and our team can understand what you need before preparing your relocation quote.'}
+            </p>
           </div>
         </div>
       </div>
@@ -262,7 +271,7 @@ export default function InternationalQuoteForm() {
                         <Plane className="w-5 h-5 text-teal-deep" />
                         Moving FROM Dubai / UAE
                       </div>
-                      <div className="text-sm text-slate-500 mt-1 font-normal">Exporting pet to another country</div>
+                      <div className="text-sm text-slate-500 mt-1 font-normal">Exporting your pet to another country</div>
                     </button>
 
                     <button
@@ -284,7 +293,7 @@ export default function InternationalQuoteForm() {
                         <Plane className="w-5 h-5 text-teal-deep rotate-90" />
                         Moving INTO Dubai / UAE
                       </div>
-                      <div className="text-sm text-slate-500 mt-1 font-normal">Importing pet into Dubai</div>
+                      <div className="text-sm text-slate-500 mt-1 font-normal">Importing your pet into Dubai</div>
                     </button>
                   </div>
                 </div>
@@ -350,8 +359,7 @@ export default function InternationalQuoteForm() {
                   onClick={() => setStep(2)}
                   className="w-full bg-teal-deep hover:bg-teal-bright text-white font-extrabold font-heading py-4 rounded-2xl shadow-md flex items-center justify-center gap-2 text-base transition-all"
                 >
-                  <span>Continue to Pet Details & Services</span>
-                  <ArrowRight className="w-5 h-5" />
+                  <span>Continue to Pet Details & Services →</span>
                 </button>
               </div>
             )}

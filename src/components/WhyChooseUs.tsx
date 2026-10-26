@@ -6,32 +6,22 @@ export default function WhyChooseUs() {
     {
       icon: Heart,
       title: 'Pet-First Decisions',
-      desc: 'Every ride and flight plan prioritizes your pet’s physical comfort, hydration, and stress reduction.',
+      desc: "Every ride and relocation plan is built around your pet's comfort, hydration and stress reduction.",
     },
     {
       icon: Calculator,
-      title: 'Transparent Instant Pricing',
-      desc: 'No hidden surprise fees. Calculate estimated Dubai Pet Taxi fares instantly based on real driving distance.',
+      title: 'Transparent Pet Taxi Pricing',
+      desc: 'Get an estimated Dubai pet taxi fare based on actual driving distance, with clear pricing and no surprise fees.',
     },
     {
       icon: Globe2,
       title: 'Local Dubai + Global Reach',
-      desc: 'One unified team managing local Dubai door-to-door rides and cross-border international moves.',
+      desc: 'One team for Dubai pet transport, airport transfers and international pet relocation.',
     },
     {
       icon: ShieldCheck,
-      title: 'Sanitized Climate Fleet',
-      desc: 'Specially converted vehicles with dual climate control suitable for extreme Dubai temperatures.',
-    },
-    {
-      icon: UserCheck,
-      title: 'Certified Pet Handlers',
-      desc: 'Trained staff experienced in handling anxious pets, brachycephalic breeds, and multi-pet families.',
-    },
-    {
-      icon: MessageSquare,
-      title: 'Direct WhatsApp Support',
-      desc: 'Speak directly with real relocation specialists and receive live updates throughout your pet’s ride.',
+      title: 'IPATA Membership',
+      desc: 'As an IPATA member, Global Pet Cab is part of a professional network focused on pet transportation and relocation.',
     },
   ];
 
@@ -44,14 +34,14 @@ export default function WhyChooseUs() {
             Why Pet Parents Choose Us
           </span>
           <h2 className="text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight">
-            Combining Warmth with Logistics Rigor
+            Pet-First Care With End-to-End Relocation Support
           </h2>
           <p className="text-base sm:text-lg font-body text-slate-600">
-            We understand that your pet is family. Here is how we ensure their safety and peace of mind on every journey.
+            From local pet transport in Dubai to international relocation, we combine careful pet handling with organised travel logistics.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((item, idx) => {
             const Icon = item.icon;
             return (

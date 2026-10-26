@@ -119,3 +119,110 @@
 .animate-fade-in-up {
   animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Custom Heading Font Sizes */
+.hero-heading-45, .lg\:text-\[45px\], .text-\[45px\] {
+  font-size: 45px !important;
+  line-height: 1.15 !important;
+}
+
+.service-heading-27, .sm\:text-\[27px\], .text-\[27px\] {
+  font-size: 27px !important;
+  line-height: 1.25 !important;
+}
+
+.journeys-heading-33, .sm\:text-\[33px\], .text-\[33px\] {
+  font-size: 33px !important;
+  line-height: 1.2 !important;
+}
+
+.questions-heading-25, .text-\[25px\] {
+  font-size: 25px !important;
+  line-height: 1.25 !important;
+}
+
+.cta-heading-36, .sm\:text-\[36px\], .text-\[36px\] {
+  font-size: 36px !important;
+  line-height: 1.2 !important;
+}
+
+h1.pet-taxi-hero-h1, .pet-taxi-hero-h1 {
+  font-size: 2.5rem !important;
+  line-height: 1.2 !important;
+}
+@media (min-width: 640px) {
+  h1.pet-taxi-hero-h1, .pet-taxi-hero-h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+  }
+}
+@media (min-width: 1024px) {
+  h1.pet-taxi-hero-h1, .pet-taxi-hero-h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+  }
+}
+
+/* Dubai Pet Taxi Destination Cards: Rich Styling & Never-Blank Hover */
+.destination-card-flation {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F5F9FA 100%) !important;
+  border: 1.5px solid rgba(14, 115, 150, 0.2) !important;
+  box-shadow: 0 4px 18px -2px rgba(5, 45, 73, 0.06) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.destination-card-flation:hover {
+  background: #FFFFFF !important;
+  border-color: #0E7396 !important;
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 36px -6px rgba(14, 115, 150, 0.16) !important;
+}
+.destination-card-flation .destination-icon-box {
+  background: linear-gradient(135deg, #E6F6FA 0%, #D2F0F8 100%) !important;
+  border: 1.5px solid rgba(14, 115, 150, 0.28) !important;
+  color: #0E7396 !important;
+  box-shadow: 0 2px 8px rgba(14, 115, 150, 0.1) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.destination-card-flation .destination-icon-box svg {
+  stroke: #0E7396 !important;
+  transition: stroke 0.3s ease, transform 0.3s ease !important;
+}
+.destination-card-flation:hover .destination-icon-box {
+  background: #0E7396 !important;
+  border-color: #0E7396 !important;
+  color: #FFFFFF !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 16px rgba(14, 115, 150, 0.3) !important;
+}
+.destination-card-flation:hover .destination-icon-box svg {
+  stroke: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+/* Dubai Pet Taxi Pricing Cards: Vibrant, Non-Pale Styling */
+.taxi-pricing-card {
+  background: #FFFFFF !important;
+  border: 1.5px solid rgba(14, 115, 150, 0.2) !important;
+  box-shadow: 0 8px 24px -4px rgba(5, 45, 73, 0.08) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.taxi-pricing-card:hover {
+  border-color: #0E7396 !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 16px 36px -6px rgba(14, 115, 150, 0.18) !important;
+}
+.taxi-pricing-card.featured {
+  border: 2px solid #0E7396 !important;
+  box-shadow: 0 12px 32px -4px rgba(14, 115, 150, 0.18) !important;
+}
+
+
+
+.intl-hero-gradient {
+  background: linear-gradient(to right, #041a2c 0%, #041a2c 34%, rgba(4,26,44,0.92) 50%, rgba(4,26,44,0.55) 68%, rgba(4,26,44,0.15) 86%, transparent 100%) !important;
+}
+@media (max-width: 768px) {
+  .intl-hero-gradient {
+    background: linear-gradient(to bottom, rgba(4,26,44,0.94) 0%, rgba(4,26,44,0.85) 50%, rgba(4,26,44,0.95) 100%) !important;
+  }
+}

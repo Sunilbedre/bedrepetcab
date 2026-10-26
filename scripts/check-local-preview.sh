@@ -2,7 +2,7 @@
 # Quick check: is localhost serving Hostinger .next (~230KB) or old next dev (~153KB)?
 set -euo pipefail
 PORT="${PORT:-3010}"
-URL="http://127.0.0.1:${PORT}/"
+URL="http://localhost:${PORT}/"
 
 bytes="$(curl -fsSL "$URL" | wc -c | tr -d ' ')"
 if [[ "$bytes" -lt 200000 ]]; then

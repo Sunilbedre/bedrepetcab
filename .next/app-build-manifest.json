@@ -134,6 +134,24 @@
       "static/chunks/878-1570d80606d2ecfb.js",
       "static/chunks/972-00e988e771933c19.js",
       "static/chunks/app/why-global-pet-cab/page-75a7b1ca6dd36484.js"
+    ],
+    "/international-pet-relocation/from-dubai/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-b786a8bcb2eed776.js",
+      "static/chunks/117-2ad76e4e11c07d98.js",
+      "static/chunks/main-app-93da2258b4221bfe.js",
+      "static/chunks/960-10288c27ff6627b2.js",
+      "static/chunks/50-13a8cbaeec2f91ec.js",
+      "static/chunks/app/international-pet-relocation/page-2baeffb38495d4a2.js"
+    ],
+    "/international-pet-relocation/to-dubai/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-b786a8bcb2eed776.js",
+      "static/chunks/117-2ad76e4e11c07d98.js",
+      "static/chunks/main-app-93da2258b4221bfe.js",
+      "static/chunks/960-10288c27ff6627b2.js",
+      "static/chunks/50-13a8cbaeec2f91ec.js",
+      "static/chunks/app/international-pet-relocation/page-2baeffb38495d4a2.js"
     ]
   }
 }

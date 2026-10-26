@@ -16,28 +16,28 @@ const SERVICES: {
     key: 'dubai',
     title: 'Within Dubai',
     description:
-      'Vet visits, grooming drop-offs, pet hotels, and DXB airport transfers across Dubai.',
+      'Pet Transport in Dubai — Vet visits, grooming drop-offs, boarding and DXB airport transfers across Dubai.',
     emoji: '🏙️',
     icon: Car,
   },
   {
     key: 'airport',
     title: 'Airport Transfer',
-    description: 'DXB Main, DWC Al Maktoum & Abu Dhabi AUH pickups and drop-offs.',
+    description: 'Pet Airport Transfers — DXB, DWC Al Maktoum and Abu Dhabi AUH pickups and drop-offs.',
     emoji: '✈️',
     icon: Plane,
   },
   {
     key: 'intercity',
     title: 'UAE Intercity',
-    description: 'Dubai ↔ Abu Dhabi, Sharjah, Ajman, RAK, and Fujairah transfers.',
+    description: 'UAE Pet Transport — Dubai to Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah and Fujairah.',
     emoji: '🗺️',
     icon: Map,
   },
   {
     key: 'international',
     title: 'International Relocation',
-    description: 'Dubai ↔ UK, India, USA, Canada, Australia, and Europe.',
+    description: 'Dubai to and from the UK, India, USA, Canada, Australia and Europe.',
     emoji: '🌍',
     icon: Globe,
   },
@@ -57,13 +57,13 @@ export default function MobilityServiceSection() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 space-y-2">
           <p className="text-xs font-black font-heading uppercase tracking-widest text-teal-deep">
-            Step 1 of 4
+            STEP 1 OF 4
           </p>
-          <h2 className="text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight">
-            Select Pet Mobility Service
+          <h2 className="text-2xl sm:text-[27px] font-black font-heading text-navy tracking-tight">
+            Choose Your Pet Transport or Relocation Service
           </h2>
           <p className="text-base text-slate-600 font-body max-w-2xl mx-auto">
-            Choose local city ground transport inside Dubai or cross-border international flight relocation.
+            Select local pet transport in Dubai, an airport transfer, UAE intercity travel, or international pet relocation.
           </p>
         </div>
 

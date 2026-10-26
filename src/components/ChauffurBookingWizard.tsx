@@ -345,10 +345,10 @@ export default function ChauffurBookingWizard() {
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-2 text-center max-w-xl mx-auto">
               <span className="text-xs font-black font-heading uppercase tracking-widest text-teal-deep bg-teal-soft px-3.5 py-1.5 rounded-full border border-teal-border">
-                Step 1 of 4
+                STEP 1 OF 4
               </span>
-              <h2 className="text-3xl font-black font-heading text-navy">Select Pet Mobility Service</h2>
-              <p className="text-base text-slate-600 font-body">Choose local city ground transport inside Dubai or cross-border international flight relocation.</p>
+              <h2 className="text-2xl sm:text-[27px] font-black font-heading text-navy">Choose Your Pet Transport or Relocation Service</h2>
+              <p className="text-base text-slate-600 font-body">Select local pet transport in Dubai, an airport transfer, UAE intercity travel, or international pet relocation.</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
@@ -376,7 +376,7 @@ export default function ChauffurBookingWizard() {
                 <div>
                   <h3 className="font-black font-heading text-xl text-navy">Within Dubai</h3>
                   <p className="text-sm text-slate-600 font-body mt-1.5 leading-relaxed">
-                    Vet visits, grooming drop-offs, pet hotels, and DXB airport transfers across Dubai.
+                    Pet Transport in Dubai — Vet visits, grooming drop-offs, boarding and DXB airport transfers across Dubai.
                   </p>
                 </div>
               </button>
@@ -404,7 +404,7 @@ export default function ChauffurBookingWizard() {
                 <div>
                   <h3 className="font-black font-heading text-xl text-navy">Airport Transfer</h3>
                   <p className="text-sm text-slate-600 font-body mt-1.5 leading-relaxed">
-                    DXB Main, DWC Al Maktoum & Abu Dhabi AUH pickups and drop-offs.
+                    Pet Airport Transfers — DXB, DWC Al Maktoum and Abu Dhabi AUH pickups and drop-offs.
                   </p>
                 </div>
               </button>
@@ -432,7 +432,7 @@ export default function ChauffurBookingWizard() {
                 <div>
                   <h3 className="font-black font-heading text-xl text-navy">UAE Intercity</h3>
                   <p className="text-sm text-slate-600 font-body mt-1.5 leading-relaxed">
-                    Dubai ↔ Abu Dhabi, Sharjah, Ajman, RAK, and Fujairah transfers.
+                    UAE Pet Transport — Dubai to Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah and Fujairah.
                   </p>
                 </div>
               </button>
@@ -462,7 +462,7 @@ export default function ChauffurBookingWizard() {
                     International Relocation
                   </h3>
                   <p className={`text-sm font-body mt-1.5 leading-relaxed ${rideCategory === 'international' ? 'text-slate-300' : 'text-slate-600'}`}>
-                    Dubai ↔ UK, India, USA, Canada, Australia, and Europe.
+                    Dubai to and from the UK, India, USA, Canada, Australia and Europe.
                   </p>
                 </div>
               </button>
