@@ -119,6 +119,12 @@
       "regex": "^/international\\-pet\\-relocation/to\\-dubai(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/international\\-pet\\-relocation/to\\-dubai(?:/)?$"
+    },
+    {
+      "page": "/gallery",
+      "regex": "^/gallery(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/gallery(?:/)?$"
     }
   ],
   "dataRoutes": [],

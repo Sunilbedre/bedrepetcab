@@ -25,6 +25,10 @@ jobs:
           node scripts/patch-how-it-works-fixes.mjs
           node scripts/patch-why-us-fixes.mjs
           node scripts/patch-destinations-fixes.mjs
+          node scripts/patch-gallery.mjs
+          node scripts/patch-footer.mjs
+          node scripts/patch-quote-picker.mjs
+          node scripts/patch-resources-layout.mjs
           bash scripts/verify-trust-badges.sh
 
       - name: Pack live app
