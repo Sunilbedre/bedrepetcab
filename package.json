@@ -6,6 +6,7 @@
     "dev": "bash scripts/run-local.sh",
     "edit": "next dev -p 3010",
     "build": "prisma generate && next build",
+    "build:prebuilt": "prisma generate",
     "start": "node server.js",
     "local": "bash scripts/run-local.sh",
     "sync:live": "node scripts/patch-trust-badges.mjs && node scripts/patch-mobility-selector.mjs && node scripts/patch-three-journeys.mjs && node scripts/patch-questions.mjs && node scripts/patch-why-choose-us.mjs && node scripts/patch-reviews.mjs && node scripts/patch-cta-banner.mjs && node scripts/patch-hero-section.mjs && node scripts/patch-dubai-pet-taxi.mjs && node scripts/patch-international-relocation.mjs && node scripts/patch-heading-font-sizes.mjs && node scripts/patch-section-padding.mjs && node scripts/patch-taxi-hero-form.mjs && node scripts/patch-places-google.mjs && node scripts/patch-taxi-faq.mjs && node scripts/patch-international-split.mjs && node scripts/patch-site-menu.mjs && node scripts/patch-site-fixes.mjs && node scripts/patch-home-hero.mjs && node scripts/patch-home-services.mjs && node scripts/patch-how-it-works-fixes.mjs && node scripts/patch-why-us-fixes.mjs && node scripts/patch-destinations-fixes.mjs && node scripts/patch-gallery.mjs && node scripts/patch-footer.mjs && node scripts/patch-quote-picker.mjs && node scripts/patch-resources-layout.mjs && bash scripts/verify-trust-badges.sh",
