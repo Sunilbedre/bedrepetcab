@@ -29,6 +29,7 @@ jobs:
           node scripts/patch-footer.mjs
           node scripts/patch-quote-picker.mjs
           node scripts/patch-resources-layout.mjs
+          node scripts/patch-mobile-polish.mjs
           bash scripts/verify-trust-badges.sh
 
       - name: Pack live app

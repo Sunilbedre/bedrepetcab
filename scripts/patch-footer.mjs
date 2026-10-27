@@ -80,6 +80,8 @@ const CSS = [
   `${MAIN}>div:nth-child(2) svg{box-sizing:content-box;flex:none;width:1.15rem!important;height:1.15rem!important;padding:.6rem;border-radius:999px;background:rgba(56,189,248,.14);color:#7ee0f5!important}`,
   // bottom bar
   `${MAIN}>div:nth-child(3){border-top:1px solid rgba(255,255,255,.1)!important;margin-top:.5rem;color:rgba(255,255,255,.55)!important;font-size:.875rem}`,
+  // the three legal links were nowrap and pushed the whole page 12px wider than a phone on every page
+  `${MAIN}>div:nth-child(3)>div{flex-wrap:wrap;white-space:normal!important;gap:.4rem 1.25rem!important}`,
   `${MAIN}>div:nth-child(3) a{color:rgba(255,255,255,.65);transition:color .2s ease}`,
   `${MAIN}>div:nth-child(3) a:hover{color:#fff}`,
   CSS_END,

@@ -20,6 +20,7 @@ node "$ROOT/scripts/patch-gallery.mjs"
 node "$ROOT/scripts/patch-footer.mjs"
 node "$ROOT/scripts/patch-quote-picker.mjs"
 node "$ROOT/scripts/patch-resources-layout.mjs"
+node "$ROOT/scripts/patch-mobile-polish.mjs"
 bash "$ROOT/scripts/verify-trust-badges.sh"
 
 STAGE="${TMPDIR:-/tmp}/gpc-deploy-stage"
