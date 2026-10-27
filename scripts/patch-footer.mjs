@@ -48,7 +48,7 @@ const F = 'footer.bg-navy';
 const MAIN = `${F}>div.max-w-7xl`;
 const CSS = [
   CSS_START,
-  `${F}{position:relative;background:radial-gradient(60rem 26rem at 10% -6%,rgba(20,184,166,.18),transparent 60%),radial-gradient(46rem 24rem at 100% 8%,rgba(14,115,150,.26),transparent 60%),linear-gradient(180deg,#052d49 0%,#031f33 100%)}`,
+  `${F}{position:relative;background:radial-gradient(48rem 24rem at 0% 0%,rgba(20,184,166,.38),transparent 62%),radial-gradient(52rem 28rem at 100% 100%,rgba(56,189,248,.3),transparent 60%),linear-gradient(135deg,#031f33 0%,#052d49 32%,#0a4d6e 68%,#0e7396 100%)}`,
   `${F}::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;z-index:2;background:linear-gradient(90deg,#14b8a6,#38bdf8 45%,#c2410c)}`,
   // link columns
   `${MAIN}>div:nth-child(1){border-bottom:1px solid rgba(255,255,255,.1)!important;padding-bottom:3rem}`,

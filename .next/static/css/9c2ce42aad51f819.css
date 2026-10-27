@@ -578,8 +578,14 @@ body:has(#route-overview) .gpc-intl-page #route-overview .lg\:col-span-5 h3{font
 .gpc-quote-picker{padding:0!important;background:transparent!important;border:0!important}
 section#dubai-taxi-calculator.gpc-quote-picker{padding-top:0!important;padding-bottom:0!important}
 /*end-gpc-quote-picker*/
+
+/*gpc-resources-layout*/
+main>div.space-y-16.py-8:has(>section.relative.overflow-hidden.bg-navy){padding-top:0;padding-bottom:0}
+main>div.space-y-16.py-8:has(>section.relative.overflow-hidden.bg-navy)>section.bg-navy{padding-top:3.25rem;padding-bottom:3.25rem}
+main>div.space-y-16.py-8:has(>section.relative.overflow-hidden.bg-navy)>*:not(:first-child){margin-top:0;padding-top:3rem;padding-bottom:4rem}
+/*end-gpc-resources-layout*/
 /*gpc-footer*/
-footer.bg-navy{position:relative;background:radial-gradient(60rem 26rem at 10% -6%,rgba(20,184,166,.18),transparent 60%),radial-gradient(46rem 24rem at 100% 8%,rgba(14,115,150,.26),transparent 60%),linear-gradient(180deg,#052d49 0%,#031f33 100%)}
+footer.bg-navy{position:relative;background:radial-gradient(48rem 24rem at 0% 0%,rgba(20,184,166,.38),transparent 62%),radial-gradient(52rem 28rem at 100% 100%,rgba(56,189,248,.3),transparent 60%),linear-gradient(135deg,#031f33 0%,#052d49 32%,#0a4d6e 68%,#0e7396 100%)}
 footer.bg-navy::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;z-index:2;background:linear-gradient(90deg,#14b8a6,#38bdf8 45%,#c2410c)}
 footer.bg-navy>div.max-w-7xl>div:nth-child(1){border-bottom:1px solid rgba(255,255,255,.1)!important;padding-bottom:3rem}
 footer.bg-navy h3{position:relative;height:auto!important;padding-bottom:.85rem;margin-bottom:1.1rem;color:#7ee0f5!important;letter-spacing:.16em}
@@ -607,8 +613,3 @@ footer.bg-navy>div.max-w-7xl>div:nth-child(3){border-top:1px solid rgba(255,255,
 footer.bg-navy>div.max-w-7xl>div:nth-child(3) a{color:rgba(255,255,255,.65);transition:color .2s ease}
 footer.bg-navy>div.max-w-7xl>div:nth-child(3) a:hover{color:#fff}
 /*end-gpc-footer*/
-/*gpc-resources-layout*/
-main>div.space-y-16.py-8:has(>section.relative.overflow-hidden.bg-navy){padding-top:0;padding-bottom:0}
-main>div.space-y-16.py-8:has(>section.relative.overflow-hidden.bg-navy)>section.bg-navy{padding-top:3.25rem;padding-bottom:3.25rem}
-main>div.space-y-16.py-8:has(>section.relative.overflow-hidden.bg-navy)>*:not(:first-child){margin-top:0;padding-top:3rem;padding-bottom:4rem}
-/*end-gpc-resources-layout*/
