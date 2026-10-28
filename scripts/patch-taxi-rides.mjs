@@ -51,8 +51,10 @@ for (const f of fs.readdirSync(cssDir).filter((n) => n.endsWith('.css'))) {
 
 const html = path.join(ROOT, 'server', 'app', 'dubai-pet-taxi.html');
 let h = fs.readFileSync(html, 'utf8');
-if (!h.includes('gpc-taxi-rides.js')) {
-  h = h.replace('</head>', '<script defer src="/gpc-taxi-rides.js"></script></head>');
+const TAG = '<script defer src="/gpc-taxi-rides.js?v=2"></script>';
+if (!h.includes(TAG)) {
+  h = h.replace(/<script defer src="\/gpc-taxi-rides\.js[^"]*"><\/script>/, '');
+  h = h.replace('</head>', TAG + '</head>');
   fs.writeFileSync(html, h);
 }
 console.log('taxi rides: css + script tag');

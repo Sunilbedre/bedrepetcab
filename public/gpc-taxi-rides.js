@@ -27,6 +27,9 @@
 
   function start() {
     mount();
+    // belt and braces: if the card is swapped by a re-render, or this ran before the card existed, keep retrying for a while
+    var n = 0, iv = setInterval(function () { mount(); if (++n > 120) clearInterval(iv); }, 250);
+    document.addEventListener('DOMContentLoaded', mount);
     try { new MutationObserver(mount).observe(document.body, { childList: true, subtree: true }); } catch (e) {}
   }
 
