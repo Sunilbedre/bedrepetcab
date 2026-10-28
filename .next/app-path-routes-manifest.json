@@ -23,5 +23,9 @@
   "/why-global-pet-cab/page": "/why-global-pet-cab",
   "/international-pet-relocation/from-dubai/page": "/international-pet-relocation/from-dubai",
   "/international-pet-relocation/to-dubai/page": "/international-pet-relocation/to-dubai",
-  "/gallery/page": "/gallery"
+  "/gallery/page": "/gallery",
+  "/book-pet-taxi/page": "/book-pet-taxi",
+  "/api/taxi/quote/route": "/api/taxi/quote",
+  "/book-pet-relocation-from-dubai/page": "/book-pet-relocation-from-dubai",
+  "/book-pet-relocation-to-dubai/page": "/book-pet-relocation-to-dubai"
 }

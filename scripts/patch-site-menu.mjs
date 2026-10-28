@@ -4,16 +4,16 @@ import { fileURLToPath } from 'url';
 
 /*
  * Header "Services" dropdown: three direct links, no sub-titles, same type as the rest of the nav
- *   Dubai Pet Taxi · Pet Relocation from Dubai · Pet Relocation into Dubai
+ *   Pet Relocation from Dubai · Pet Relocation into Dubai · Dubai Pet Taxi
  * The header is a client component, so it lives in the layout chunk (browser) and the server chunk that renders it.
  */
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '.next');
 
 const LINKS = [
-  ['/dubai-pet-taxi', 'Dubai Pet Taxi'],
   ['/international-pet-relocation/from-dubai', 'Pet Relocation from Dubai'],
   ['/international-pet-relocation/to-dubai', 'Pet Relocation into Dubai'],
+  ['/dubai-pet-taxi', 'Dubai Pet Taxi'],
 ];
 
 // same size / weight / colour as the top-level nav items (font-semibold text-[15px] text-navy-muted)
@@ -32,8 +32,6 @@ function patchRoutes(file) {
 
 function patch(file) {
   let s = fs.readFileSync(file, 'utf8');
-  if (s.includes('Pet Relocation from Dubai')) return false;
-
   const open = 'className:"absolute top-full left-0 w-64 bg-white rounded-2xl shadow-fj-card-hover border border-teal-border p-2 space-y-1 animate-fade-in-up z-50",children:[';
   const a = s.indexOf(open);
   if (a === -1) throw new Error('patch-site-menu: Services dropdown not found in ' + file);
@@ -43,12 +41,13 @@ function patch(file) {
   if (end === -1) throw new Error('patch-site-menu: end of Services dropdown not found in ' + file);
 
   const items = rest.slice(0, end);
-  const m = items.match(/^((?:\(0,\w+\.jsxs\)|\w+\.jsxs))\(([\w.()]+),\{href:"\/dubai-pet-taxi"/);
+  const m = items.match(/^((?:\(0,\w+\.jsxs?\)|\w+\.jsxs?))\(([\w.()]+),\{href:"\/(?:dubai-pet-taxi|international-pet-relocation\/from-dubai)"/);
   if (!m) throw new Error('patch-site-menu: unexpected first menu item in ' + file);
-  const jsx = m[1].replace('jsxs', 'jsx');
+  const jsx = m[1].replace(/jsxs$/, 'jsx').replace('jsxs)', 'jsx)');
   const link = m[2];
 
   const next = LINKS.map(([href, label]) => `${jsx}(${link},{href:"${href}",className:"${ITEM_CLASS}",children:"${label}"})`).join(',');
+  if (items === next) return false;
   s = s.slice(0, start) + next + rest.slice(end);
   fs.writeFileSync(file, s);
   return true;

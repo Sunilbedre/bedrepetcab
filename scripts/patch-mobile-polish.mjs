@@ -17,14 +17,28 @@ const CSS_END = '/*end-gpc-mobile-polish*/';
 const CSS = [
   CSS_START,
   '@media (max-width:1023px){html body:has(h1.pet-taxi-hero-h1) #dubai-taxi-calculator{padding-top:0!important}}',
+  // landing-page behaviour on phones: the quote / fare form sits on the first screen.
+  // relocation pages (and the destination pages that share the hero): heading, then the form, then the rest of the hero copy and buttons
+  '@media (max-width:1023px){',
+  'html body .gpc-intl-hero{padding-top:1.75rem!important;padding-bottom:2.5rem!important}',
+  'html body .gpc-intl-hero-grid{display:flex!important;flex-direction:column;gap:1rem!important}',
+  'html body .gpc-intl-hero-copy{display:contents!important}',
+  'html body .gpc-intl-hero-copy>*{order:5;margin:0!important;text-align:left}',
+  'html body .gpc-intl-hero-copy>*:nth-child(1){order:0;align-self:flex-start}',
+  'html body .gpc-intl-hero-copy>h1{order:1;margin:0!important}',
+  'html body .gpc-intl-hero-form{order:2;width:100%}',
+  // taxi page: the fare card is a separate block under the hero, so the hero keeps only the label and heading and the card slides up under it
+  'html body:has(h1.pet-taxi-hero-h1) h1.pet-taxi-hero-h1~*{display:none!important}',
+  'html body:has(h1.pet-taxi-hero-h1) section:has(h1.pet-taxi-hero-h1){padding-top:1.75rem!important;padding-bottom:4.5rem!important}',
+  '}',
   // service picker (home + /get-a-quote): the photo took ~450px of the first screen and pushed the service cards below the fold
   '@media (max-width:1023px){.gpc-home-picker>div>.grid>div:first-child{min-height:0!important;height:11rem}.gpc-home-picker>div>.grid>div:first-child .absolute.bottom-6{bottom:1rem;left:1rem;right:1rem}.gpc-home-picker>div>.grid>div:first-child .absolute.bottom-6 .text-2xl{font-size:1.05rem;line-height:1.25}}',
   '@media (max-width:639px){',
   // service picker cards: wider text column (smaller padding, smaller icon, no "Selected" pill; the border already shows the choice)
   '.gpc-home-picker>div>.grid>div:nth-child(2){padding:1.1rem!important}',
-  '.gpc-home-picker button[role="tab"]{padding:.8rem!important;gap:.7rem!important}',
-  '.gpc-home-picker button[role="tab"]>div:first-child{width:2.5rem!important;height:2.5rem!important;font-size:1.3rem!important;border-radius:.8rem!important}',
-  '.gpc-home-picker button[role="tab"]>span{display:none}',
+  '.gpc-home-picker a[data-gpc-card]{padding:.8rem!important;gap:.7rem!important}',
+  '.gpc-home-picker a[data-gpc-card]>div:first-child{width:2.5rem!important;height:2.5rem!important;font-size:1.3rem!important;border-radius:.8rem!important}',
+  '.gpc-home-picker a[data-gpc-card]>span{display:none}',
   'main h1{font-size:clamp(1.6rem,7.4vw,1.95rem)!important;line-height:1.18!important;letter-spacing:-.01em}',
   'html body:has(h1.pet-taxi-hero-h1) h1.pet-taxi-hero-h1{font-size:clamp(1.6rem,7.4vw,1.95rem)!important;line-height:1.18!important}',
   'html body:has(h1.pet-taxi-hero-h1) h1.pet-taxi-hero-h1~p{font-size:1rem!important;line-height:1.6!important}',

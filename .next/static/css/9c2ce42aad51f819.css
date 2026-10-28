@@ -427,28 +427,7 @@ section[class*="bg-[#052D49]"][class*="lg:pb-32"] [class*="lg:col-span-7"] a[cla
 [class*="lg:col-span-5"]>div:first-child{max-width:540px!important}
 section[class*="bg-[#052D49]"][class*="lg:pb-32"] [class*="lg:col-span-5"]>div:first-child::before{content:"";position:absolute;left:50%;top:44%;width:112%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(26,168,212,.26) 0%,rgba(26,168,212,.08) 45%,transparent 68%);z-index:-1;pointer-events:none}
 /*end-gpc-home-hero*/
-/*gpc-home-picker*/
-.gpc-picker-panel #dubai-taxi-calculator{padding-top:0!important}
-@media (min-width:1024px){.gpc-home-picker>div>.grid>div:first-child{position:sticky;top:6.5rem;align-self:start;height:640px;min-height:0}}
-.gpc-picker-tabs button{min-height:100%}
-.gpc-picker-tabs button p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.gpc-picker-panel>div{box-shadow:0 22px 50px -30px rgba(5,45,73,.35)}
-.gpc-picker-panel #dubai-taxi-calculator .p-6{padding:1.25rem 1.5rem}
-.gpc-picker-panel #dubai-taxi-calculator .space-y-6>:not([hidden])~:not([hidden]){margin-top:.85rem}
-.gpc-picker-panel #dubai-taxi-calculator h2{font-size:1.5rem;line-height:1.25}
-.gpc-picker-panel #dubai-taxi-calculator h2+p{display:none}
-.gpc-picker-panel #dubai-taxi-calculator [class*="md:grid-cols-2"]{grid-template-columns:minmax(0,1fr)}
-.gpc-picker-panel #dubai-taxi-calculator [class*="lg:grid-cols-4"]{grid-template-columns:repeat(2,minmax(0,1fr))}
-.gpc-picker-panel #dubai-taxi-calculator .gap-5{gap:.7rem .75rem}
-.gpc-picker-panel #dubai-taxi-calculator .fj-input,.gpc-picker-panel #dubai-taxi-calculator .fj-select{height:2.5rem;line-height:2.5rem;font-size:.9375rem;font-weight:500}
-.gpc-picker-panel #dubai-taxi-calculator .fj-select{line-height:normal}
-.gpc-picker-panel #dubai-taxi-calculator .h-12{height:2.5rem;line-height:2.5rem}
-.gpc-picker-panel #dubai-taxi-calculator .h-11{height:2.5rem}
-.gpc-picker-panel #dubai-taxi-calculator button[type=submit]{height:3rem}
-.gpc-picker-panel #dubai-taxi-calculator .flex-col.gap-2{gap:.25rem}
-.gpc-picker-panel #dubai-taxi-calculator .flex-wrap[class*="min-h-"]{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:.375rem;min-height:0}
-.gpc-picker-panel #dubai-taxi-calculator .flex-wrap[class*="min-h-"]>*{flex-shrink:0;white-space:nowrap}
-/*end-gpc-home-picker*/
+
 /*gpc-how-it-works*/
 body:has(#dubai-taxi-steps) main section.relative.overflow-hidden.text-white:not(.bg-navy)::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(3,31,51,.93) 0%,rgba(5,45,73,.84) 55%,rgba(5,45,73,.72) 100%)}
 body:has(#dubai-taxi-steps) main section.relative.overflow-hidden.text-white:not(.bg-navy)>.z-10{position:relative;z-index:10}
@@ -574,10 +553,7 @@ body:has(#route-overview) .gpc-intl-page #route-overview .lg\:col-span-5 h3{font
 @media (prefers-reduced-motion:no-preference){.gpc-lb:target .gpc-lb-fig{animation:gpcLbIn .35s cubic-bezier(.16,1,.3,1)}@keyframes gpcLbIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}}
 /*end-gpc-gallery*/
 
-/*gpc-quote-picker*/
-.gpc-quote-picker{padding:0!important;background:transparent!important;border:0!important}
-section#dubai-taxi-calculator.gpc-quote-picker{padding-top:0!important;padding-bottom:0!important}
-/*end-gpc-quote-picker*/
+
 
 /*gpc-resources-layout*/
 main>div.space-y-16.py-8:has(>section.relative.overflow-hidden.bg-navy){padding-top:0;padding-bottom:0}
@@ -614,14 +590,130 @@ footer.bg-navy>div.max-w-7xl>div:nth-child(3)>div{flex-wrap:wrap;white-space:nor
 footer.bg-navy>div.max-w-7xl>div:nth-child(3) a{color:rgba(255,255,255,.65);transition:color .2s ease}
 footer.bg-navy>div.max-w-7xl>div:nth-child(3) a:hover{color:#fff}
 /*end-gpc-footer*/
+
+/*gpc-book*/
+.gpc-book-page{background:#f4f7f9;min-height:60vh}
+.gb-hero{background:linear-gradient(90deg,rgba(3,31,51,.94),rgba(5,45,73,.8)),url("/gallery/pet-4.jpg") center 35%/cover no-repeat,#052d49;color:#fff;padding:3rem 1rem 5.5rem;text-align:center}
+.gb-hero-in{max-width:46rem;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:.85rem}
+.gb-badge{font-size:.72rem;font-weight:900;letter-spacing:.14em;color:#8fe1f5;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:.45rem 1rem;border-radius:999px}
+.gb-hero h1{font-size:clamp(1.8rem,4.4vw,2.7rem);line-height:1.15;font-weight:900;margin:0;text-wrap:balance}
+.gb-hero p{margin:0;color:rgba(255,255,255,.86);font-size:1.0625rem;line-height:1.6;text-wrap:pretty}
+.gb-wrap{max-width:68rem;margin:-3.25rem auto 0;padding:0 1rem 4.5rem;position:relative}
+.gb-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem;align-items:start}
+@media (min-width:960px){.gb-grid{grid-template-columns:minmax(0,1fr) 20rem}.gb-side{position:sticky;top:7rem}}
+.gb-card{background:#fff;border:1px solid rgba(14,115,150,.16);border-radius:1.5rem;padding:1.5rem 1.25rem;box-shadow:0 24px 50px -30px rgba(5,45,73,.4)}
+@media (min-width:640px){.gb-card{padding:2rem}}
+.gb-steps{display:flex;gap:.35rem;list-style:none;margin:0 0 1.5rem;padding:0}
+.gb-steps li{flex:1;display:flex;flex-direction:column;gap:.35rem;align-items:center;font-size:.72rem;font-weight:700;color:#94a3b8}
+.gb-steps li span{width:1.9rem;height:1.9rem;border-radius:999px;background:#e2e8f0;color:#64748b;display:grid;place-items:center;font-weight:800;font-size:.85rem}
+.gb-steps li.on span{background:#c2410c;color:#fff}.gb-steps li.on{color:#052d49}.gb-steps li.done span{background:#0e7396;color:#fff}.gb-steps li.done{color:#0e7396}
+.gb-steps em{font-style:normal}
+.gb-steps li{cursor:pointer;transition:transform .15s}.gb-steps li:hover{transform:translateY(-2px)}.gb-steps li:hover span{box-shadow:0 0 0 4px rgba(14,115,150,.15)}
+.gb-body h2{font-size:1.45rem;font-weight:900;color:#052d49;margin:0 0 .35rem;font-family:inherit}
+.gb-sub{color:#475569;margin:0 0 1.1rem}
+.gb-rides{display:grid;gap:.75rem;margin-top:1rem}
+@media (min-width:640px){.gb-rides{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.gb-ride{display:flex;flex-direction:column;gap:.35rem;align-items:flex-start;text-align:left;padding:1.1rem;border-radius:1.1rem;border:2px solid rgba(14,115,150,.2);background:#fff;cursor:pointer;transition:border-color .2s,box-shadow .2s,transform .2s}
+.gb-ride:hover{border-color:#0e7396;transform:translateY(-2px);box-shadow:0 14px 28px -20px rgba(5,45,73,.5)}
+.gb-ride.on{border-color:#0e7396;background:#eaf7fb}
+.gb-ride .ic{font-size:1.6rem}.gb-ride b{color:#052d49;font-size:1.05rem}.gb-ride small{color:#475569;font-size:.85rem;line-height:1.4}
+.gb-help{margin:1.1rem 0 0;color:#475569;font-size:.9rem}.gb-help a{color:#0e7396;font-weight:700;text-decoration:underline}
+.gb-f{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem}
+.gb-f label{font-weight:700;color:#0f172a;font-size:.9rem}.gb-f label i{color:#c2410c;font-style:normal}
+.gb-f input,.gb-f select,.gb-f textarea{width:100%;padding:.8rem .95rem;border-radius:.9rem;border:1.5px solid #cbd5e1;background:#fff;font-size:1rem;color:#0f172a;font-family:inherit}
+.gb-f input:focus,.gb-f select:focus,.gb-f textarea:focus{outline:none;border-color:#0e7396;box-shadow:0 0 0 3px rgba(14,115,150,.18)}
+.gb-f small{color:#64748b;font-size:.8rem}
+.gb-two{display:grid;gap:0 1rem}@media (min-width:640px){.gb-two{grid-template-columns:1fr 1fr}}
+.gb-seg{display:flex;flex-wrap:wrap;gap:.5rem}
+.gb-seg button{flex:1;min-width:7rem;padding:.75rem .9rem;border-radius:.9rem;border:1.5px solid #cbd5e1;background:#fff;color:#334155;font-weight:700;cursor:pointer;line-height:1.25}
+.gb-seg button.on{border-color:#0e7396;background:#eaf7fb;color:#052d49;box-shadow:inset 0 0 0 1px #0e7396}
+.gb-seg button small{font-weight:600;color:#64748b}
+.gb-pl{position:relative}
+.gb-sug{position:absolute;z-index:20;left:0;right:0;top:calc(100% + .25rem);margin:0;padding:.25rem;list-style:none;background:#fff;border:1px solid #cbd5e1;border-radius:.9rem;box-shadow:0 18px 36px -18px rgba(5,45,73,.45);max-height:16rem;overflow:auto}
+.gb-sug[hidden]{display:none}
+.gb-sug li{padding:.6rem .75rem;border-radius:.65rem;cursor:pointer;display:flex;flex-direction:column}.gb-sug li:hover{background:#eaf7fb}.gb-sug li b{color:#052d49;font-size:.95rem}.gb-sug li small{color:#64748b}
+.gb-note{color:#475569;font-size:.88rem;background:#f1f7fa;border-radius:.8rem;padding:.7rem .9rem;margin:.25rem 0 0}
+.gb-sum{margin:.5rem 0 1rem}.gb-sum div{display:flex;gap:1rem;padding:.65rem 0;border-bottom:1px solid #e2e8f0}.gb-sum dt{flex:0 0 7rem;color:#64748b;font-weight:700;font-size:.9rem}.gb-sum dd{margin:0;color:#0f172a;font-weight:600;min-width:0;overflow-wrap:anywhere}
+.gb-terms{display:flex;gap:.6rem;align-items:flex-start;color:#334155;font-size:.92rem;line-height:1.5}.gb-terms input{margin-top:.25rem;width:1.1rem;height:1.1rem;flex:none}
+.gb-err{color:#b91c1c;background:#fef2f2;border:1px solid #fecaca;border-radius:.8rem;padding:.7rem .9rem;margin:1rem 0 0;font-weight:600}
+.gb-nav{display:flex;justify-content:space-between;align-items:center;gap:.75rem;margin-top:1.4rem}
+.gb-btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.95rem 1.6rem;border-radius:999px;border:0;background:#c2410c;color:#fff;font-weight:800;font-size:1rem;cursor:pointer;text-decoration:none;box-shadow:0 14px 26px -14px rgba(194,65,12,.75);transition:background .2s,transform .2s}
+.gb-btn:hover{background:#9a3412;transform:translateY(-1px)}.gb-btn[disabled]{opacity:.6;cursor:wait}
+.gb-btn.ghost{background:transparent;color:#052d49;box-shadow:none;border:1.5px solid #cbd5e1}.gb-btn.ghost:hover{background:#f1f5f9}
+.gb-btn.wa{background:#10b981;box-shadow:0 14px 26px -14px rgba(16,185,129,.75)}.gb-btn.wa:hover{background:#059669}
+.gb-quote{background:linear-gradient(160deg,#052d49,#0a4d6e);color:#fff;border-radius:1.5rem;padding:1.4rem;box-shadow:0 24px 50px -28px rgba(5,45,73,.6)}
+.gb-q-h{display:flex;justify-content:space-between;align-items:center;font-weight:800;margin-bottom:.6rem}.gb-q-h em{font-style:normal;font-size:.72rem;background:rgba(255,255,255,.14);padding:.25rem .6rem;border-radius:999px;font-weight:700}
+.gb-q-t{font-size:2.3rem;font-weight:900;line-height:1.1}.gb-q-d{color:rgba(255,255,255,.75);font-size:.85rem;margin:.2rem 0 .8rem}
+.gb-q-m{color:rgba(255,255,255,.85);margin:.2rem 0}.gb-q-m.err{color:#fecaca}
+.gb-q-pol{margin:.8rem 0 0;padding-left:1.1rem;color:rgba(255,255,255,.75);font-size:.85rem;line-height:1.6}
+.gb-q-l{list-style:none;margin:0;padding:.6rem 0 0;border-top:1px solid rgba(255,255,255,.18)}.gb-q-l li{display:flex;justify-content:space-between;gap:.75rem;padding:.3rem 0;font-size:.88rem;color:rgba(255,255,255,.9)}.gb-q-l b{white-space:nowrap}.gb-q-l b.neg{color:#86efac}
+.gb-q-v{display:flex;justify-content:space-between;padding:.55rem 0 0;margin-top:.4rem;border-top:1px solid rgba(255,255,255,.18);font-size:.85rem;color:rgba(255,255,255,.8)}
+.gb-q-n{font-size:.76rem;color:rgba(255,255,255,.65);margin:.7rem 0 0;line-height:1.5}
+.gb-mbar{display:none}
+@media (max-width:959px){.gb-side{order:-1}.gb-side .gb-quote{padding:1.1rem}.gb-side .gb-q-l,.gb-side .gb-q-n,.gb-side .gb-q-pol{display:none}.gb-q-t{font-size:1.9rem}}
+.gb-done{text-align:center;padding:1rem .5rem;display:flex;flex-direction:column;align-items:center;gap:.9rem}.gb-done .tick{width:4rem;height:4rem;border-radius:999px;background:#10b981;color:#fff;display:grid;place-items:center;font-size:2rem;font-weight:900}.gb-done h2{margin:0;color:#052d49;font-size:1.6rem;font-weight:900}.gb-done p{margin:0;color:#475569;max-width:32rem;line-height:1.6}
+/*end-gpc-book*/
+/*gpc-pet-top*/
+#international-quote-form .gpc-pet-top{padding-top:.25rem}
+#international-quote-form .gpc-pet-top .fj-label{font-size:1rem;margin-bottom:.45rem}
+#international-quote-form .gpc-pet-top .fj-input,#international-quote-form .gpc-pet-top .fj-select{height:3.6rem;font-size:1.08rem;padding:0 1.15rem;border-radius:1.1rem;border-width:2px}
+#international-quote-form .gpc-pet-top .fj-select{padding-right:2.4rem}
+@media (max-width:639px){#international-quote-form .gpc-pet-top{gap:1rem}#international-quote-form .gpc-pet-top .fj-input,#international-quote-form .gpc-pet-top .fj-select{height:3.4rem;font-size:1.02rem}}
+/*end-gpc-pet-top*/
+
+/*gpc-reloc*/
+.gpc-reloc-page .gb-steps2 li{max-width:14rem}
+.gpc-reloc-page .gb-fixed{padding:.85rem 1rem;border-radius:.9rem;background:#eaf7fb;border:2px solid rgba(14,115,150,.2);color:#052d49;font-weight:700}
+.gpc-reloc-page .gb-next{list-style:none;margin:.2rem 0 .6rem;padding:0;display:grid;gap:.8rem}
+.gpc-reloc-page .gb-next li{display:flex;gap:.7rem;align-items:flex-start;color:rgba(255,255,255,.92);font-size:.95rem;line-height:1.45}
+.gpc-reloc-page .gb-next b{flex:none;width:1.6rem;height:1.6rem;border-radius:999px;background:rgba(255,255,255,.16);display:grid;place-items:center;font-size:.8rem}
+@media (max-width:959px){.gpc-reloc-page .gb-side{order:2}}
+/*end-gpc-reloc*/
+/*gpc-home-picker*/
+.gpc-picker-panel #dubai-taxi-calculator{padding-top:0!important}
+@media (min-width:1024px){.gpc-home-picker>div>.grid>div:first-child{position:sticky;top:6.5rem;align-self:start;height:640px;min-height:0}}
+.gpc-picker-tabs button{min-height:100%}
+.gpc-picker-tabs button p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.gpc-picker-panel>div{box-shadow:0 22px 50px -30px rgba(5,45,73,.35)}
+.gpc-picker-panel #dubai-taxi-calculator .p-6{padding:1.25rem 1.5rem}
+.gpc-picker-panel #dubai-taxi-calculator .space-y-6>:not([hidden])~:not([hidden]){margin-top:.85rem}
+.gpc-picker-panel #dubai-taxi-calculator h2{font-size:1.5rem;line-height:1.25}
+.gpc-picker-panel #dubai-taxi-calculator h2+p{display:none}
+.gpc-picker-panel #dubai-taxi-calculator [class*="md:grid-cols-2"]{grid-template-columns:minmax(0,1fr)}
+.gpc-picker-panel #dubai-taxi-calculator [class*="lg:grid-cols-4"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gpc-picker-panel #dubai-taxi-calculator .gap-5{gap:.7rem .75rem}
+.gpc-picker-panel #dubai-taxi-calculator .fj-input,.gpc-picker-panel #dubai-taxi-calculator .fj-select{height:2.5rem;line-height:2.5rem;font-size:.9375rem;font-weight:500}
+.gpc-picker-panel #dubai-taxi-calculator .fj-select{line-height:normal}
+.gpc-picker-panel #dubai-taxi-calculator .h-12{height:2.5rem;line-height:2.5rem}
+.gpc-picker-panel #dubai-taxi-calculator .h-11{height:2.5rem}
+.gpc-picker-panel #dubai-taxi-calculator button[type=submit]{height:3rem}
+.gpc-picker-panel #dubai-taxi-calculator .flex-col.gap-2{gap:.25rem}
+.gpc-picker-panel #dubai-taxi-calculator .flex-wrap[class*="min-h-"]{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:.375rem;min-height:0}
+.gpc-picker-panel #dubai-taxi-calculator .flex-wrap[class*="min-h-"]>*{flex-shrink:0;white-space:nowrap}
+/*end-gpc-home-picker*/
+/*gpc-quote-picker*/
+.gpc-quote-picker{padding:0!important;background:transparent!important;border:0!important}
+section#dubai-taxi-calculator.gpc-quote-picker{padding-top:0!important;padding-bottom:0!important}
+/*end-gpc-quote-picker*/
 /*gpc-mobile-polish*/
 @media (max-width:1023px){html body:has(h1.pet-taxi-hero-h1) #dubai-taxi-calculator{padding-top:0!important}}
+@media (max-width:1023px){
+html body .gpc-intl-hero{padding-top:1.75rem!important;padding-bottom:2.5rem!important}
+html body .gpc-intl-hero-grid{display:flex!important;flex-direction:column;gap:1rem!important}
+html body .gpc-intl-hero-copy{display:contents!important}
+html body .gpc-intl-hero-copy>*{order:5;margin:0!important;text-align:left}
+html body .gpc-intl-hero-copy>*:nth-child(1){order:0;align-self:flex-start}
+html body .gpc-intl-hero-copy>h1{order:1;margin:0!important}
+html body .gpc-intl-hero-form{order:2;width:100%}
+html body:has(h1.pet-taxi-hero-h1) h1.pet-taxi-hero-h1~*{display:none!important}
+html body:has(h1.pet-taxi-hero-h1) section:has(h1.pet-taxi-hero-h1){padding-top:1.75rem!important;padding-bottom:4.5rem!important}
+}
 @media (max-width:1023px){.gpc-home-picker>div>.grid>div:first-child{min-height:0!important;height:11rem}.gpc-home-picker>div>.grid>div:first-child .absolute.bottom-6{bottom:1rem;left:1rem;right:1rem}.gpc-home-picker>div>.grid>div:first-child .absolute.bottom-6 .text-2xl{font-size:1.05rem;line-height:1.25}}
 @media (max-width:639px){
 .gpc-home-picker>div>.grid>div:nth-child(2){padding:1.1rem!important}
-.gpc-home-picker button[role="tab"]{padding:.8rem!important;gap:.7rem!important}
-.gpc-home-picker button[role="tab"]>div:first-child{width:2.5rem!important;height:2.5rem!important;font-size:1.3rem!important;border-radius:.8rem!important}
-.gpc-home-picker button[role="tab"]>span{display:none}
+.gpc-home-picker a[data-gpc-card]{padding:.8rem!important;gap:.7rem!important}
+.gpc-home-picker a[data-gpc-card]>div:first-child{width:2.5rem!important;height:2.5rem!important;font-size:1.3rem!important;border-radius:.8rem!important}
+.gpc-home-picker a[data-gpc-card]>span{display:none}
 main h1{font-size:clamp(1.6rem,7.4vw,1.95rem)!important;line-height:1.18!important;letter-spacing:-.01em}
 html body:has(h1.pet-taxi-hero-h1) h1.pet-taxi-hero-h1{font-size:clamp(1.6rem,7.4vw,1.95rem)!important;line-height:1.18!important}
 html body:has(h1.pet-taxi-hero-h1) h1.pet-taxi-hero-h1~p{font-size:1rem!important;line-height:1.6!important}
@@ -630,3 +722,25 @@ div[class*="text-teal-deep"][class*="font-extrabold"][class*="text-xl"]{font-siz
 div[class*="text-teal-deep"][class*="font-extrabold"][class*="text-xl"] svg{width:1.15rem!important;height:1.15rem!important;flex:none}
 }
 /*end-gpc-mobile-polish*/
+/*gpc-taxi-rides*/
+body:has(h1.pet-taxi-hero-h1) #dubai-taxi-calculator>:not(#gpc-taxi-rides){display:none!important}
+body:has(h1.pet-taxi-hero-h1) #gpc-taxi-rides{padding:1.5rem 1.5rem 1.25rem;font-family:inherit}
+body:has(h1.pet-taxi-hero-h1) .gtr-k{margin:0 0 .25rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#0e7396}
+body:has(h1.pet-taxi-hero-h1) .gtr-h{margin:0;font-size:1.6rem;line-height:1.2;font-weight:800;color:#052d49}
+body:has(h1.pet-taxi-hero-h1) .gtr-p{margin:.4rem 0 1rem;font-size:.95rem;line-height:1.55;color:#475569}
+body:has(h1.pet-taxi-hero-h1) .gtr-list{display:grid;gap:.65rem}
+body:has(h1.pet-taxi-hero-h1) .gtr-ride{display:flex;align-items:center;gap:.9rem;padding:.9rem 1rem;border-radius:1.1rem;border:2px solid rgba(14,115,150,.2);background:#fff;text-decoration:none;transition:border-color .2s,transform .2s,box-shadow .2s,background .2s}
+body:has(h1.pet-taxi-hero-h1) .gtr-ride:hover{border-color:#0e7396;background:#eaf7fb;transform:translateY(-2px);box-shadow:0 14px 28px -20px rgba(5,45,73,.5)}
+body:has(h1.pet-taxi-hero-h1) .gtr-ic{flex:none;font-size:1.7rem;line-height:1}
+body:has(h1.pet-taxi-hero-h1) .gtr-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:.15rem}
+body:has(h1.pet-taxi-hero-h1) .gtr-t b{color:#052d49;font-size:1.05rem}
+body:has(h1.pet-taxi-hero-h1) .gtr-t small{color:#475569;font-size:.85rem;line-height:1.4}
+body:has(h1.pet-taxi-hero-h1) .gtr-go{flex:none;font-size:1.2rem;font-weight:800;color:#0e7396;transition:transform .2s}
+body:has(h1.pet-taxi-hero-h1) .gtr-ride:hover .gtr-go{transform:translateX(3px)}
+body:has(h1.pet-taxi-hero-h1) .gtr-all{display:block;margin-top:.9rem;text-align:center;font-size:.9rem;font-weight:700;color:#c2410c;text-decoration:none}
+body:has(h1.pet-taxi-hero-h1) .gtr-all:hover{text-decoration:underline}
+body:has(h1.pet-taxi-hero-h1) #dubai-taxi-calculator:not(:has(#gpc-taxi-rides)){min-height:398px;position:relative;background:#fff}
+body:has(h1.pet-taxi-hero-h1) #dubai-taxi-calculator:not(:has(#gpc-taxi-rides))::before{content:"Choose your ride";display:block;padding:2.6rem 1.5rem 0;font-size:1.6rem;font-weight:800;color:#052d49}
+body:has(h1.pet-taxi-hero-h1) #dubai-taxi-calculator:not(:has(#gpc-taxi-rides))::after{content:"";position:absolute;left:1.5rem;right:1.5rem;top:7.2rem;height:4.9rem;border-radius:1.1rem;background:#eef6f9;box-shadow:0 5.6rem 0 #eef6f9,0 11.2rem 0 #eef6f9}
+@media (min-width:1024px){body:has(h1.pet-taxi-hero-h1) div.font-body:has(#dubai-taxi-calculator) section:has(>#dubai-taxi-calculator){top:350px!important;transform:translateY(-50%)}}
+/*end-gpc-taxi-rides*/

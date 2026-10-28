@@ -125,6 +125,30 @@
       "regex": "^/gallery(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/gallery(?:/)?$"
+    },
+    {
+      "page": "/book-pet-taxi",
+      "regex": "^/book\\-pet\\-taxi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/book\\-pet\\-taxi(?:/)?$"
+    },
+    {
+      "page": "/api/taxi/quote",
+      "regex": "^/api/taxi/quote(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/taxi/quote(?:/)?$"
+    },
+    {
+      "page": "/book-pet-relocation-from-dubai",
+      "regex": "^/book\\-pet\\-relocation\\-from\\-dubai(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/book\\-pet\\-relocation\\-from\\-dubai(?:/)?$"
+    },
+    {
+      "page": "/book-pet-relocation-to-dubai",
+      "regex": "^/book\\-pet\\-relocation\\-to\\-dubai(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/book\\-pet\\-relocation\\-to\\-dubai(?:/)?$"
     }
   ],
   "dataRoutes": [],

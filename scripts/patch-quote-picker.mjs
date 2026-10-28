@@ -16,7 +16,7 @@ const HOME_SERVER = path.join(ROOT, 'server', 'app', 'page.js');
 const Q_SERVER = path.join(ROOT, 'server', 'app', 'get-a-quote', 'page.js');
 const Q_MANIFEST = path.join(ROOT, 'server', 'app', 'get-a-quote', 'page_client-reference-manifest.js');
 const Q_CLIENT_DIR = path.join(ROOT, 'static', 'chunks', 'app', 'get-a-quote');
-const VERSION = 'gpcQuoteV1';
+const VERSION = 'gpcQuoteV2';
 const changed = [];
 
 const must = (s, from, to, label) => {
@@ -35,7 +35,7 @@ function homeModule(file, startMark, endMark) {
 function adapt(text, newId, startHead) {
   let t = text;
   t = t.replace(/^\d+/, String(newId));
-  t = must(t, 'let gpcV="gpcPickerV2"', `let gpcV="${VERSION}"`, 'version');
+  t = must(t, 'let gpcV="gpcPickerV3"', `let gpcV="${VERSION}"`, 'version');
   t = must(t, 'function c(){let[t,a]=(0,i.useState)("taxi"),[u,d]=(0,i.useState)(1),', 'function c(P){let gS=P&&P.initialService?String(P.initialService):"",[t,a]=(0,i.useState)(/international|relocation|export|import|from|to/.test(gS)?"from":"taxi"),[u,d]=(0,i.useState)(gS?2:1),', 'component head');
   t = must(t, 'className:"pt-32 sm:pt-36 lg:pt-40 pb-20 bg-white gpc-home-picker"', 'className:"gpc-home-picker gpc-quote-picker"', 'section class');
   return t;
@@ -53,7 +53,7 @@ function adapt(text, newId, startHead) {
     const b = s.indexOf(',2633:function(e,t,a){', a);
     if (a === -1 || b === -1) throw new Error('patch-quote-picker: wizard module boundaries not found');
     s = s.slice(0, a) + adapt(mod, 4176) + s.slice(b);
-    s = must(s, 'e.O(0,[878,960,971,117,744],', 'e.O(0,[878,960,971,117,744,50,879],', 'chunk bootstrap');
+    if (s.includes('e.O(0,[878,960,971,117,744],')) s = must(s, 'e.O(0,[878,960,971,117,744],', 'e.O(0,[878,960,971,117,744,50,879],', 'chunk bootstrap');
     fs.writeFileSync(file, s);
     changed.push('client chunk');
   }
@@ -70,7 +70,7 @@ function adapt(text, newId, startHead) {
     const nx = m.exec(s);
     if (a === -1 || !nx) throw new Error('patch-quote-picker: wizard SSR module boundaries not found');
     s = s.slice(0, a) + adapt(mod, 8148) + s.slice(nx.index + 1);
-    s = must(s, 't.X(0,[276,342,481,322,98],()=>a(1743))', 't.X(0,[276,342,481,322,98,262,916],()=>a(1743))', 'chunk loader');
+    if (s.includes('t.X(0,[276,342,481,322,98],()=>a(1743))')) s = must(s, 't.X(0,[276,342,481,322,98],()=>a(1743))', 't.X(0,[276,342,481,322,98,262,916],()=>a(1743))', 'chunk loader');
     fs.writeFileSync(Q_SERVER, s);
     changed.push('server bundle');
   }
