@@ -36,9 +36,6 @@ const CSS = [
   '@media (max-width:639px){',
   // service picker cards: wider text column (smaller padding, smaller icon, no "Selected" pill; the border already shows the choice)
   '.gpc-home-picker>div>.grid>div:nth-child(2){padding:1.1rem!important}',
-  '.gpc-home-picker a[data-gpc-card]{padding:.8rem!important;gap:.7rem!important}',
-  '.gpc-home-picker a[data-gpc-card]>div:first-child{width:2.5rem!important;height:2.5rem!important;font-size:1.3rem!important;border-radius:.8rem!important}',
-  '.gpc-home-picker a[data-gpc-card]>span{display:none}',
   'main h1{font-size:clamp(1.6rem,7.4vw,1.95rem)!important;line-height:1.18!important;letter-spacing:-.01em}',
   'html body:has(h1.pet-taxi-hero-h1) h1.pet-taxi-hero-h1{font-size:clamp(1.6rem,7.4vw,1.95rem)!important;line-height:1.18!important}',
   'html body:has(h1.pet-taxi-hero-h1) h1.pet-taxi-hero-h1~p{font-size:1rem!important;line-height:1.6!important}',

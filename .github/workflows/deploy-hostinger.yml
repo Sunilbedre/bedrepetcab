@@ -34,6 +34,11 @@ jobs:
           node scripts/patch-book-relocation.mjs
           node scripts/patch-relocation-form.mjs
           node scripts/patch-taxi-rides.mjs
+          node scripts/patch-home-banners.mjs
+          node scripts/patch-faq-image.mjs
+          node scripts/patch-type-scale.mjs
+          node scripts/patch-sentence-case.mjs
+          node scripts/patch-home-themes.mjs
           bash scripts/verify-trust-badges.sh
 
       - name: Pack live app

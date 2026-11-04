@@ -206,7 +206,7 @@ function renderDubaiToUk(){
       (0,a.jsxs)("div",{className:"relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gpc-intl-hero-grid",children:[(0,a.jsxs)("div",{className:"gpc-intl-hero-copy space-y-6",children:[
         (0,a.jsxs)("div",{className:"inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold font-heading uppercase tracking-widest bg-teal-bright/20 text-teal-light border border-teal-bright/30",children:[
           a.jsx(Svg,{p:"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z",cls:"w-3.5 h-3.5"}),
-          t.route||"INTERNATIONAL PET RELOCATION"
+          t.route||"International pet relocation"
         ]}),
         a.jsx("h1",{className:"text-3xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight text-white max-w-4xl mx-auto leading-[1.15]",children:t.title}),
         (0,a.jsxs)("div",{className:"max-w-3xl mx-auto space-y-3",children:[
@@ -237,7 +237,7 @@ function renderDubaiToUk(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"WHAT GLOBAL PET CAB HANDLES"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"What Global Pet Cab handles"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Helping You Prepare for Your Pet's Move from Dubai to the UK"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"A move to the UK is more than getting your pet onto a flight. We help bring the important pieces together, from route planning and veterinary preparation to travel crate arrangements, airport handling and arrival coordination."})
         ]}),
@@ -253,7 +253,7 @@ function renderDubaiToUk(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-slate-50 border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"DOCUMENTS & REQUIREMENTS"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"Documents & requirements"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Documents Your Pet May Need for Travel to the UK"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"UK pet travel requirements are route-specific and can change. This is what pets typically need, and we check it against the latest rules before you travel."})
         ]}),
@@ -276,7 +276,7 @@ function renderDubaiToUk(){
         a.jsx("div",{className:"absolute inset-0",style:{background:"linear-gradient(rgba(7, 23, 40, 0.90), rgba(10, 37, 64, 0.88), rgba(7, 23, 40, 0.95))"}})
       ]}),
       (0,a.jsxs)("div",{className:"relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"HUMAN SUPPORT"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Human support"}),
         a.jsx("h2",{className:"text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"We Know the Hard Part Isn't Just the Flight"}),
         (0,a.jsxs)("div",{className:"space-y-4 max-w-3xl mx-auto",children:[
           a.jsx("p",{className:"text-base sm:text-lg text-slate-200 leading-relaxed font-body",children:"When you're moving your pet to another country, it is easy to get stuck wondering whether you have missed a document, booked the right kind of travel, or planned everything early enough."}),
@@ -290,7 +290,7 @@ function renderDubaiToUk(){
     a.jsx("section",{id:"route-overview",className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"ROUTE OVERVIEW"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Route overview"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Your Route at a Glance"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"Here is how the route works and what happens once you send us your details."})
         ]}),
@@ -328,7 +328,7 @@ function renderDubaiToUk(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-slate-50 border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"HOW IT WORKS"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"How it works"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"From Dubai to the UK, One Step at a Time"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"We coordinate every phase from your initial route enquiry to destination arrival."})
         ]}),
@@ -344,7 +344,7 @@ function renderDubaiToUk(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center mb-14 space-y-3",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"QUESTIONS PET PARENTS ASK"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Questions pet parents ask"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Dubai to UK Pet Relocation Questions, Answered"}),
           a.jsx("p",{className:"text-base sm:text-lg font-body text-slate-600 max-w-2xl mx-auto",children:"Planning your pet's move from Dubai to the UK? Here are a few of the questions worth answering before you book."})
         ]}),
@@ -361,7 +361,7 @@ function renderDubaiToUk(){
     // 8. FINAL CTA
     a.jsx("section",{className:"py-20 sm:py-24 bg-gradient-to-r from-navy-dark via-navy to-navy-light text-white text-center",children:
       (0,a.jsxs)("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"READY TO PLAN THE MOVE?"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Ready to plan the move?"}),
         a.jsx("h2",{className:"text-3xl sm:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"Let's Get Your Pet Ready for the UK"}),
         a.jsx("p",{className:"text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-body leading-relaxed",children:"You don't need to figure out every step on your own. Tell us about your pet and your route, and we'll help you understand what needs to happen next."}),
         (0,a.jsxs)("div",{className:"flex flex-col sm:flex-row items-center justify-center gap-4 pt-4",children:[
@@ -392,7 +392,7 @@ function renderDubaiToUsa(){
       (0,a.jsxs)("div",{className:"relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gpc-intl-hero-grid",children:[(0,a.jsxs)("div",{className:"gpc-intl-hero-copy space-y-6",children:[
         (0,a.jsxs)("div",{className:"inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold font-heading uppercase tracking-widest bg-teal-bright/20 text-teal-light border border-teal-bright/30",children:[
           a.jsx(Svg,{p:"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z",cls:"w-3.5 h-3.5"}),
-          t.route||"INTERNATIONAL PET RELOCATION"
+          t.route||"International pet relocation"
         ]}),
         a.jsx("h1",{className:"text-3xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight text-white max-w-4xl mx-auto leading-[1.15]",children:t.title}),
         (0,a.jsxs)("div",{className:"max-w-3xl mx-auto space-y-3",children:[
@@ -423,7 +423,7 @@ function renderDubaiToUsa(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"WHAT GLOBAL PET CAB HANDLES"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"What Global Pet Cab handles"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"What We Can Help With on Your Dubai to USA Pet Move"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"Every international pet journey has its own details. We start with your route, your pet and your intended travel date, then help coordinate the practical pieces needed to get the journey moving."})
         ]}),
@@ -439,7 +439,7 @@ function renderDubaiToUsa(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-slate-50 border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"DOCUMENTS GENERALLY REQUIRED"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"Documents generally required"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Documents to Prepare for a Dubai to USA Pet Journey"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"These are the documents pets typically need for the USA. Entry requirements vary with the animal and how it travels, so we always confirm the final checklist for your journey."})
         ]}),
@@ -462,7 +462,7 @@ function renderDubaiToUsa(){
         a.jsx("div",{className:"absolute inset-0",style:{background:"linear-gradient(rgba(7, 23, 40, 0.90), rgba(10, 37, 64, 0.88), rgba(7, 23, 40, 0.95))"}})
       ]}),
       (0,a.jsxs)("div",{className:"relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"HUMAN-FIRST SUPPORT"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Human-first support"}),
         a.jsx("h2",{className:"text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"The Paperwork Is Important. So Is Knowing What Happens Next."}),
         (0,a.jsxs)("div",{className:"space-y-4 max-w-3xl mx-auto",children:[
           a.jsx("p",{className:"text-base sm:text-lg text-slate-200 leading-relaxed font-body",children:"International pet travel can feel overwhelming because there are several things to keep track of at the same time. You may be thinking about vaccination records, the microchip, the crate, the flight and what happens when your pet lands."}),
@@ -475,7 +475,7 @@ function renderDubaiToUsa(){
     a.jsx("section",{id:"route-overview",className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"ROUTE OVERVIEW"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Route overview"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Your Route at a Glance"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"Here is how the route works and what happens once you send us your details."})
         ]}),
@@ -513,7 +513,7 @@ function renderDubaiToUsa(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-slate-50 border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"THE JOURNEY"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"The journey"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"From Dubai to the USA, One Step at a Time"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"We coordinate every phase from your initial route enquiry to destination arrival."})
         ]}),
@@ -529,7 +529,7 @@ function renderDubaiToUsa(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center mb-14 space-y-3",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"QUESTIONS PET PARENTS ASK"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Questions pet parents ask"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Dubai to USA Pet Relocation Questions, Answered"}),
           a.jsx("p",{className:"text-base sm:text-lg font-body text-slate-600 max-w-2xl mx-auto",children:"Planning to take your pet from Dubai to the United States? Here are some of the practical questions to think about before you book."})
         ]}),
@@ -546,7 +546,7 @@ function renderDubaiToUsa(){
     // 8. FINAL CTA
     a.jsx("section",{className:"py-20 sm:py-24 bg-gradient-to-r from-navy-dark via-navy to-navy-light text-white text-center",children:
       (0,a.jsxs)("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"READY TO PLAN YOUR PET'S MOVE?"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Ready to plan your pet's move?"}),
         a.jsx("h2",{className:"text-3xl sm:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"Let's Start With Your Route"}),
         a.jsx("p",{className:"text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-body leading-relaxed",children:"You don't have to work out every part of an international pet move on your own. Tell us where your pet is travelling from, where they are going and when you are hoping to travel. We'll help you understand what comes next."}),
         (0,a.jsxs)("div",{className:"flex flex-col sm:flex-row items-center justify-center gap-4 pt-4",children:[
@@ -577,7 +577,7 @@ function renderDubaiToCanada(){
       (0,a.jsxs)("div",{className:"relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gpc-intl-hero-grid",children:[(0,a.jsxs)("div",{className:"gpc-intl-hero-copy space-y-6",children:[
         (0,a.jsxs)("div",{className:"inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold font-heading uppercase tracking-widest bg-teal-bright/20 text-teal-light border border-teal-bright/30",children:[
           a.jsx(Svg,{p:"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z",cls:"w-3.5 h-3.5"}),
-          t.route||"INTERNATIONAL PET RELOCATION"
+          t.route||"International pet relocation"
         ]}),
         a.jsx("h1",{className:"text-3xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight text-white max-w-4xl mx-auto leading-[1.15]",children:t.title}),
         (0,a.jsxs)("div",{className:"max-w-3xl mx-auto space-y-3",children:[
@@ -614,7 +614,7 @@ function renderDubaiToCanada(){
     a.jsx("section",{id:"route-overview",className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"ROUTE OVERVIEW"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Route overview"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Your Route at a Glance"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"Here is how the route works and what happens once you send us your details."})
         ]}),
@@ -656,7 +656,7 @@ function renderDubaiToCanada(){
         a.jsx("div",{className:"absolute inset-0",style:{background:"linear-gradient(rgba(7, 23, 40, 0.90), rgba(10, 37, 64, 0.88), rgba(7, 23, 40, 0.95))"}})
       ]}),
       (0,a.jsxs)("div",{className:"relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"YOUR PET'S JOURNEY TO CANADA"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Your pet's journey to Canada"}),
         a.jsx("h2",{className:"text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"More Than Just Getting From Dubai to Canada"}),
         (0,a.jsxs)("div",{className:"space-y-4 max-w-3xl mx-auto font-body text-base sm:text-lg text-slate-200 leading-relaxed",children:[
           a.jsx("p",{children:"A pet relocation involves more than getting your pet onto a flight."}),
@@ -671,7 +671,7 @@ function renderDubaiToCanada(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"HOW WE SUPPORT YOUR MOVE"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"How we support your move"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"One Journey. Many Moving Parts. One Team to Help Coordinate Them."}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"We support your pet relocation step by step across both Dubai and Canadian jurisdictions."})
         ]}),
@@ -694,7 +694,7 @@ function renderDubaiToCanada(){
         a.jsx("div",{className:"absolute inset-0",style:{background:"linear-gradient(rgba(7, 23, 40, 0.90), rgba(10, 37, 64, 0.88), rgba(7, 23, 40, 0.95))"}})
       ]}),
       (0,a.jsxs)("div",{className:"relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"BEFORE TRAVEL DAY"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Before travel day"}),
         a.jsx("h2",{className:"text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"Need Help Getting Your Pet Ready?"}),
         (0,a.jsxs)("div",{className:"space-y-4 max-w-3xl mx-auto font-body text-base sm:text-lg text-slate-200 leading-relaxed",children:[
           a.jsx("p",{children:"Sometimes the international journey isn't the only thing on your plate."}),
@@ -714,13 +714,13 @@ function renderDubaiToCanada(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-slate-50 border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"KNOW WHICH WAY YOUR PET IS TRAVELLING"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"Know which way your pet is travelling"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"From Dubai to Canada? Or Canada to Dubai?"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"Pet import and export regulations differ significantly between departure and arrival countries."})
         ]}),
         (0,a.jsxs)("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto",children:[
           (0,a.jsxs)("div",{className:"p-8 rounded-3xl bg-white border border-teal-border shadow-2xs hover:shadow-fj-card transition-all duration-300 space-y-4",children:[
-            a.jsx("div",{className:"inline-flex items-center gap-2 text-xs font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-3 py-1.5 rounded-full border border-teal-border",children:"EXPORT JOURNEY"}),
+            a.jsx("div",{className:"inline-flex items-center gap-2 text-xs font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-3 py-1.5 rounded-full border border-teal-border",children:"Export journey"}),
             a.jsx("h3",{className:"text-2xl font-black font-heading text-navy",children:"Moving FROM Dubai / UAE to Canada"}),
             a.jsx("p",{className:"text-sm sm:text-base text-slate-600 leading-relaxed font-body",children:"Your pet is leaving the UAE, so this is an export from the UAE and an import into Canada. The journey needs to be planned around the requirements on both sides."}),
             (0,a.jsxs)("ul",{className:"space-y-2 pt-2 text-sm text-slate-700 font-medium font-body",children:[
@@ -739,7 +739,7 @@ function renderDubaiToCanada(){
             ]})
           ]}),
           (0,a.jsxs)("div",{className:"p-8 rounded-3xl bg-white border border-teal-border shadow-2xs hover:shadow-fj-card transition-all duration-300 space-y-4",children:[
-            a.jsx("div",{className:"inline-flex items-center gap-2 text-xs font-black font-heading text-coral uppercase tracking-widest bg-coral/10 px-3 py-1.5 rounded-full border border-coral/20",children:"IMPORT JOURNEY"}),
+            a.jsx("div",{className:"inline-flex items-center gap-2 text-xs font-black font-heading text-coral uppercase tracking-widest bg-coral/10 px-3 py-1.5 rounded-full border border-coral/20",children:"Import journey"}),
             a.jsx("h3",{className:"text-2xl font-black font-heading text-navy",children:"Moving INTO Dubai / UAE from Canada"}),
             a.jsx("p",{className:"text-sm sm:text-base text-slate-600 leading-relaxed font-body",children:"Your pet is entering the UAE, so this is an import into Dubai/UAE. The preparation and documentation will be based on the applicable UAE entry requirements and your pet's travel circumstances."}),
             (0,a.jsxs)("ul",{className:"space-y-2 pt-2 text-sm text-slate-700 font-medium font-body",children:[
@@ -768,7 +768,7 @@ function renderDubaiToCanada(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"WHY GLOBAL PET CAB"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Why Global Pet Cab"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Because Your Pet Isn't Just Another Piece of Luggage."}),
           (0,a.jsxs)("div",{className:"space-y-3 font-body text-base sm:text-lg text-slate-600 leading-relaxed",children:[
             a.jsx("p",{children:"International relocation can feel complicated when you're trying to figure everything out yourself."}),
@@ -791,7 +791,7 @@ function renderDubaiToCanada(){
         a.jsx("div",{className:"absolute inset-0",style:{background:"linear-gradient(rgba(7, 23, 40, 0.90), rgba(10, 37, 64, 0.88), rgba(7, 23, 40, 0.95))"}})
       ]}),
       (0,a.jsxs)("div",{className:"relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"FAMILY-FIRST CARE"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Family-first care"}),
         a.jsx("h2",{className:"text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"Your Pet's Journey Deserves More Than a Booking Confirmation."}),
         (0,a.jsxs)("div",{className:"space-y-3 max-w-3xl mx-auto font-body text-base sm:text-lg text-slate-200 leading-relaxed",children:[
           a.jsx("p",{children:"We know you're not simply sending a pet from one airport to another."}),
@@ -814,7 +814,7 @@ function renderDubaiToCanada(){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center mb-14 space-y-3",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"QUESTIONS PET PARENTS ASK"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Questions pet parents ask"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Dubai ↔ Canada Pet Relocation FAQs"}),
           a.jsx("p",{className:"text-base sm:text-lg font-body text-slate-600 max-w-2xl mx-auto",children:"Planning to move your pet between Dubai and Canada? Here are answers to commonly asked questions."})
         ]}),
@@ -831,7 +831,7 @@ function renderDubaiToCanada(){
     // 10. FINAL CTA
     a.jsx("section",{className:"py-20 sm:py-24 bg-gradient-to-r from-navy-dark via-navy to-navy-light text-white text-center",children:
       (0,a.jsxs)("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"READY TO PLAN YOUR PET'S MOVE?"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Ready to plan your pet's move?"}),
         a.jsx("h2",{className:"text-3xl sm:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"Let's Figure Out the Journey Together."}),
         (0,a.jsxs)("div",{className:"space-y-2 max-w-2xl mx-auto font-body text-base sm:text-xl text-slate-200 leading-relaxed",children:[
           a.jsx("p",{children:"Tell us where your pet is travelling from, where they're going and roughly when you want to travel."}),
@@ -865,7 +865,7 @@ function renderDefault(t){
       (0,a.jsxs)("div",{className:"relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gpc-intl-hero-grid",children:[(0,a.jsxs)("div",{className:"gpc-intl-hero-copy space-y-6",children:[
         (0,a.jsxs)("div",{className:"inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold font-heading uppercase tracking-widest bg-teal-bright/20 text-teal-light border border-teal-bright/30",children:[
           a.jsx(Svg,{p:"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z",cls:"w-3.5 h-3.5"}),
-          t.route||"INTERNATIONAL PET RELOCATION"
+          t.route||"International pet relocation"
         ]}),
         a.jsx("h1",{className:"text-3xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight text-white max-w-4xl mx-auto leading-[1.15]",children:t.title}),
         (0,a.jsxs)("div",{className:"max-w-3xl mx-auto space-y-3",children:[
@@ -896,7 +896,7 @@ function renderDefault(t){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"HOW WE HELP"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"How we help"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"What We Help You Plan, Prepare and Coordinate"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"An international move is not just a flight booking. It is a multi-stage process with veterinary, documentation and travel requirements that depend on where your pet is going."})
         ]}),
@@ -912,7 +912,7 @@ function renderDefault(t){
     a.jsx("section",{className:"py-20 sm:py-24 bg-slate-50 border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-5xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-14 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"ROUTE-FIRST APPROACH"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"Route-first approach"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Every Route Has Its Own Rules"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"The requirements for international pet travel depend heavily on the country your pet is leaving and the country they are entering. Some destinations require blood tests months in advance, while others have strict quarantine or entry document rules."})
         ]}),
@@ -945,7 +945,7 @@ function renderDefault(t){
     a.jsx("section",{id:"route-overview",className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"ROUTE OVERVIEW"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Route overview"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Your Pet's Journey "+(gpcImport?"from ":"to ")+gpcForeign}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"These are the typical requirements for this route. We confirm the exact list for your pet, airline and travel date before anything is booked."})
         ]}),
@@ -984,7 +984,7 @@ function renderDefault(t){
     a.jsx("section",{className:"py-20 sm:py-24 bg-slate-50 border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"HOW IT WORKS"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"How it works"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"How We Move Your Pet Safely Across Borders"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"A clear, structured process so you always know what has been done and what happens next."})
         ]}),
@@ -1004,7 +1004,7 @@ function renderDefault(t){
         a.jsx("div",{className:"absolute inset-0",style:{background:"linear-gradient(rgba(7, 23, 40, 0.90), rgba(10, 37, 64, 0.88), rgba(7, 23, 40, 0.95))"}})
       ]}),
       (0,a.jsxs)("div",{className:"relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"LOCAL MOBILITY SUPPORT"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Local mobility support"}),
         a.jsx("h2",{className:"text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"Need Help Getting Your Pet Ready in Dubai?"}),
         (0,a.jsxs)("div",{className:"space-y-4 max-w-3xl mx-auto",children:[
           a.jsx("p",{className:"text-base sm:text-lg text-slate-200 leading-relaxed font-body",children:"Sometimes the international journey starts days or weeks before the airport. If you are not available, selected local pet transportation services can help your pet get to grooming or health-related appointments before travel, subject to the service arrangement."}),
@@ -1023,7 +1023,7 @@ function renderDefault(t){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-14 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"DUBAI ↔ WORLDWIDE"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Dubai ↔ worldwide"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"From Dubai to the World, and Back Again"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"Whether you are moving home, relocating for work, returning to your home country or bringing your pet to join you in Dubai, the journey starts with understanding your route."}),
           a.jsx("p",{className:"text-sm font-bold text-navy pt-2",children:"Explore our destination guides for route-specific information and requirements:"})
@@ -1039,7 +1039,7 @@ function renderDefault(t){
     a.jsx("section",{className:"py-20 sm:py-24 bg-slate-50 border-b border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center max-w-3xl mx-auto mb-16 space-y-4",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"WHY PET PARENTS CHOOSE US"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-white px-4 py-2 rounded-full border border-teal-border shadow-2xs",children:"Why pet parents choose us"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"Professional Support, With Your Pet at the Centre"}),
           a.jsx("p",{className:"text-base sm:text-lg text-slate-600 leading-relaxed font-body",children:"There is a lot to think about when your pet is crossing borders. We want the process to feel clear, organised and personal — not like you are trying to piece together a complicated journey on your own."})
         ]}),
@@ -1055,7 +1055,7 @@ function renderDefault(t){
     a.jsx("section",{className:"py-20 sm:py-24 bg-white border-t border-teal-border/40",children:
       (0,a.jsxs)("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,a.jsxs)("div",{className:"text-center mb-14 space-y-3",children:[
-          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"QUESTIONS PET PARENTS ASK"}),
+          a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-deep uppercase tracking-widest bg-teal-soft px-4 py-2 rounded-full border border-teal-border",children:"Questions pet parents ask"}),
           a.jsx("h2",{className:"text-3xl sm:text-4xl font-black font-heading text-navy tracking-tight",children:"International Pet Relocation Questions, Answered"}),
           a.jsx("p",{className:"text-base sm:text-lg font-body text-slate-600 max-w-2xl mx-auto",children:"Every international move has its own requirements. These answers give you a starting point before you request a route-specific quote."})
         ]}),
@@ -1072,7 +1072,7 @@ function renderDefault(t){
     // 10. FINAL CTA
     a.jsx("section",{className:"py-20 sm:py-24 bg-gradient-to-r from-navy-dark via-navy to-navy-light text-white text-center",children:
       (0,a.jsxs)("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6",children:[
-        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"PLANNING A MOVE?"}),
+        a.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"Planning a move?"}),
         a.jsx("h2",{className:"text-3xl sm:text-5xl font-black font-heading tracking-tight max-w-2xl mx-auto leading-tight",children:"Your Pet's Next Journey Starts With a Conversation"}),
         a.jsx("p",{className:"text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-body leading-relaxed",children:"Tell us where your pet is coming from, where they are going and when you hope to travel. We'll help you understand the journey ahead and the next steps to get started."}),
         (0,a.jsxs)("div",{className:"flex flex-col sm:flex-row items-center justify-center gap-4 pt-4",children:[

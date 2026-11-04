@@ -16,7 +16,7 @@ const HOME_SERVER = path.join(ROOT, 'server', 'app', 'page.js');
 const Q_SERVER = path.join(ROOT, 'server', 'app', 'get-a-quote', 'page.js');
 const Q_MANIFEST = path.join(ROOT, 'server', 'app', 'get-a-quote', 'page_client-reference-manifest.js');
 const Q_CLIENT_DIR = path.join(ROOT, 'static', 'chunks', 'app', 'get-a-quote');
-const VERSION = 'gpcQuoteV2';
+const VERSION = 'gpcQuoteV3';
 const changed = [];
 
 const must = (s, from, to, label) => {
@@ -35,8 +35,7 @@ function homeModule(file, startMark, endMark) {
 function adapt(text, newId, startHead) {
   let t = text;
   t = t.replace(/^\d+/, String(newId));
-  t = must(t, 'let gpcV="gpcPickerV3"', `let gpcV="${VERSION}"`, 'version');
-  t = must(t, 'function c(){let[t,a]=(0,i.useState)("taxi"),[u,d]=(0,i.useState)(1),', 'function c(P){let gS=P&&P.initialService?String(P.initialService):"",[t,a]=(0,i.useState)(/international|relocation|export|import|from|to/.test(gS)?"from":"taxi"),[u,d]=(0,i.useState)(gS?2:1),', 'component head');
+  t = must(t, 'let gpcV="gpcPickerV4"', `let gpcV="${VERSION}"`, 'version');
   t = must(t, 'className:"pt-32 sm:pt-36 lg:pt-40 pb-20 bg-white gpc-home-picker"', 'className:"gpc-home-picker gpc-quote-picker"', 'section class');
   return t;
 }
