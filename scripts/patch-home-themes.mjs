@@ -102,8 +102,11 @@ function splitDecls(body) {
   if (cur.trim()) parts.push(cur);
   return parts;
 }
+// Only declarations that carry a colour are copied. Copying a whole rule would also re-apply its layout properties
+// (aspect-ratio, height, display ...) at a later position / higher specificity and break the responsive overrides.
+const HAS_COLOR = /#[0-9a-fA-F]{3,8}\b|\b(?:rgba?|hsla?)\(/;
 function recolorBody(body, T) {
-  if (!T.dark) return recolor(body, T);
+  if (!T.dark) return splitDecls(body).filter((d) => HAS_COLOR.test(d)).map((d) => recolor(d, T)).join(';');
   return splitDecls(body).map((decl) => {
     const i = decl.indexOf(':');
     if (i < 0) return decl;
@@ -187,7 +190,7 @@ function emit(nodes, key, T) {
   for (const nd of nodes) {
     if (nd.type === 'rule') {
       const rec = recolorBody(nd.body, T);
-      if (rec === nd.body) continue;
+      if (!rec.trim()) continue;
       const sel = scope(nd.selector, key);
       if (sel) out += `${sel}{${rec}}\n`;
     } else if (nd.type === 'group') {
@@ -216,6 +219,8 @@ for (const f of fs.readdirSync(cssDir).filter((x) => x.endsWith('.css'))) {
     const sc = 'body';
     block += `${sc} .gpc-hb-shade{background:linear-gradient(90deg,rgba(${nr},${ng},${nb},.94) 0%,rgba(${nr},${ng},${nb},.8) 34%,rgba(${nr},${ng},${nb},.35) 56%,rgba(${nr},${ng},${nb},0) 74%)}\n`;
     block += `@media (max-width:767px){${sc} .gpc-hb-slide{background:rgb(${nr},${ng},${nb})}}\n`;
+    // tablets: the text column is wider than on desktop, so the shade has to reach further across the photo
+    block += `@media (min-width:768px) and (max-width:1023px){${sc} .gpc-hb-shade{background:linear-gradient(90deg,rgba(${nr},${ng},${nb},.94) 0%,rgba(${nr},${ng},${nb},.82) 48%,rgba(${nr},${ng},${nb},.3) 80%,rgba(${nr},${ng},${nb},0) 100%)}}\n`;
     // dark option: the logo image has dark lettering, so it sits on a white chip (like the footer); page base colours
     if (T.dark) block += `${sc} header img[alt*="Global"],${sc} header a[href="/"] img{background:#fff;border-radius:.8rem;padding:.2rem .55rem}\n${sc}{background:#0b1626;color:#e2e8f0}\n`;
   }

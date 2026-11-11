@@ -83,6 +83,8 @@ const CSS = [
   `${R} tbody tr{cursor:pointer}${R} tbody tr:hover{background:#f1f7fa}${R} tbody tr.on{background:#eaf7fb;box-shadow:inset 3px 0 0 #0e7396}`,
   `${R} .gc-inc ul{margin:0;padding:0;list-style:none;display:grid;gap:.6rem}@media (min-width:640px){${R} .gc-inc ul{grid-template-columns:1fr 1fr}}`,
   `${R} .gc-inc li{position:relative;padding-left:1.6rem;color:#334155;line-height:1.5}${R} .gc-inc li:before{content:"✓";position:absolute;left:0;color:#0e7396;font-weight:900}`,
+  // phones: the comparison table keeps only Route and Total (no sideways scrolling)
+  `@media (max-width:639px){${R} table{min-width:0}${R} th:nth-child(n+2):not(:last-child),${R} td:nth-child(n+2):not(:last-child){display:none}${R} td,${R} th{padding:.7rem .45rem}}`,
   // the sticky estimate card stays first on phones so the total is always visible
   `@media (max-width:959px){${R} .gb-side .gb-q-l,${R} .gb-side .gb-q-n{display:block}${R} .gb-side{order:2}}`,
   CSS_END,
