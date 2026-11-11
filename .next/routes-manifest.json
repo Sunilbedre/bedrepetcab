@@ -149,6 +149,12 @@
       "regex": "^/book\\-pet\\-relocation\\-to\\-dubai(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/book\\-pet\\-relocation\\-to\\-dubai(?:/)?$"
+    },
+    {
+      "page": "/pet-import-cost-uae",
+      "regex": "^/pet\\-import\\-cost\\-uae(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pet\\-import\\-cost\\-uae(?:/)?$"
     }
   ],
   "dataRoutes": [],

@@ -47,11 +47,7 @@ const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
  * cta   = the orange call-to-action colours                  -> hue ch, saturation x cs, lightness x cl
  */
 const THEMES = {
-  a: { name: 'Fresh teal', nh: 209, ns: 0.72, nl: 1.12, th: 181, ts: 0.9, tl: 1.14, ch: 30, cs: 1, cl: 1.1 },
   b: { name: 'Navy & gold', nh: 220, ns: 0.78, nl: 0.95, th: 40, ts: 0.82, tl: 1.32, ch: 36, cs: 0.8, cl: 0.9 },
-  d: { name: 'Dark', dark: true, nh: 210, ns: 0.85, nl: 0.9, th: 190, ts: 1, tl: 1.08, ch: 21, cs: 1, cl: 1.05 },
-  e: { name: 'Ivory, teal & gold', warm: true, lh: 40, ls: 0.3, nh: 180, ns: 0.62, nl: 1.3, th: 176, ts: 0.55, tl: 1.0, ch: 42, cs: 0.68, cl: 1.1 },
-  c: { name: 'Forest & orange', nh: 158, ns: 0.7, nl: 1.0, th: 158, ts: 0.78, tl: 1.1, ch: 20, cs: 1, cl: 1.12 },
 };
 
 function remap(r, g, b, T) {
@@ -173,7 +169,7 @@ function splitSelectors(sel) {
 }
 
 function scope(selector, key) {
-  const SC = `body[data-gpc-theme="${key}"]:has(.gpc-hb)`;
+  const SC = 'body';
   const res = [];
   for (const sel of splitSelectors(selector)) {
     // the preflight reset (*, ::before, ::after) must keep its original, low specificity
@@ -217,7 +213,7 @@ for (const f of fs.readdirSync(cssDir).filter((x) => x.endsWith('.css'))) {
     block += `/*theme ${key}: ${T.name}*/\n` + emit(nodes, key, T);
     // the banner photos have a blue wash baked in on the left: cover it with this theme's navy
     const [nr, ng, nb] = T.dark ? [8, 18, 33] : remap(5, 45, 73, T);
-    const sc = `body[data-gpc-theme="${key}"]:has(.gpc-hb)`;
+    const sc = 'body';
     block += `${sc} .gpc-hb-shade{background:linear-gradient(90deg,rgba(${nr},${ng},${nb},.94) 0%,rgba(${nr},${ng},${nb},.8) 34%,rgba(${nr},${ng},${nb},.35) 56%,rgba(${nr},${ng},${nb},0) 74%)}\n`;
     block += `@media (max-width:767px){${sc} .gpc-hb-slide{background:rgb(${nr},${ng},${nb})}}\n`;
     // dark option: the logo image has dark lettering, so it sits on a white chip (like the footer); page base colours

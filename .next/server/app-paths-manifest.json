@@ -27,5 +27,6 @@
   "/book-pet-taxi/page": "app/book-pet-taxi/page.js",
   "/api/taxi/quote/route": "app/api/taxi/quote/route.js",
   "/book-pet-relocation-from-dubai/page": "app/book-pet-relocation-from-dubai/page.js",
-  "/book-pet-relocation-to-dubai/page": "app/book-pet-relocation-to-dubai/page.js"
+  "/book-pet-relocation-to-dubai/page": "app/book-pet-relocation-to-dubai/page.js",
+  "/pet-import-cost-uae/page": "app/pet-import-cost-uae/page.js"
 }

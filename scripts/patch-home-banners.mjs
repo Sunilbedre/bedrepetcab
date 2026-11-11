@@ -74,7 +74,7 @@ function heroExpr(node, bar) {
   // colour options for the client (scripts/patch-home-themes.mjs): the inline script sets the chosen theme before the page paints
   const EARLY = "try{var t=new URLSearchParams(location.search).get('theme')||localStorage.getItem('gpcTheme');if(/^(a|b|c|d|e)$/.test(t||''))document.body.setAttribute('data-gpc-theme',t)}catch(e){}";
   const early = node('script', { dangerouslySetInnerHTML: { __raw: '{__html:' + JSON.stringify(EARLY) + '}' } });
-  return node('section', { className: 'gpc-hb font-body' }, [early, stage, bar, node('script', { src: SCRIPT_SRC, defer: true }), node('script', { src: '/gpc-home-themes.js?v=1', defer: true })]);
+  return node('section', { className: 'gpc-hb font-body' }, [stage, bar, node('script', { src: SCRIPT_SRC, defer: true })]);
 }
 
 /* ---- locate the hero function's returned expression ---- */
