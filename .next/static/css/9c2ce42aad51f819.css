@@ -890,6 +890,17 @@ html body:not(#gpc-t):not(#gpc-u) main{overflow-x:clip}
 html body:not(#gpc-t):not(#gpc-u) main .text-\[11px\]{font-size:.75rem!important}
 @media (max-width:767px){html body:not(#gpc-t):not(#gpc-u) main button.h-7{min-height:2.25rem;height:auto}html body:not(#gpc-t):not(#gpc-u) main .gtr-all{padding:.7rem 0}}
 /*end-gpc-responsive*/
+
+
+
+
+
+/*gpc-cta-image*/
+img[src*="cta-dog"]{object-position:80% 50%!important}
+@media (min-width:768px){img[src*="cta-dog"]{object-position:center 40%!important}}
+img[src*="cta-dog"]~.bg-navy\/78{background-color:rgba(5,45,73,.5)!important}
+img[src*="cta-dog"]~.bg-gradient-to-t{opacity:.75}
+/*end-gpc-cta-image*/
 /*gpc-home-themes*/
 /*theme b: Navy & gold*/
 body input::-moz-placeholder,body textarea::-moz-placeholder{color:#9ca3af}
@@ -1400,6 +1411,7 @@ body .gpc-cost-page tbody tr:hover{background:#faf7f1}
 body .gpc-cost-page tbody tr.on{background:#f9f5ec;box-shadow:inset 3px 0 0 #b68523}
 body .gpc-cost-page .gc-inc li{color:#334155}
 body .gpc-cost-page .gc-inc li:before{color:#b68523}
+body img[src*="cta-dog"]~.bg-navy\/78{background-color:rgba(12,29,62,.5)!important}
 body .gpc-hb-shade{background:linear-gradient(90deg,rgba(12,29,62,.94) 0%,rgba(12,29,62,.8) 34%,rgba(12,29,62,.35) 56%,rgba(12,29,62,0) 74%)}
 @media (max-width:767px){body .gpc-hb-slide{background:rgb(12,29,62)}}
 @media (min-width:768px) and (max-width:1023px){body .gpc-hb-shade{background:linear-gradient(90deg,rgba(12,29,62,.94) 0%,rgba(12,29,62,.82) 48%,rgba(12,29,62,.3) 80%,rgba(12,29,62,0) 100%)}}
