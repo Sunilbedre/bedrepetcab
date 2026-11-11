@@ -865,6 +865,17 @@ html body :not(svg):not(path){text-transform:none!important}
 .gpc-cost-page .gc-inc li{position:relative;padding-left:1.6rem;color:#334155;line-height:1.5}.gpc-cost-page .gc-inc li:before{content:"✓";position:absolute;left:0;color:#0e7396;font-weight:900}
 @media (max-width:959px){.gpc-cost-page .gb-side .gb-q-l,.gpc-cost-page .gb-side .gb-q-n{display:block}.gpc-cost-page .gb-side{order:2}}
 /*end-gpc-cost*/
+
+/*gpc-responsive*/
+html body:not(#gpc-t):not(#gpc-u) main h1:not(.gpc-hb-title){font-size:1.75rem!important;line-height:1.15!important}
+@media (min-width:768px){html body:not(#gpc-t):not(#gpc-u) main h1:not(.gpc-hb-title){font-size:2.5rem!important}}
+@media (min-width:1024px){html body:not(#gpc-t):not(#gpc-u) main h1:not(.gpc-hb-title){font-size:2.75rem!important}}
+@media (min-width:640px){html body:not(#gpc-t):not(#gpc-u) main .gpc-hb-title{font-size:2.125rem!important}}
+@media (min-width:1024px){html body:not(#gpc-t):not(#gpc-u) main .gpc-hb-title{font-size:2.5rem!important}}
+html body:not(#gpc-t):not(#gpc-u) main .faq-subtitle-single-line{white-space:normal!important}
+@media (min-width:1280px){html body:not(#gpc-t):not(#gpc-u) main .faq-subtitle-single-line{white-space:nowrap!important}}
+html body:not(#gpc-t):not(#gpc-u) main .gpc-pc{width:100%;max-width:100%;min-width:0}
+/*end-gpc-responsive*/
 /*gpc-home-themes*/
 /*theme b: Navy & gold*/
 body{background-color:#fbfbfa;color:#0c1d3e}
