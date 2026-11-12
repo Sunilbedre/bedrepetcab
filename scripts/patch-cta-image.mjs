@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
  * "Moving Your Pet? Let Global Pet Cab Handle the Journey." banner: background photo -> /banners/cta-dog.webp (Shih Tzu at the airport).
  * Only that banner (the section with img "object-cover object-center" + the 78% navy overlay) is changed; the same stock photo is still used by
  * other sections (why-us hero, how-it-works / international hero css) on purpose. Patches the compiled pages (js), the prerendered html and rsc.
+ * Also restyles the international pages' "Planning a move?" banner (css background, public/banners/cta-airport.webp).
  * Also keeps the dog in view on phones (photo is cropped from the right) and lightens the dark overlay so the photo shows. Idempotent.
  */
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '.next');
@@ -43,6 +44,8 @@ const CSS = [
   `@media (min-width:768px){${IMG}{object-position:center 40%!important}}`,
   `${IMG}~.bg-navy\\/78{background-color:rgba(5,45,73,.5)!important}`,
   `${IMG}~.bg-gradient-to-t{opacity:.75}`,
+  // "Planning a move? Your Pet's Next Journey Starts With a Conversation" (international pages): airport photo, lighter navy overlay
+  'html body:not(#gpc-t):not(#gpc-u) .gpc-intl-page>section.text-center.text-white{background-image:linear-gradient(90deg,rgba(3,31,51,.86) 0%,rgba(5,45,73,.74) 55%,rgba(5,45,73,.62) 100%),url("/_next/image?url=%2Fbanners%2Fcta-airport.webp&w=1920&q=75")!important;background-position:center 40%!important}',
   CSS_END,
 ].join('\n');
 const cssDir = path.join(ROOT, 'static', 'css');
