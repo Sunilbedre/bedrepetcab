@@ -22,4 +22,13 @@ for (const f of walk(ROOT)) {
   else if (t.includes(CHUNK_FROM)) u = t.replace(CHUNK_FROM, CHUNK_TO);
   if (u !== t) { fs.writeFileSync(f, u); n++; }
 }
+/* browser layout chunk: the footer is rendered there too and must match the server html */
+const CLIENT_DIR = path.join(ROOT, '..', 'static', 'chunks', 'app');
+const C_FROM = 'children:"Relocation Overview"})}),';
+const C_TO = C_FROM + '(0,a.jsx)("li",{children:(0,a.jsx)(n(),{href:"/pet-import-cost-uae",className:"hover:text-white transition-colors leading-snug",children:"' + LABEL + '"})}),';
+for (const nm of fs.readdirSync(CLIENT_DIR).filter((x) => /^layout-.*\.js$/.test(x))) {
+  const fp = path.join(CLIENT_DIR, nm);
+  const t = fs.readFileSync(fp, 'utf8');
+  if (t.includes(C_FROM) && !t.includes('children:"' + LABEL + '"})}),')) { fs.writeFileSync(fp, t.replace(C_FROM, C_TO)); n++; }
+}
 console.log('footer import-cost link: patched ' + n + ' files');
