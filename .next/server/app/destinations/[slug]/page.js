@@ -199,7 +199,7 @@ function renderDubaiToUk(){
     // 1. HERO SECTION (gpcDestV2)
     (0,a.jsxs)("section",{className:"relative overflow-hidden bg-navy text-white pt-16 sm:pt-24 pb-20 sm:pb-28 gpc-intl-hero",children:[
       (0,a.jsxs)("div",{className:"absolute inset-0","aria-hidden":"true",children:[
-        a.jsx("img",{src:"https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=2000&q=80",alt:"",className:"w-full h-full object-cover object-center"}),
+        a.jsx("img",{src:"/banners/uk-hero.webp",alt:"A golden retriever and a cat with the Dubai skyline on one side and London on the other",className:"w-full h-full object-cover object-center"}),
         a.jsx("div",{className:"absolute inset-0 bg-navy/75"}),
         a.jsx("div",{className:"absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy/80 to-navy/55"})
       ]}),
@@ -271,7 +271,7 @@ function renderDubaiToUk(){
     // 4. HUMAN SUPPORT SECTION
     (0,a.jsxs)("section",{className:"relative py-20 sm:py-24 overflow-hidden text-white",children:[
       (0,a.jsxs)("div",{className:"absolute inset-0","aria-hidden":"true",children:[
-        a.jsx("img",{src:"https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=2000&q=80",alt:"Pet Care Support",className:"w-full h-full object-cover object-center"}),
+        a.jsx("img",{src:"/banners/uk-support.webp",alt:"A pet parent with her dog and cat, holding a passport next to an international pet travel checklist",className:"w-full h-full object-cover object-center"}),
         a.jsx("div",{className:"absolute inset-0 bg-navy opacity-90"}),
         a.jsx("div",{className:"absolute inset-0",style:{background:"linear-gradient(rgba(7, 23, 40, 0.90), rgba(10, 37, 64, 0.88), rgba(7, 23, 40, 0.95))"}})
       ]}),
