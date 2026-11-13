@@ -1068,6 +1068,11 @@ img[src*="why-hero"]{object-position:50% 40%!important}
 /*gpc-mobile-bar*/
 .gpc-mb-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:.4rem}.gpc-mb-grid>a{white-space:nowrap;min-width:0}
 /*end-gpc-mobile-bar*/
+
+/*gpc-header-fit*/
+@media (min-width:1024px){header nav>*,header nav>*>button,header .hidden.lg\:flex>*{white-space:nowrap}}
+@media (min-width:1024px) and (max-width:1279px){header nav>a,header nav>div>button{padding-left:.5rem;padding-right:.5rem;font-size:.85rem}header .hidden.lg\:flex>a[href^="https://wa.me"]{display:none}}
+/*end-gpc-header-fit*/
 /*gpc-home-themes*/
 /*theme b: Navy & gold*/
 body input::-moz-placeholder,body textarea::-moz-placeholder{color:#9ca3af}
