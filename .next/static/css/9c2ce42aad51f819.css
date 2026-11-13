@@ -957,6 +957,16 @@ img[src*="hiw-hero"]{object-position:50% 40%!important}
 img[src*="hiw-taxi"]{object-position:50% 45%!important}
 html body:not(#gpc-t):not(#gpc-u):has(#dubai-taxi-steps) main section.py-20.bg-navy{background-image:linear-gradient(180deg,rgba(5,45,73,.84) 0%,rgba(5,45,73,.74) 55%,rgba(3,31,51,.92) 100%),url("/_next/image?url=%2Fbanners%2Fhiw-intl.webp&w=1920&q=75")!important;background-position:center 40%!important}
 /*end-gpc-hiw-images*/
+
+/*gpc-fd-images*/
+img[src*="fd-hero"]~.bg-navy\/75{background-color:rgba(5,45,73,.3)!important}
+img[src*="fd-hero"]~.bg-gradient-to-r{opacity:.7}
+img[src*="fd-hero"]{object-position:60% 50%!important}
+img[src*="fd-help"]~.bg-navy\/80{background-color:rgba(5,45,73,.45)!important}
+img[src*="fd-help"]~.bg-gradient-to-r{opacity:.75}
+img[src*="fd-help"]{object-position:50% 40%!important}
+html body:not(#gpc-t):not(#gpc-u) .gpc-intl-page>section.gpc-fd-team{background-image:linear-gradient(180deg,rgba(5,45,73,.84) 0%,rgba(5,45,73,.74) 55%,rgba(3,31,51,.92) 100%),url("/_next/image?url=%2Fbanners%2Ffd-team.webp&w=1920&q=75")!important;background-size:cover!important;background-position:center 40%!important}
+/*end-gpc-fd-images*/
 /*gpc-home-themes*/
 /*theme b: Navy & gold*/
 body input::-moz-placeholder,body textarea::-moz-placeholder{color:#9ca3af}
@@ -1477,6 +1487,9 @@ body img[src*="usa-hero"]~.bg-navy\/75{background-color:rgba(12,29,62,.3)!import
 body img[src*="uk-hero"]~.bg-navy\/75{background-color:rgba(12,29,62,.3)!important}
 body img[src*="hiw-hero"]~.bg-navy\/70{background-color:rgba(12,29,62,.3)!important}
 html body:not(#gpc-t):not(#gpc-u):has(#dubai-taxi-steps) main section.py-20.bg-navy{background-image:linear-gradient(180deg,rgba(12,29,62,.84) 0%,rgba(12,29,62,.74) 55%,rgba(8,20,43,.92) 100%),url("/_next/image?url=%2Fbanners%2Fhiw-intl.webp&w=1920&q=75")!important}
+body img[src*="fd-hero"]~.bg-navy\/75{background-color:rgba(12,29,62,.3)!important}
+body img[src*="fd-help"]~.bg-navy\/80{background-color:rgba(12,29,62,.45)!important}
+html body:not(#gpc-t):not(#gpc-u) .gpc-intl-page>section.gpc-fd-team{background-image:linear-gradient(180deg,rgba(12,29,62,.84) 0%,rgba(12,29,62,.74) 55%,rgba(8,20,43,.92) 100%),url("/_next/image?url=%2Fbanners%2Ffd-team.webp&w=1920&q=75")!important}
 body .gpc-hb-shade{background:linear-gradient(90deg,rgba(12,29,62,.94) 0%,rgba(12,29,62,.8) 34%,rgba(12,29,62,.35) 56%,rgba(12,29,62,0) 74%)}
 @media (max-width:767px){body .gpc-hb-slide{background:rgb(12,29,62)}}
 @media (min-width:768px) and (max-width:1023px){body .gpc-hb-shade{background:linear-gradient(90deg,rgba(12,29,62,.94) 0%,rgba(12,29,62,.82) 48%,rgba(12,29,62,.3) 80%,rgba(12,29,62,0) 100%)}}
