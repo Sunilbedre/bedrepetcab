@@ -942,6 +942,13 @@ img[src*="uk-hero"]{object-position:50% 40%!important}
 img[src*="uk-support"]~.bg-navy{opacity:.3!important}
 img[src*="uk-support"]~div:not(.bg-navy){opacity:.45}
 /*end-gpc-uk-images*/
+
+
+
+/*gpc-resources-image*/
+img[src*="resources-hero"]~div{opacity:.85}
+img[src*="resources-hero"]{object-position:50% 40%!important}
+/*end-gpc-resources-image*/
 /*gpc-home-themes*/
 /*theme b: Navy & gold*/
 body input::-moz-placeholder,body textarea::-moz-placeholder{color:#9ca3af}
