@@ -926,6 +926,14 @@ img[src*="canada-hero"]~.bg-gradient-to-r{opacity:.7}
 img[src*="canada-route"]~.bg-navy,img[src*="canada-ready"]~.bg-navy{opacity:.3!important}
 img[src*="canada-route"]~div:not(.bg-navy),img[src*="canada-ready"]~div:not(.bg-navy){opacity:.45}
 /*end-gpc-canada-images*/
+
+/*gpc-usa-images*/
+img[src*="usa-hero"]~.bg-navy\/75{background-color:rgba(5,45,73,.3)!important}
+img[src*="usa-hero"]~.bg-gradient-to-r{opacity:.7}
+img[src*="usa-hero"]{object-position:50% 40%!important}
+img[src*="usa-support"]~.bg-navy{opacity:.3!important}
+img[src*="usa-support"]~div:not(.bg-navy){opacity:.45}
+/*end-gpc-usa-images*/
 /*gpc-home-themes*/
 /*theme b: Navy & gold*/
 body input::-moz-placeholder,body textarea::-moz-placeholder{color:#9ca3af}
@@ -1442,6 +1450,7 @@ body img[src*="taxi-hero"]~.bg-navy\/72{background-color:rgba(12,29,62,.38)!impo
 body img[src*="taxi-cta"]~.bg-navy\/78{background-color:rgba(12,29,62,.7)!important}
 html body:not(#gpc-t):not(#gpc-u):has(h1.pet-taxi-hero-h1) main section:has(.how-it-works-single-line){background-image:linear-gradient(180deg,rgba(12,29,62,.84) 0%,rgba(12,29,62,.74) 55%,rgba(8,20,43,.92) 100%),url("/_next/image?url=%2Fbanners%2Ftaxi-steps.webp&w=1920&q=75")!important}
 body img[src*="canada-hero"]~.bg-navy\/75{background-color:rgba(12,29,62,.3)!important}
+body img[src*="usa-hero"]~.bg-navy\/75{background-color:rgba(12,29,62,.3)!important}
 body .gpc-hb-shade{background:linear-gradient(90deg,rgba(12,29,62,.94) 0%,rgba(12,29,62,.8) 34%,rgba(12,29,62,.35) 56%,rgba(12,29,62,0) 74%)}
 @media (max-width:767px){body .gpc-hb-slide{background:rgb(12,29,62)}}
 @media (min-width:768px) and (max-width:1023px){body .gpc-hb-shade{background:linear-gradient(90deg,rgba(12,29,62,.94) 0%,rgba(12,29,62,.82) 48%,rgba(12,29,62,.3) 80%,rgba(12,29,62,0) 100%)}}
