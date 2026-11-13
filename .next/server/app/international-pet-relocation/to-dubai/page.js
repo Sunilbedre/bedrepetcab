@@ -49,7 +49,7 @@ function l(){
     // 1. HERO SECTION
     (0,i.jsxs)("section",{className:"relative overflow-hidden bg-navy text-white pt-16 sm:pt-24 pb-20 sm:pb-28 gpc-intl-hero",children:[
       (0,i.jsxs)("div",{className:"absolute inset-0","aria-hidden":"true",children:[
-        i.jsx("img",{src:"https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=2000&q=80",alt:"",className:"w-full h-full object-cover object-center"}),
+        i.jsx("img",{src:"/banners/td-hero.webp",alt:"A golden retriever looking out of the plane window at the Palm Jumeirah and the Dubai skyline as it arrives",className:"w-full h-full object-cover object-center"}),
         i.jsx("div",{className:"absolute inset-0 bg-navy/75"}),
         i.jsx("div",{className:"absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy/80 to-navy/55"})
       ]}),
@@ -110,7 +110,7 @@ function l(){
     // 6. BANNER WITH BACKGROUND IMAGE: Need Help Before Your Pet Flies?
     (0,i.jsxs)("section",{className:"relative overflow-hidden text-white py-24 sm:py-28",children:[
       (0,i.jsxs)("div",{className:"absolute inset-0","aria-hidden":"true",children:[
-        i.jsx("img",{src:"https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=2000&q=80",alt:"",className:"w-full h-full object-cover object-center"}),
+        i.jsx("img",{src:"/banners/td-help.webp",alt:"A happy border collie next to a pre-flight pet checklist, passport and travel crate at the airport",className:"w-full h-full object-cover object-center"}),
         i.jsx("div",{className:"absolute inset-0 bg-navy/80"}),
         i.jsx("div",{className:"absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy/85 to-navy/60"})
       ]}),
@@ -164,7 +164,7 @@ function l(){
     }),
 
     // 5. PROCESS STEPS: HOW WE HELP MANAGE THE JOURNEY
-    i.jsx("section",{className:"py-20 sm:py-24 bg-navy text-white",children:
+    i.jsx("section",{className:"py-20 sm:py-24 bg-navy text-white gpc-td-team",children:
       (0,i.jsxs)("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[
         (0,i.jsxs)("div",{className:"max-w-3xl mb-14 space-y-4",children:[
           i.jsx("div",{className:"inline-flex items-center gap-2 text-xs sm:text-sm font-black font-heading text-teal-light uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full border border-white/15",children:"How it works"}),
