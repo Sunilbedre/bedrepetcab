@@ -832,6 +832,22 @@ div[class*="text-teal-deep"][class*="font-extrabold"][class*="text-xl"] svg{widt
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*gpc-home-banners*/
 .gpc-hb{position:relative;background:transparent;color:#fff}
 html body .gpc-hb>div.relative.z-30{transform:none!important;margin-top:-3rem!important;margin-left:auto!important;margin-right:auto!important;max-width:80rem;padding:0 1rem}
@@ -880,14 +896,14 @@ html body .gpc-hb+section#dubai-taxi-calculator.gpc-home-picker{padding-top:2.5r
 @keyframes gpc-hb-fade{0%,17%{opacity:1;visibility:visible}21%,97%{opacity:0;visibility:hidden}100%{opacity:1;visibility:visible}}
 @keyframes gpc-hb-dot{0%,19.5%{width:1.6rem;background:#fff}20%,100%{width:.6rem;background:rgba(255,255,255,.45)}}
 @media (max-width:767px){
-.gpc-hb-stage{aspect-ratio:auto;height:37.5rem;min-height:0}
-.gpc-hb-slide{display:flex;flex-direction:column;background:#052d49}
-.gpc-hb-img{position:relative;inset:auto;flex:none;height:13.5rem;object-position:80% 40%}
-.gpc-hb-shade{display:none}
-.gpc-hb-wrap{flex:1;align-items:flex-start}
-.gpc-hb-copy{padding:1.1rem 0 5rem;gap:.55rem}
-.gpc-hb-title{font-size:1.5rem}
-.gpc-hb-text{font-size:.92rem;line-height:1.5}
+.gpc-hb-stage{aspect-ratio:auto;height:44rem;min-height:0}
+.gpc-hb-slide{display:flex;flex-direction:column;background:#0b2a6e url(/banners/home-mobile.webp) center bottom/cover no-repeat}
+.gpc-hb-img{display:none}
+.gpc-hb-shade{display:block}
+.gpc-hb-wrap{flex:1;align-items:flex-start;position:relative;z-index:2}
+.gpc-hb-copy{padding:1.5rem 0 6rem;gap:.6rem}
+.gpc-hb-title{font-size:1.65rem}
+.gpc-hb-text{font-size:.95rem;line-height:1.5}
 .gpc-hb-ui{bottom:3.7rem}
 .gpc-hb-btns{gap:.55rem}
 .gpc-hb-btn{padding:.7rem 1.15rem;font-size:.88rem}
@@ -1504,7 +1520,7 @@ body .gpc-hb-arrow:hover{background:rgba(255,255,255,.34)}
 body .gpc-hb-stage[data-js] .gpc-hb-dot{background:rgba(255,255,255,.45)}
 body .gpc-hb-stage[data-js] .gpc-hb-dot.on{background:#ffffff}
 @media (max-width:767px){
-body .gpc-hb-slide{background:#0c1d3e}
+body .gpc-hb-slide{background:#152d5e url(/banners/home-mobile.webp) center bottom/cover no-repeat}
 }
 body img[src*="cta-dog"]~.bg-navy\/78{background-color:rgba(12,29,62,.5)!important}
 html body:not(#gpc-t):not(#gpc-u) .gpc-intl-page>section.text-center.text-white{background-image:linear-gradient(90deg,rgba(8,20,43,.86) 0%,rgba(12,29,62,.74) 55%,rgba(12,29,62,.62) 100%),url("/_next/image?url=%2Fbanners%2Fcta-airport.webp&w=1920&q=75")!important}
@@ -1531,6 +1547,6 @@ body .gpc-cost-page tbody tr.on{background:#f9f5ec;box-shadow:inset 3px 0 0 #b68
 body .gpc-cost-page .gc-inc li{color:#334155}
 body .gpc-cost-page .gc-inc li:before{color:#b68523}
 body .gpc-hb-shade{background:linear-gradient(90deg,rgba(12,29,62,.94) 0%,rgba(12,29,62,.8) 34%,rgba(12,29,62,.35) 56%,rgba(12,29,62,0) 74%)}
-@media (max-width:767px){body .gpc-hb-slide{background:rgb(12,29,62)}}
+@media (max-width:767px){body .gpc-hb-slide{background-color:rgb(12,29,62)}body .gpc-hb-shade{background:linear-gradient(180deg,rgba(12,29,62,.6) 0%,rgba(12,29,62,.28) 42%,rgba(12,29,62,0) 66%)}}
 @media (min-width:768px) and (max-width:1023px){body .gpc-hb-shade{background:linear-gradient(90deg,rgba(12,29,62,.94) 0%,rgba(12,29,62,.82) 48%,rgba(12,29,62,.3) 80%,rgba(12,29,62,0) 100%)}}
 /*end-gpc-home-themes*/

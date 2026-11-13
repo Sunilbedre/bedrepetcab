@@ -218,7 +218,7 @@ for (const f of fs.readdirSync(cssDir).filter((x) => x.endsWith('.css'))) {
     const [nr, ng, nb] = T.dark ? [8, 18, 33] : remap(5, 45, 73, T);
     const sc = 'body';
     block += `${sc} .gpc-hb-shade{background:linear-gradient(90deg,rgba(${nr},${ng},${nb},.94) 0%,rgba(${nr},${ng},${nb},.8) 34%,rgba(${nr},${ng},${nb},.35) 56%,rgba(${nr},${ng},${nb},0) 74%)}\n`;
-    block += `@media (max-width:767px){${sc} .gpc-hb-slide{background:rgb(${nr},${ng},${nb})}}\n`;
+    block += `@media (max-width:767px){${sc} .gpc-hb-slide{background-color:rgb(${nr},${ng},${nb})}${sc} .gpc-hb-shade{background:linear-gradient(180deg,rgba(${nr},${ng},${nb},.6) 0%,rgba(${nr},${ng},${nb},.28) 42%,rgba(${nr},${ng},${nb},0) 66%)}}\n`;
     // tablets: the text column is wider than on desktop, so the shade has to reach further across the photo
     block += `@media (min-width:768px) and (max-width:1023px){${sc} .gpc-hb-shade{background:linear-gradient(90deg,rgba(${nr},${ng},${nb},.94) 0%,rgba(${nr},${ng},${nb},.82) 48%,rgba(${nr},${ng},${nb},.3) 80%,rgba(${nr},${ng},${nb},0) 100%)}}\n`;
     // dark option: the logo image has dark lettering, so it sits on a white chip (like the footer); page base colours
