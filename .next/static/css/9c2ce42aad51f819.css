@@ -877,6 +877,22 @@ body:has(h1.pet-taxi-hero-h1) #dubai-taxi-calculator:not(:has(#gpc-taxi-rides)):
 body:has(h1.pet-taxi-hero-h1) #dubai-taxi-calculator:not(:has(#gpc-taxi-rides))::after{content:"";position:absolute;left:1.5rem;right:1.5rem;top:7.2rem;height:4.9rem;border-radius:1.1rem;background:#eef6f9;box-shadow:0 5.6rem 0 #eef6f9,0 11.2rem 0 #eef6f9}
 @media (min-width:1024px){body:has(h1.pet-taxi-hero-h1) div.font-body:has(#dubai-taxi-calculator) section:has(>#dubai-taxi-calculator){top:350px!important;transform:translateY(-50%)}}
 /*end-gpc-taxi-rides*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*gpc-home-banners*/
 .gpc-hb{position:relative;background:transparent;color:#fff}
 html body .gpc-hb>div.relative.z-30{transform:none!important;margin-top:-3rem!important;margin-left:auto!important;margin-right:auto!important;max-width:80rem;padding:0 1rem}
@@ -930,11 +946,11 @@ html body .gpc-hb+section#dubai-taxi-calculator.gpc-home-picker{padding-top:2.5r
 .gpc-hb-img{display:none}
 .gpc-hb-shade{display:block}
 .gpc-hb-wrap{flex:1;align-items:flex-start;position:relative;z-index:2}
-.gpc-hb-copy{padding:1.5rem 0 6rem;gap:.6rem}
+.gpc-hb-copy{padding:2.4rem 0 6rem;gap:.65rem;align-items:center;text-align:center;margin:0 auto}
 .gpc-hb-title{font-size:1.65rem}
 .gpc-hb-text{font-size:.95rem;line-height:1.5}
 .gpc-hb-ui{bottom:3.7rem}
-.gpc-hb-btns{gap:.55rem}
+.gpc-hb-btns{gap:.55rem;justify-content:center}
 .gpc-hb-btn{padding:.7rem 1.15rem;font-size:.88rem}
 }
 @media (prefers-reduced-motion:reduce){.gpc-hb-slide,.gpc-hb-dot{animation:none!important}.gpc-hb-slide:first-child{opacity:1;visibility:visible}}
