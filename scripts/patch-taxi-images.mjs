@@ -45,8 +45,8 @@ const CSS_END = '/*end-gpc-taxi-images*/';
 const CSS = [
   CSS_START,
   'img[src*="taxi-hero"]~.bg-navy\\/72{background-color:rgba(5,45,73,.38)!important}',
-  'img[src*="taxi-cta"]~.bg-navy\\/78{background-color:rgba(5,45,73,.5)!important}',
-  'img[src*="taxi-cta"]~.bg-gradient-to-t{opacity:.7}',
+  'img[src*="taxi-cta"]~.bg-navy\\/78{background-color:rgba(5,45,73,.7)!important}',
+  'img[src*="taxi-cta"]~.bg-gradient-to-t{opacity:1}',
   'img[src*="taxi-hero"]{object-position:60% 50%!important}',
   'html body:not(#gpc-t):not(#gpc-u):has(h1.pet-taxi-hero-h1) main section:has(.how-it-works-single-line){background-image:linear-gradient(180deg,rgba(5,45,73,.84) 0%,rgba(5,45,73,.74) 55%,rgba(3,31,51,.92) 100%),url("/_next/image?url=%2Fbanners%2Ftaxi-steps.webp&w=1920&q=75")!important;background-position:center 35%!important}',
   CSS_END,

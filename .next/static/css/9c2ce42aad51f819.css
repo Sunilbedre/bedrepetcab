@@ -907,10 +907,12 @@ html body:not(#gpc-t):not(#gpc-u) .gpc-intl-page>section.text-center.text-white{
 
 
 
+
+
 /*gpc-taxi-images*/
 img[src*="taxi-hero"]~.bg-navy\/72{background-color:rgba(5,45,73,.38)!important}
-img[src*="taxi-cta"]~.bg-navy\/78{background-color:rgba(5,45,73,.5)!important}
-img[src*="taxi-cta"]~.bg-gradient-to-t{opacity:.7}
+img[src*="taxi-cta"]~.bg-navy\/78{background-color:rgba(5,45,73,.7)!important}
+img[src*="taxi-cta"]~.bg-gradient-to-t{opacity:1}
 img[src*="taxi-hero"]{object-position:60% 50%!important}
 html body:not(#gpc-t):not(#gpc-u):has(h1.pet-taxi-hero-h1) main section:has(.how-it-works-single-line){background-image:linear-gradient(180deg,rgba(5,45,73,.84) 0%,rgba(5,45,73,.74) 55%,rgba(3,31,51,.92) 100%),url("/_next/image?url=%2Fbanners%2Ftaxi-steps.webp&w=1920&q=75")!important;background-position:center 35%!important}
 /*end-gpc-taxi-images*/
@@ -1427,7 +1429,7 @@ body .gpc-cost-page .gc-inc li:before{color:#b68523}
 body img[src*="cta-dog"]~.bg-navy\/78{background-color:rgba(12,29,62,.5)!important}
 html body:not(#gpc-t):not(#gpc-u) .gpc-intl-page>section.text-center.text-white{background-image:linear-gradient(90deg,rgba(8,20,43,.86) 0%,rgba(12,29,62,.74) 55%,rgba(12,29,62,.62) 100%),url("/_next/image?url=%2Fbanners%2Fcta-airport.webp&w=1920&q=75")!important}
 body img[src*="taxi-hero"]~.bg-navy\/72{background-color:rgba(12,29,62,.38)!important}
-body img[src*="taxi-cta"]~.bg-navy\/78{background-color:rgba(12,29,62,.5)!important}
+body img[src*="taxi-cta"]~.bg-navy\/78{background-color:rgba(12,29,62,.7)!important}
 html body:not(#gpc-t):not(#gpc-u):has(h1.pet-taxi-hero-h1) main section:has(.how-it-works-single-line){background-image:linear-gradient(180deg,rgba(12,29,62,.84) 0%,rgba(12,29,62,.74) 55%,rgba(8,20,43,.92) 100%),url("/_next/image?url=%2Fbanners%2Ftaxi-steps.webp&w=1920&q=75")!important}
 body .gpc-hb-shade{background:linear-gradient(90deg,rgba(12,29,62,.94) 0%,rgba(12,29,62,.8) 34%,rgba(12,29,62,.35) 56%,rgba(12,29,62,0) 74%)}
 @media (max-width:767px){body .gpc-hb-slide{background:rgb(12,29,62)}}
