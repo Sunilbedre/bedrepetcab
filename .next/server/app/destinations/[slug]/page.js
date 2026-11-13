@@ -570,7 +570,7 @@ function renderDubaiToCanada(){
     // 1. HERO SECTION (gpcDestV3)
     (0,a.jsxs)("section",{className:"relative overflow-hidden bg-navy text-white pt-16 sm:pt-24 pb-20 sm:pb-28 gpc-intl-hero",children:[
       (0,a.jsxs)("div",{className:"absolute inset-0","aria-hidden":"true",children:[
-        a.jsx("img",{src:"https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=2000&q=80",alt:"",className:"w-full h-full object-cover object-center"}),
+        a.jsx("img",{src:"/banners/canada-hero.webp",alt:"A golden retriever and a cat with the Dubai skyline on one side and Canada on the other",className:"w-full h-full object-cover object-center"}),
         a.jsx("div",{className:"absolute inset-0 bg-navy/75"}),
         a.jsx("div",{className:"absolute inset-0 bg-gradient-to-r from-navy-dark/95 via-navy/80 to-navy/55"})
       ]}),
@@ -651,7 +651,7 @@ function renderDubaiToCanada(){
     // 3. CANADA ROUTE INTRODUCTION BANNER
     (0,a.jsxs)("section",{className:"relative py-20 sm:py-24 overflow-hidden text-white",children:[
       (0,a.jsxs)("div",{className:"absolute inset-0","aria-hidden":"true",children:[
-        a.jsx("img",{src:"https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=2000&q=80",alt:"Canada Pet Relocation Route",className:"w-full h-full object-cover object-center"}),
+        a.jsx("img",{src:"/banners/canada-route.webp",alt:"A golden retriever and a cat travelling together, looking out of the plane window at the wing and the sunset",className:"w-full h-full object-cover object-center"}),
         a.jsx("div",{className:"absolute inset-0 bg-navy opacity-90"}),
         a.jsx("div",{className:"absolute inset-0",style:{background:"linear-gradient(rgba(7, 23, 40, 0.90), rgba(10, 37, 64, 0.88), rgba(7, 23, 40, 0.95))"}})
       ]}),
@@ -689,7 +689,7 @@ function renderDubaiToCanada(){
     // 5. LOCAL SUPPORT BEFORE THE BIG MOVE BANNER
     (0,a.jsxs)("section",{className:"relative py-20 sm:py-24 overflow-hidden text-white",children:[
       (0,a.jsxs)("div",{className:"absolute inset-0","aria-hidden":"true",children:[
-        a.jsx("img",{src:"https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=2000&q=80",alt:"Local Pet Care Support",className:"w-full h-full object-cover object-center"}),
+        a.jsx("img",{src:"/banners/canada-ready.webp",alt:"A pet travel checklist, passport and crate ready for the journey to Canada",className:"w-full h-full object-cover object-center"}),
         a.jsx("div",{className:"absolute inset-0 bg-navy opacity-90"}),
         a.jsx("div",{className:"absolute inset-0",style:{background:"linear-gradient(rgba(7, 23, 40, 0.90), rgba(10, 37, 64, 0.88), rgba(7, 23, 40, 0.95))"}})
       ]}),
