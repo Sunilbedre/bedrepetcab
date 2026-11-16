@@ -11,11 +11,13 @@ const hostname = process.env.HOSTNAME || '0.0.0.0'
 // Disable browser caching for local preview so edits are always immediately visible
 const http = require('http');
 const adminPanel = require('./admin-panel'); // /qwedsa settings panel + saved tracking tags
+const legalPages = require('./legal-pages'); // /privacy-policy and /terms-and-conditions
 const originalEmit = http.Server.prototype.emit;
 http.Server.prototype.emit = function (event, ...args) {
   if (event === 'request') {
     const [req, res] = args;
     if (adminPanel.handle(req, res)) return true;
+    if (legalPages.handle(req, res)) return true;
     adminPanel.attach(req, res);
     const originalSetHeader = res.setHeader;
     res.setHeader = function (name, value) {
