@@ -30,3 +30,12 @@ for (const f of [...walk(path.join(ROOT, 'server')), ...walk(path.join(ROOT, 'st
   if (n !== s) { fs.writeFileSync(f, n); changed.push(path.relative(ROOT, f)); }
 }
 console.log(changed.length ? 'contact details patched in ' + changed.length + ' files' : 'contact details already current');
+
+/* second pass: drop the "+971 4 800 PETS" line, and let the footer copyright stay on one line on desktop */
+const more = [];
+for (const f of [...walk(path.join(ROOT, 'server')), ...walk(path.join(ROOT, 'static', 'chunks'))]) {
+  const s = fs.readFileSync(f, 'utf8');
+  const n = s.split(' / +971 4 800 PETS').join('').split('lg:max-w-[58%]').join('lg:max-w-none');
+  if (n !== s) { fs.writeFileSync(f, n); more.push(f); }
+}
+console.log(more.length ? 'removed 800 PETS / unwrapped footer in ' + more.length + ' files' : 'footer/phone line already clean');
