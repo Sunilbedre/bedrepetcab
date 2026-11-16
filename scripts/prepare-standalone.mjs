@@ -31,6 +31,7 @@ const copy = (from, to, filter) => {
 };
 
 copy(path.join(ROOT, 'server.js'), path.join(OUT, 'server.js'));
+copy(path.join(ROOT, 'admin-panel.js'), path.join(OUT, 'admin-panel.js'));
 copy(path.join(ROOT, 'package.json'), path.join(OUT, 'package.json'));
 copy(path.join(ROOT, 'next.config.mjs'), path.join(OUT, 'next.config.mjs'));
 copy(path.join(ROOT, 'public'), path.join(OUT, 'public'));

@@ -37,7 +37,7 @@ OUT="${TMPDIR:-/tmp}/gpc-deploy.zip"
 rm -rf "$STAGE" "$OUT"
 mkdir -p "$STAGE"
 
-cp server.js app.js package.json package-lock.json "$STAGE/"
+cp server.js admin-panel.js app.js package.json package-lock.json "$STAGE/"
 cp -r .next public prisma scripts "$STAGE/"
 cp .env.production.example "$STAGE/.env"
 
