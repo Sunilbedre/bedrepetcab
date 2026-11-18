@@ -6,7 +6,7 @@
 const LEGAL_NAME = 'PAWPORT PETS RELOCATION SERVICES L.L.C';
 const TRADE_NAME = 'Global Pet Cab';
 const EMAIL = 'info@globalpetcab.ae';
-const PHONE = '+971 50 485 6239';
+const PHONE = '+971 58 503 6567';
 const ADDRESS = 'City Avenue Building, 7th Floor, Office 707, 8th St, Port Saeed, Deira, Dubai, United Arab Emirates';
 const SITE = 'https://globalpetcab.ae';
 const UPDATED = '16 November 2026';
@@ -22,7 +22,7 @@ const PRIVACY = [
   ['Retention and security', 'We keep information only as long as needed for the purposes above or as required by law, and use reasonable technical and organisational measures to protect it.'],
   ['Your rights', `You may ask us to access, correct or delete your personal data, or object to marketing, by emailing <a href="mailto:${EMAIL}">${EMAIL}</a>.`],
   ['Changes', 'We may update this policy from time to time. The date at the top shows the latest version.'],
-  ['Contact', `${LEGAL_NAME}, ${ADDRESS}. Phone: <a href="tel:+971504856239">${PHONE}</a>. Email: <a href="mailto:${EMAIL}">${EMAIL}</a>.`],
+  ['Contact', `${LEGAL_NAME}, ${ADDRESS}. Phone: <a href="tel:+971585036567">${PHONE}</a>. Email: <a href="mailto:${EMAIL}">${EMAIL}</a>.`],
 ];
 
 const TERMS = [
@@ -33,7 +33,7 @@ const TERMS = [
   ['Cancellations and changes', 'Please tell us as early as possible if you need to change or cancel. Costs already incurred (airline bookings, permits, veterinary fees) are non-refundable. Specific cancellation terms are given with your quote.'],
   ['Liability', 'We take every care of your pet. We are not liable for delays or outcomes caused by airlines, weather, customs or government authorities, or by incorrect or incomplete information supplied by you. Nothing in these terms limits liability that cannot be limited by law.'],
   ['Governing law', 'These terms are governed by the laws of the Emirate of Dubai and the federal laws of the United Arab Emirates, and disputes are subject to the courts of Dubai.'],
-  ['Contact', `${LEGAL_NAME}, ${ADDRESS}. Phone: <a href="tel:+971504856239">${PHONE}</a>. Email: <a href="mailto:${EMAIL}">${EMAIL}</a>.`],
+  ['Contact', `${LEGAL_NAME}, ${ADDRESS}. Phone: <a href="tel:+971585036567">${PHONE}</a>. Email: <a href="mailto:${EMAIL}">${EMAIL}</a>.`],
 ];
 
 function page(title, intro, sections, path) {

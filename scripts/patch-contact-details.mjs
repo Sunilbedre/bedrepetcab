@@ -16,9 +16,12 @@ function walk(dir, out = []) {
 }
 const ADDR_SHORT = 'City Avenue Building, 7th Floor, Office 707, 8th St, Port Saeed, Deira, Dubai';
 const REPL = [
-  ['+971 50 123 4567', '+971 50 485 6239'],
-  ['+971-50-123-4567', '+971-50-485-6239'],
-  ['971501234567', '971504856239'],
+  ['+971 50 485 6239', '+971 58 503 6567'],
+  ['+971-50-485-6239', '+971-58-503-6567'],
+  ['971504856239', '971585036567'],
+  ['+971 50 123 4567', '+971 58 503 6567'],
+  ['+971-50-123-4567', '+971-58-503-6567'],
+  ['971501234567', '971585036567'],
   ['Business Bay / Dubai Silicon Oasis, Dubai, UAE', ADDR_SHORT + ', UAE'],
   ['Business Bay / Silicon Oasis, Dubai, United Arab Emirates', ADDR_SHORT + ', United Arab Emirates'],
   ['Business Bay / Dubai Silicon Oasis', ADDR_SHORT],

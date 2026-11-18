@@ -225,7 +225,7 @@ function renderDubaiToUk(){
             "Get a Free Relocation Quote",
             a.jsx(Svg,{p:["M5 12h14","m12 5 7 7-7 7"],cls:"w-4 h-4"})
           ]}),
-          (0,a.jsxs)("a",{href:"https://wa.me/971504856239?text="+encodeURIComponent("Hello Global Pet Cab Dubai - "+t.title+" enquiry"),target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
+          (0,a.jsxs)("a",{href:"https://wa.me/971585036567?text="+encodeURIComponent("Hello Global Pet Cab Dubai - "+t.title+" enquiry"),target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
             a.jsx(Svg,{p:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z",cls:"w-4 h-4"}),
             "WhatsApp Us"
           ]})
@@ -369,7 +369,7 @@ function renderDubaiToUk(){
             "Get a Free Pet Relocation Quote",
             a.jsx(Svg,{p:["M5 12h14","m12 5 7 7-7 7"],cls:"w-4 h-4"})
           ]}),
-          (0,a.jsxs)("a",{href:"https://wa.me/971504856239?text=Hello%20Global%20Pet%20Cab%20Dubai%20-%20UK%20Pet%20Relocation%20Enquiry",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
+          (0,a.jsxs)("a",{href:"https://wa.me/971585036567?text=Hello%20Global%20Pet%20Cab%20Dubai%20-%20UK%20Pet%20Relocation%20Enquiry",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
             a.jsx(Svg,{p:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z",cls:"w-4 h-4"}),
             "WhatsApp Us"
           ]})
@@ -411,7 +411,7 @@ function renderDubaiToUsa(){
             "Get a Free Relocation Quote",
             a.jsx(Svg,{p:["M5 12h14","m12 5 7 7-7 7"],cls:"w-4 h-4"})
           ]}),
-          (0,a.jsxs)("a",{href:"https://wa.me/971504856239?text="+encodeURIComponent("Hello Global Pet Cab Dubai - "+t.title+" enquiry"),target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
+          (0,a.jsxs)("a",{href:"https://wa.me/971585036567?text="+encodeURIComponent("Hello Global Pet Cab Dubai - "+t.title+" enquiry"),target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
             a.jsx(Svg,{p:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z",cls:"w-4 h-4"}),
             "WhatsApp Us"
           ]})
@@ -554,7 +554,7 @@ function renderDubaiToUsa(){
             "Get a Free Pet Relocation Quote →",
             a.jsx(Svg,{p:["M5 12h14","m12 5 7 7-7 7"],cls:"w-4 h-4"})
           ]}),
-          (0,a.jsxs)("a",{href:"https://wa.me/971504856239?text=Hello%20Global%20Pet%20Cab%20Dubai%20-%20USA%20Pet%20Relocation%20Enquiry",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
+          (0,a.jsxs)("a",{href:"https://wa.me/971585036567?text=Hello%20Global%20Pet%20Cab%20Dubai%20-%20USA%20Pet%20Relocation%20Enquiry",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
             a.jsx(Svg,{p:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z",cls:"w-4 h-4"}),
             "WhatsApp Us"
           ]})
@@ -596,7 +596,7 @@ function renderDubaiToCanada(){
             "Get a Free Relocation Quote",
             a.jsx(Svg,{p:["M5 12h14","m12 5 7 7-7 7"],cls:"w-4 h-4"})
           ]}),
-          (0,a.jsxs)("a",{href:"https://wa.me/971504856239?text="+encodeURIComponent("Hello Global Pet Cab Dubai - "+t.title+" enquiry"),target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
+          (0,a.jsxs)("a",{href:"https://wa.me/971585036567?text="+encodeURIComponent("Hello Global Pet Cab Dubai - "+t.title+" enquiry"),target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
             a.jsx(Svg,{p:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z",cls:"w-4 h-4"}),
             "WhatsApp Us"
           ]})
@@ -842,7 +842,7 @@ function renderDubaiToCanada(){
             "Get a Free Canada Relocation Quote →",
             a.jsx(Svg,{p:["M5 12h14","m12 5 7 7-7 7"],cls:"w-4 h-4"})
           ]}),
-          (0,a.jsxs)("a",{href:"https://wa.me/971504856239?text=Hello%20Global%20Pet%20Cab%20Dubai%20-%20Canada%20Pet%20Relocation%20Enquiry",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
+          (0,a.jsxs)("a",{href:"https://wa.me/971585036567?text=Hello%20Global%20Pet%20Cab%20Dubai%20-%20Canada%20Pet%20Relocation%20Enquiry",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
             a.jsx(Svg,{p:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z",cls:"w-4 h-4"}),
             "WhatsApp the Relocation Team"
           ]})
@@ -884,7 +884,7 @@ function renderDefault(t){
             "Get a Free Relocation Quote",
             a.jsx(Svg,{p:["M5 12h14","m12 5 7 7-7 7"],cls:"w-4 h-4"})
           ]}),
-          (0,a.jsxs)("a",{href:"https://wa.me/971504856239?text="+encodeURIComponent("Hello Global Pet Cab Dubai - "+t.title+" enquiry"),target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
+          (0,a.jsxs)("a",{href:"https://wa.me/971585036567?text="+encodeURIComponent("Hello Global Pet Cab Dubai - "+t.title+" enquiry"),target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
             a.jsx(Svg,{p:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z",cls:"w-4 h-4"}),
             "WhatsApp Us"
           ]})
@@ -1080,7 +1080,7 @@ function renderDefault(t){
             "Get a Free Relocation Quote",
             a.jsx(Svg,{p:["M5 12h14","m12 5 7 7-7 7"],cls:"w-4 h-4"})
           ]}),
-          (0,a.jsxs)("a",{href:"https://wa.me/971504856239?text=Hello%20Global%20Pet%20Cab%20Dubai%20-%20International%20Pet%20Relocation%20Enquiry",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
+          (0,a.jsxs)("a",{href:"https://wa.me/971585036567?text=Hello%20Global%20Pet%20Cab%20Dubai%20-%20International%20Pet%20Relocation%20Enquiry",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold font-heading px-8 py-4 rounded-full transition-all text-sm sm:text-base shadow-sm w-full sm:w-auto",children:[
             a.jsx(Svg,{p:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z",cls:"w-4 h-4"}),
             "WhatsApp Us"
           ]})
